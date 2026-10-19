@@ -182,6 +182,8 @@ static void screen_mode_choose(long *width, float scale[2])
 	/* display.screen_width, or 0 for the display's shape, which the app
 	passes (port/android/host/host_main.c) */
 	const char *display = getenv("HALO_DISPLAY_WIDTH");
+	int pixel_width = 0, pixel_height = 0;
+	float scale_x, scale_y;
 
 	*width = config_integer("display.screen_width");
 	if (*width <= 0)
@@ -193,6 +195,39 @@ static void screen_mode_choose(long *width, float scale[2])
 	*width &= ~1L;
 	scale[0] = scale[1] = 1.0f;
 	screen_supersampling = 1.0f;
+	/* display.resolution_scaling: "native" draws the screen's targets at
+	the window's pixels, as the desktop does; "original" draws 480 lines,
+	scaled up at presentation. Before the window exists its size is 0, and
+	the scale stays 1 until halo_screen_commit finds it. */
+	if (strcmp(config_string("display.resolution_scaling"), "original"))
+	{
+		platform_video_drawable_size(&pixel_width, &pixel_height);
+		if (pixel_width > 0 && pixel_height > 0)
+				{
+			scale_x = (float)pixel_width / (float)*width;
+			scale_y = (float)pixel_height / (float)SCREEN_HEIGHT;
+			/* a window of another shape than the screen's (a foldable
+			folded or unfolded since the app started, or display.screen_width
+			set): the picture keeps its shape and the display blit
+			letterboxes it */
+			if (scale_x > scale_y * 1.02f || scale_y > scale_x * 1.02f)
+				scale_x = scale_y = scale_x < scale_y ? scale_x : scale_y;
+			/* no larger than the GPU's largest target, once it is known */
+			if (maximum_target_size > 0)
+			{
+				float limit = 1.0f;
+
+				if (*width * scale_x > (float)maximum_target_size)
+					limit = (float)maximum_target_size / (*width * scale_x);
+				if (SCREEN_HEIGHT * scale_y * limit > (float)maximum_target_size)
+					limit = (float)maximum_target_size / (SCREEN_HEIGHT * scale_y);
+				scale_x *= limit;
+				scale_y *= limit;
+			}
+			scale[0] = scale_x;
+			scale[1] = scale_y;
+		}
+	}
 #else
 	long display_width, display_height;
 
