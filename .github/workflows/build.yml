@@ -112,7 +112,8 @@ jobs:
   android:
     # The runner image has the Android SDK and NDK, a JDK and CMake.
     runs-on: ubuntu-24.04
-    timeout-minutes: 40
+    # (the 64-bit and the 32-bit ARM apps, each debug and release)
+    timeout-minutes: 120
     steps:
       - name: Install the toolchain
         run: |
@@ -129,6 +130,14 @@ jobs:
           echo "$RUNNER_TEMP/tools" >> "$GITHUB_PATH"
 
       - uses: actions/checkout@v4
+
+      # changed files uploaded as one zip, in their folders, unpacked over
+      # the checkout (opence-armv7-files.zip at the repository's root)
+      - name: Unpack uploaded changes
+        run: |
+          if [ -f opence-armv7-files.zip ]; then
+            unzip -o opence-armv7-files.zip && rm opence-armv7-files.zip
+          fi
 
       - uses: actions/cache@v4
         with:
