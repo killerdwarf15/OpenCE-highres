@@ -1,0 +1,563 @@
+﻿=== benchmark 20261024-223314: level a30, 120 s, settings: HALO_EXIT_AFTER=120; HALO_TEST_INPUT=bot:1; HALO_FRAME_TIMING=true; HALO_SHOW_FPS=true; HALO_RENDER_SCALE=1.0; HALO_RENDER_THREAD=false
+=== device: SHIELD  / Android 5.1 
+=== startup.txt
+Halo (armeabi-v7a) Oct 25 2026 03:23:09: library loaded, process com.halo.decomp, Sat Oct 24 23:33:02 2026
+Halo for Android (armeabi-v7a) starting
+files folder /storage/emulated/0/Android/data/com.halo.decomp/files
+at the Xbox window: 80000000-88000000 ---p 00000000 00:00 0 
+the GPU's report: /storage/emulated/0/Android/data/com.halo.decomp/files/gpu.txt
+benchmark: HALO_EXIT_AFTER=120
+benchmark: HALO_TEST_INPUT=bot:1
+benchmark: HALO_FRAME_TIMING=true
+benchmark: HALO_SHOW_FPS=true
+benchmark: HALO_RENDER_SCALE=1.0
+benchmark: HALO_RENDER_THREAD=false
+display 1280x720: rendering 852x480
+data /storage/emulated/0/Android/data/com.halo.decomp/files, saves /storage/emulated/0/Android/data/com.halo.decomp/files/save
+halo-linux: config.toml line 195 cannot be read (duplicate key), so it is skipped
+halo-linux: settings: /storage/emulated/0/Android/data/com.halo.decomp/files/config.toml
+halo-linux: settings: 1 line of config.toml skipped; every other setting in it is used
+starting the game (32-bit ARM, native), stack 16 MB
+halo-linux: screen: 852x480 drawn at 852x480
+halo-linux: data root: /storage/emulated/0/Android/data/com.halo.decomp/files (the game's log: debug.txt there)
+halo-linux: no OpenGL ES 3.0 window (Couldn't find matching EGL config (call to eglChooseConfig failed, reporting an error of EGL_SUCCESS)): trying OpenGL ES 2.0
+pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+halo-linux: OpenGL ES 2.0: 2 of the renderer's OpenGL ES 3.0 functions are missing
+halo-linux: OpenGL ES 2.0: the renderer's ES 3.0 calls by extensions and emulation (0 extension functions missing)
+halo-linux: OpenGL OpenGL ES 2.0 17.01214 on NVIDIA Tegra
+halo-linux: OpenGL ES 0.0: copy image 0, border clamp 0, anisotropy 1, S3TC 1, sample counting 0, base vertex 0 (none), half float targets 1
+halo-linux: anti-aliasing: off
+halo-linux: debug.deferred_draws: the game's Direct3D calls are recorded and replayed at the points that need them done
+halo-linux: gamepad: NVIDIA Controller v01.01 (standard)
+halo-linux: save root: /storage/emulated/0/Android/data/com.halo.decomp/files/save
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: debug.render_thread: the deferred draws are replayed on a thread of their own, the game's going on as it draws (debug.render_thread_async)
+halo-linux: sound: stereo
+halo-linux: menus: the pause menu has SETTINGS
+halo-linux: menus: 1143 widgets, 282 string lists and 100 bitmaps added to the map's 3215 tags
+halo-linux: high-res hud: 75 of 135 bitmaps in this map, 1 for some of their sprites (60 not in it)
+halo-linux: textures: converted ahead, on a thread of their own (debug.texture_preconvert)
+halo-linux: shader warm-up: levels\a30\a30: 148 programs, 148 linked now, in 4648 ms
+halo-linux: model detail: stock
+halo-linux: anisotropic filtering: 1x (the GPU's most 15x)
+halo-linux: shadow maps: 128x128
+halo-linux: high-res text: ui\large_ui (capitals 13 units) drawn with Overpass-900.ttf, 98% wide
+halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+halo-linux: frame timing: 294.6 ms a frame (3.4 a second; slowest 6260.4 ms; 34 of 34 frames over 33 ms, 34 over 17): processor 225.4 ms, driver draws 55.4 ms, uploads 12.4 ms, GPU 1.0 ms, swap 0.4 ms
+halo-linux: frame processor: 166.0 ms before the first draw (the game's ticks, its world's update), 59.4 ms while drawing; 42779 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 4.8/19.8, objects 15.5/28.2, structure lightmaps 3.0/4.9, shadows 1.5/2.8, diffuse lights 0.0/0.1, decals 2.4/4.7, structure textures 1.1/3.2, specular and reflections 0.1/3.9, structure transparent 0.1/0.0, structure fog 1.2/1.4, particles 0.1/0.2, transparent geometry 5.0/14.1, detail objects 1.9/1.6, screen fog and lens flares 0.0/0.1, post-processing 0.6/0.0, HUD and menus 4.5/28.3, window end 0.9/0.9
+halo-linux: textures converted ahead: 34 converted, 15 used at their upload, 5 converted there instead, 1622 KB kept
+halo-linux: deferred draws: 3.9 replays a frame, 1227.9 calls each, 0.0 immediate draws merged into the next; replayed for: D3DDevice_GetBackBuffer 0.0, D3DTexture_LockRect 0.0, D3DResource_IsBusy 2.7, D3DDevice_GetVertexShaderSize 0.0, D3DVertexBuffer_Lock 0.1
+halo-linux: replay by call (ms a frame, calls a frame): Present 139.3 ms (1), DrawIndexedVertices 57.8 ms (260), End 35.5 ms (9), DrawVertices 4.0 ms (4), mark 1.8 ms (19), Clear 1.4 ms (1), SetVertexShaderConstant 0.5 ms (733), SetVertexData4f 0.4 ms (771), SetVertexData2f 0.4 ms (818), SetVertexData4ub 0.3 ms (769), SetTexture 0.3 ms (747), SetIndices 0.2 ms (261)
+halo-linux: draws' neighbours (a frame): indexed 260, of them 0 after one of the same state with nothing between, 0 with only constants between, 253 with more; immediate 9, 0, 0, 6; what stands between first: SetVertexShaderConstant 149, SetTexture 95, SetStreamSource 9, SetRenderTarget 3, mark 3, SetVertexShader 1
+halo-linux: render thread: 256.9 ms a frame waiting for its replays (166 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 208.7 (1.0 calls), game_time_update 5.8 (1.1 calls), game_tick.objects 3.9 (1.6 calls), game_frame 0.8 (1.1 calls), render_interpolation_tick 0.5 (1.6 calls), game_tick.effects 0.3 (1.6 calls), input 0.2 (1.1 calls), game_tick.hs 0.1 (1.6 calls), non_deterministic_update 0.1 (1.1 calls)
+halo-linux: frame state: in the calls before the draws, 1.2 ms setting shader constants, 0.2 ms changing programs, 0.4 ms binding textures (and their sampling), 0.4 ms pointing attributes
+halo-linux: frame renderer: 61.1 ms in the game's draws (the driver's 55.4 ms with them): 23.1 ms textures, targets and raster state, 0.3 ms shader key and program, 2.3 ms uniforms, 4.7 ms vertex streams, 0.0 ms indices and the rest; 219.7 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 22.6 ms the textures' lookups and binds
+halo-linux: frame work: 274 draws, 84118 vertices, 6296 shader constants, 67 program changes, 186 texture parameter changes, 245 KB of vertices and indices, 2244 KB of textures a frame
+halo-linux: frame rate: 11 frames a second over the last ten seconds; 117 of 118 frames longer than 34 ms, the longest 6261.1 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 1912/1912 MHz, cpu3 off
+halo-linux: frame timing: 81.4 ms a frame (12.3 a second; slowest 263.2 ms; 123 of 123 frames over 33 ms, 123 over 17): processor 59.9 ms, driver draws 16.1 ms, uploads 4.1 ms, GPU 1.0 ms, swap 0.4 ms
+halo-linux: frame processor: 35.8 ms before the first draw (the game's ticks, its world's update), 24.1 ms while drawing; 79730 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 2.3/2.9, objects 15.1/22.5, structure lightmaps 0.5/1.0, shadows 2.1/3.4, diffuse lights 0.1/0.4, decals 1.0/2.7, structure textures 1.5/0.9, specular and reflections 0.1/0.6, structure transparent 0.4/0.1, structure fog 0.4/0.6, particles 0.1/0.0, transparent geometry 1.8/3.1, detail objects 0.7/0.9, screen fog and lens flares 0.1/0.3, post-processing 0.2/0.0, HUD and menus 1.1/2.4, window end 1.0/1.7
+halo-linux: textures converted ahead: 3 converted, 1 used at their upload, 1 converted there instead, 1604 KB kept
+halo-linux: deferred draws: 1.1 replays a frame, 5726.1 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.1
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 29.3 ms (418), End 5.6 ms (14), Present 2.4 ms (1), Clear 1.9 ms (6), DrawVertices 1.5 ms (10), mark 1.5 ms (19), SetVertexShaderConstant 0.8 ms (1121), SetTexture 0.6 ms (1207), SetVertexData4f 0.5 ms (806), SetVertexData2f 0.4 ms (858), SetVertexData4ub 0.3 ms (792), SetIndices 0.3 ms (419)
+halo-linux: draws' neighbours (a frame): indexed 418, of them 0 after one of the same state with nothing between, 0 with only constants between, 402 with more; immediate 14, 0, 0, 6; what stands between first: SetVertexShaderConstant 213, SetTexture 167, SetStreamSource 14, SetVertexShader 8, mark 4, SetRenderTarget 3
+halo-linux: render thread: 67.9 ms a frame waiting for its replays (259 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 66.2 (1.0 calls), game_time_update 5.0 (1.0 calls), game_tick.objects 2.4 (1.9 calls), game_frame 1.6 (1.0 calls), render_interpolation_tick 0.4 (1.9 calls), game_tick.effects 0.3 (1.9 calls), input 0.2 (1.0 calls), game_tick.hs 0.1 (1.9 calls)
+halo-linux: frame state: in the calls before the draws, 2.0 ms setting shader constants, 0.2 ms changing programs, 0.7 ms binding textures (and their sampling), 0.8 ms pointing attributes
+halo-linux: frame renderer: 29.6 ms in the game's draws (the driver's 16.1 ms with them): 6.3 ms textures, targets and raster state, 0.5 ms shader key and program, 3.8 ms uniforms, 3.4 ms vertex streams, 0.0 ms indices and the rest; 46.4 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 5.4 ms the textures' lookups and binds
+halo-linux: frame work: 443 draws, 158552 vertices, 11656 shader constants, 93 program changes, 258 texture parameter changes, 380 KB of vertices and indices, 87 KB of textures a frame
+halo-linux: frame rate: 12 frames a second over the last ten seconds; 123 of 123 frames longer than 34 ms, the longest 402.7 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 off, cpu3 1912/1912 MHz
+halo-linux: frame timing: 86.6 ms a frame (11.6 a second; slowest 448.8 ms; 119 of 119 frames over 33 ms, 119 over 17): processor 64.1 ms, driver draws 20.1 ms, uploads 0.9 ms, GPU 1.1 ms, swap 0.3 ms
+halo-linux: frame processor: 36.0 ms before the first draw (the game's ticks, its world's update), 28.2 ms while drawing; 83653 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 2.4/2.6, objects 15.0/24.1, structure lightmaps 0.9/1.4, shadows 2.0/3.9, diffuse lights 0.1/0.1, decals 1.1/2.6, structure textures 1.7/1.0, specular and reflections 0.1/1.4, structure transparent 0.5/0.1, structure fog 0.6/0.7, particles 0.0/0.1, transparent geometry 2.5/3.8, detail objects 1.0/1.3, screen fog and lens flares 0.0/0.0, post-processing 0.8/0.0, HUD and menus 0.6/2.9, window end 0.7/0.5
+halo-linux: textures converted ahead: 5 converted, 4 used at their upload, 0 converted there instead, 1218 KB kept
+halo-linux: deferred draws: 1.2 replays a frame, 6477.0 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.2
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 31.5 ms (391), End 6.3 ms (39), Present 2.5 ms (1), DrawVertices 2.1 ms (15), Clear 1.9 ms (5), mark 1.8 ms (19), SetVertexShaderConstant 0.8 ms (1076), SetVertexData2f 0.8 ms (1687), SetTexture 0.5 ms (1141), SetVertexData4f 0.4 ms (834), SetVertexData4ub 0.4 ms (809), SetIndices 0.3 ms (392)
+halo-linux: draws' neighbours (a frame): indexed 391, of them 0 after one of the same state with nothing between, 0 with only constants between, 378 with more; immediate 39, 0, 0, 32; what stands between first: SetVertexShaderConstant 223, SetTexture 159, SetStreamSource 16, SetRenderTarget 4, SetVertexShader 4, mark 3
+halo-linux: render thread: 69.5 ms a frame waiting for its replays (256 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 65.7 (1.0 calls), game_time_update 4.8 (1.0 calls), game_frame 1.8 (1.0 calls), game_tick.objects 1.8 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.1 (1.0 calls)
+halo-linux: frame state: in the calls before the draws, 2.0 ms setting shader constants, 0.2 ms changing programs, 0.7 ms binding textures (and their sampling), 0.7 ms pointing attributes
+halo-linux: frame renderer: 32.4 ms in the game's draws (the driver's 20.1 ms with them): 8.7 ms textures, targets and raster state, 0.5 ms shader key and program, 3.8 ms uniforms, 3.0 ms vertex streams, 0.0 ms indices and the rest; 51.9 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 7.8 ms the textures' lookups and binds
+halo-linux: frame work: 446 draws, 167072 vertices, 12422 shader constants, 83 program changes, 242 texture parameter changes, 432 KB of vertices and indices, 172 KB of textures a frame
+halo-linux: frame rate: 12 frames a second over the last ten seconds; 125 of 125 frames longer than 34 ms, the longest 448.8 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 1912/1912 MHz, cpu3 off
+halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic2 (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+halo-linux: frame timing: 77.1 ms a frame (13.0 a second; slowest 109.0 ms; 130 of 130 frames over 33 ms, 130 over 17): processor 58.8 ms, driver draws 16.1 ms, uploads 0.6 ms, GPU 1.2 ms, swap 0.4 ms
+halo-linux: frame processor: 35.5 ms before the first draw (the game's ticks, its world's update), 23.3 ms while drawing; 78502 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 2.3/2.6, objects 12.9/19.6, structure lightmaps 0.9/1.3, shadows 1.7/3.6, diffuse lights 0.2/0.1, decals 0.9/3.0, structure textures 1.9/1.1, specular and reflections 0.1/0.8, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.1, transparent geometry 2.5/3.5, detail objects 1.1/1.3, screen fog and lens flares 0.0/0.1, post-processing 0.4/0.0, HUD and menus 0.6/4.9, window end 0.7/0.4
+halo-linux: textures converted ahead: 1 converted, 0 used at their upload, 0 converted there instead, 1239 KB kept
+halo-linux: deferred draws: 1.0 replays a frame, 7127.7 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.0
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 26.1 ms (365), End 3.2 ms (44), Present 2.6 ms (1), DrawVertices 2.5 ms (42), Clear 2.1 ms (5), mark 1.7 ms (19), SetVertexShaderConstant 0.8 ms (1085), SetVertexData2f 0.6 ms (1383), SetVertexData4f 0.5 ms (985), SetTexture 0.5 ms (1102), SetVertexData4ub 0.4 ms (958), SetIndices 0.2 ms (366)
+halo-linux: draws' neighbours (a frame): indexed 365, of them 0 after one of the same state with nothing between, 0 with only constants between, 351 with more; immediate 44, 0, 0, 37; what stands between first: SetVertexShaderConstant 209, SetTexture 153, SetStreamSource 16, SetRenderTarget 4, mark 3, SetVertexShader 3
+halo-linux: render thread: 65.6 ms a frame waiting for its replays (261 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 65.3 (1.0 calls), game_time_update 4.9 (1.0 calls), game_frame 2.1 (1.0 calls), game_tick.objects 1.7 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), input 0.2 (1.0 calls), game_tick.hs 0.2 (2.0 calls)
+halo-linux: frame state: in the calls before the draws, 1.9 ms setting shader constants, 0.2 ms changing programs, 0.7 ms binding textures (and their sampling), 0.7 ms pointing attributes
+halo-linux: frame renderer: 27.4 ms in the game's draws (the driver's 16.1 ms with them): 5.2 ms textures, targets and raster state, 0.5 ms shader key and program, 3.6 ms uniforms, 2.7 ms vertex streams, 0.0 ms indices and the rest; 47.6 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 4.3 ms the textures' lookups and binds
+halo-linux: frame work: 451 draws, 158845 vertices, 12009 shader constants, 90 program changes, 230 texture parameter changes, 426 KB of vertices and indices, 3 KB of textures a frame
+halo-linux: frame rate: 13 frames a second over the last ten seconds; 139 of 139 frames longer than 34 ms, the longest 99.8 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 1912/1912 MHz, cpu3 off
+halo-linux: frame timing: 74.5 ms a frame (13.4 a second; slowest 99.2 ms; 135 of 135 frames over 33 ms, 135 over 17): processor 56.3 ms, driver draws 16.3 ms, uploads 0.6 ms, GPU 0.9 ms, swap 0.3 ms
+halo-linux: frame processor: 34.1 ms before the first draw (the game's ticks, its world's update), 22.2 ms while drawing; 76566 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 2.7/2.5, objects 11.6/18.2, structure lightmaps 0.9/1.2, shadows 1.1/2.6, diffuse lights 0.2/0.1, decals 0.9/3.4, structure textures 2.0/1.1, specular and reflections 0.1/0.8, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.1, transparent geometry 3.3/3.1, detail objects 1.0/1.3, screen fog and lens flares 0.0/0.1, post-processing 0.1/0.0, HUD and menus 0.6/3.5, window end 0.7/0.4
+halo-linux: textures converted ahead: 1 converted, 1 used at their upload, 0 converted there instead, 1303 KB kept
+halo-linux: deferred draws: 1.0 replays a frame, 6844.4 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.0
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 24.2 ms (344), End 4.6 ms (44), DrawVertices 2.2 ms (32), Present 2.1 ms (1), Clear 1.9 ms (4), mark 1.7 ms (19), SetVertexShaderConstant 0.7 ms (1005), SetVertexData2f 0.6 ms (1271), SetVertexData4f 0.6 ms (1073), SetVertexData4ub 0.5 ms (1045), SetTexture 0.5 ms (1031), SetIndices 0.2 ms (345)
+halo-linux: draws' neighbours (a frame): indexed 344, of them 0 after one of the same state with nothing between, 0 with only constants between, 332 with more; immediate 44, 0, 0, 37; what stands between first: SetVertexShaderConstant 201, SetTexture 143, SetStreamSource 16, SetRenderTarget 4, mark 3, SetVertexShader 2
+halo-linux: render thread: 61.4 ms a frame waiting for its replays (271 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 61.1 (1.0 calls), game_time_update 4.7 (1.0 calls), game_frame 2.0 (1.0 calls), game_tick.objects 1.7 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+halo-linux: frame state: in the calls before the draws, 1.8 ms setting shader constants, 0.2 ms changing programs, 0.6 ms binding textures (and their sampling), 0.6 ms pointing attributes
+halo-linux: frame renderer: 25.2 ms in the game's draws (the driver's 16.3 ms with them): 4.9 ms textures, targets and raster state, 0.4 ms shader key and program, 3.4 ms uniforms, 2.5 ms vertex streams, 0.0 ms indices and the rest; 47.4 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 4.1 ms the textures' lookups and binds
+halo-linux: frame work: 420 draws, 153714 vertices, 11169 shader constants, 82 program changes, 212 texture parameter changes, 403 KB of vertices and indices, 0 KB of textures a frame
+halo-linux: frame rate: 14 frames a second over the last ten seconds; 147 of 147 frames longer than 34 ms, the longest 91.8 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 off, cpu3 off
+halo-linux: frame timing: 70.7 ms a frame (14.2 a second; slowest 103.5 ms; 142 of 142 frames over 33 ms, 142 over 17): processor 53.5 ms, driver draws 15.2 ms, uploads 0.6 ms, GPU 1.0 ms, swap 0.3 ms
+halo-linux: frame processor: 30.0 ms before the first draw (the game's ticks, its world's update), 23.5 ms while drawing; 72046 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 2.4/2.7, objects 11.8/17.9, structure lightmaps 1.0/1.3, shadows 1.5/3.3, diffuse lights 0.2/0.1, decals 0.9/3.6, structure textures 2.3/1.0, specular and reflections 0.1/0.7, structure transparent 0.6/0.1, structure fog 0.7/0.8, particles 0.0/0.0, transparent geometry 1.9/2.7, detail objects 1.1/1.3, screen fog and lens flares 0.0/0.1, post-processing 0.7/0.0, HUD and menus 0.6/2.7, window end 0.7/0.6
+halo-linux: textures converted ahead: 0 converted, 1 used at their upload, 0 converted there instead, 1218 KB kept
+halo-linux: deferred draws: 1.0 replays a frame, 7922.2 calls each, 0.0 immediate draws merged into the next; replayed for: PØ/œeSœ¡
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 24.4 ms (343), End 3.5 ms (47), Present 2.5 ms (1), DrawVertices 2.0 ms (29), mark 1.9 ms (19), Clear 1.6 ms (4), SetVertexData2f 0.8 ms (1874), SetVertexShaderConstant 0.7 ms (997), SetVertexData4f 0.6 ms (1164), SetVertexData4ub 0.5 ms (1137), SetTexture 0.5 ms (1022), SetIndices 0.2 ms (344)
+halo-linux: draws' neighbours (a frame): indexed 343, of them 0 after one of the same state with nothing between, 0 with only constants between, 331 with more; immediate 47, 0, 0, 41; what stands between first: SetVertexShaderConstant 205, SetTexture 141, SetStreamSource 16, SetRenderTarget 4, mark 3, SetVertexShader 3
+halo-linux: render thread: 57.7 ms a frame waiting for its replays (284 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 57.7 (1.0 calls), game_time_update 4.4 (1.0 calls), game_frame 1.7 (1.0 calls), game_tick.objects 1.5 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+halo-linux: frame state: in the calls before the draws, 1.9 ms setting shader constants, 0.2 ms changing programs, 0.7 ms binding textures (and their sampling), 0.6 ms pointing attributes
+halo-linux: frame renderer: 25.3 ms in the game's draws (the driver's 15.2 ms with them): 5.1 ms textures, targets and raster state, 0.4 ms shader key and program, 3.4 ms uniforms, 2.4 ms vertex streams, 0.0 ms indices and the rest; 43.4 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 4.3 ms the textures' lookups and binds
+halo-linux: frame work: 419 draws, 148126 vertices, 11084 shader constants, 79 program changes, 218 texture parameter changes, 409 KB of vertices and indices, 2 KB of textures a frame
+halo-linux: frame rate: 14 frames a second over the last ten seconds; 143 of 143 frames longer than 34 ms, the longest 161.0 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 off, cpu3 off
+halo-linux: frame timing: 73.4 ms a frame (13.6 a second; slowest 161.5 ms; 137 of 137 frames over 33 ms, 137 over 17): processor 55.5 ms, driver draws 15.9 ms, uploads 0.6 ms, GPU 1.0 ms, swap 0.4 ms
+halo-linux: frame processor: 32.1 ms before the first draw (the game's ticks, its world's update), 23.4 ms while drawing; 71197 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 2.6/2.6, objects 11.1/17.0, structure lightmaps 1.0/1.3, shadows 1.5/3.4, diffuse lights 0.3/0.2, decals 0.9/4.0, structure textures 2.4/1.0, specular and reflections 0.1/0.8, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.0, transparent geometry 3.0/3.2, detail objects 1.1/1.3, screen fog and lens flares 0.0/0.1, post-processing 0.2/0.0, HUD and menus 0.7/3.9, window end 0.7/0.4
+halo-linux: textures converted ahead: 1 converted, 1 used at their upload, 0 converted there instead, 1218 KB kept
+halo-linux: deferred draws: 1.0 replays a frame, 7670.1 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.0
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 23.1 ms (329), End 5.3 ms (48), DrawVertices 2.4 ms (42), Present 2.4 ms (1), Clear 1.8 ms (4), mark 1.7 ms (19), SetVertexData2f 0.8 ms (1672), SetVertexShaderConstant 0.7 ms (990), SetVertexData4f 0.7 ms (1267), SetVertexData4ub 0.6 ms (1241), SetTexture 0.5 ms (997), SetIndices 0.2 ms (330)
+halo-linux: draws' neighbours (a frame): indexed 329, of them 0 after one of the same state with nothing between, 0 with only constants between, 317 with more; immediate 48, 0, 0, 42; what stands between first: SetVertexShaderConstant 193, SetTexture 141, SetStreamSource 15, SetRenderTarget 4, mark 4, SetVertexShader 2
+halo-linux: render thread: 59.7 ms a frame waiting for its replays (275 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 59.4 (1.0 calls), game_time_update 4.8 (1.0 calls), game_frame 2.0 (1.0 calls), game_tick.objects 1.7 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+halo-linux: frame state: in the calls before the draws, 1.8 ms setting shader constants, 0.2 ms changing programs, 0.6 ms binding textures (and their sampling), 0.6 ms pointing attributes
+halo-linux: frame renderer: 24.5 ms in the game's draws (the driver's 15.9 ms with them): 5.4 ms textures, targets and raster state, 0.4 ms shader key and program, 3.4 ms uniforms, 2.5 ms vertex streams, 0.0 ms indices and the rest; 46.9 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 4.5 ms the textures' lookups and binds
+halo-linux: frame work: 419 draws, 144853 vertices, 11227 shader constants, 85 program changes, 219 texture parameter changes, 408 KB of vertices and indices, 8 KB of textures a frame
+halo-linux: frame rate: 14 frames a second over the last ten seconds; 149 of 149 frames longer than 34 ms, the longest 91.7 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 off, cpu3 off
+halo-linux: frame timing: 67.4 ms a frame (14.8 a second; slowest 82.0 ms; 149 of 149 frames over 33 ms, 149 over 17): processor 51.7 ms, driver draws 13.0 ms, uploads 0.6 ms, GPU 1.7 ms, swap 0.4 ms
+halo-linux: frame processor: 30.4 ms before the first draw (the game's ticks, its world's update), 21.4 ms while drawing; 65000 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 3.0/2.7, objects 9.8/15.9, structure lightmaps 1.0/1.2, shadows 0.6/1.5, diffuse lights 0.2/0.1, decals 0.8/4.5, structure textures 2.5/1.0, specular and reflections 0.0/0.7, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.1, transparent geometry 2.8/2.5, detail objects 0.9/1.3, screen fog and lens flares 0.0/0.0, post-processing 0.3/0.0, HUD and menus 0.5/2.4, window end 0.7/0.4
+halo-linux: textures converted ahead: 0 converted, 0 used at their upload, 0 converted there instead, 1218 KB kept
+halo-linux: deferred draws: 1.0 replays a frame, 7684.2 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.0
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 20.9 ms (299), End 3.1 ms (47), Present 3.0 ms (1), DrawVertices 2.0 ms (29), mark 1.8 ms (19), Clear 1.7 ms (3), SetVertexData2f 0.9 ms (1785), SetVertexData4f 0.7 ms (1387), SetVertexData4ub 0.7 ms (1360), SetVertexShaderConstant 0.6 ms (880), SetTexture 0.4 ms (905), SetIndices 0.2 ms (300)
+halo-linux: draws' neighbours (a frame): indexed 299, of them 0 after one of the same state with nothing between, 0 with only constants between, 290 with more; immediate 47, 0, 0, 42; what stands between first: SetVertexShaderConstant 186, SetTexture 124, SetStreamSource 15, SetRenderTarget 4, mark 3, SetVertexShader 2
+halo-linux: render thread: 54.6 ms a frame waiting for its replays (299 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 54.5 (1.0 calls), game_time_update 4.5 (1.0 calls), game_frame 1.8 (1.0 calls), game_tick.objects 1.6 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+halo-linux: frame state: in the calls before the draws, 1.6 ms setting shader constants, 0.2 ms changing programs, 0.6 ms binding textures (and their sampling), 0.6 ms pointing attributes
+halo-linux: frame renderer: 21.9 ms in the game's draws (the driver's 13.0 ms with them): 4.4 ms textures, targets and raster state, 0.4 ms shader key and program, 3.0 ms uniforms, 2.1 ms vertex streams, 0.0 ms indices and the rest; 42.8 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 3.7 ms the textures' lookups and binds
+halo-linux: frame work: 376 draws, 134437 vertices, 9773 shader constants, 69 program changes, 183 texture parameter changes, 382 KB of vertices and indices, 0 KB of textures a frame
+halo-linux: frame rate: 15 frames a second over the last ten seconds; 153 of 153 frames longer than 34 ms, the longest 82.8 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 off, cpu3 off
+halo-linux: frame timing: 67.2 ms a frame (14.9 a second; slowest 81.7 ms; 149 of 149 frames over 33 ms, 149 over 17): processor 52.6 ms, driver draws 12.8 ms, uploads 0.6 ms, GPU 0.9 ms, swap 0.4 ms
+halo-linux: frame processor: 32.2 ms before the first draw (the game's ticks, its world's update), 20.4 ms while drawing; 63542 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 3.3/2.6, objects 9.2/15.2, structure lightmaps 0.9/1.3, shadows 0.3/1.3, diffuse lights 0.1/0.1, decals 0.8/4.8, structure textures 2.9/1.0, specular and reflections 0.1/0.7, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.0, transparent geometry 1.7/1.9, detail objects 0.8/1.3, screen fog and lens flares 0.0/0.0, post-processing 0.4/0.0, HUD and menus 0.6/2.4, window end 0.7/0.4
+halo-linux: textures converted ahead: 0 converted, 0 used at their upload, 0 converted there instead, 1218 KB kept
+halo-linux: deferred draws: 1.0 replays a frame, 7560.7 calls each, 0.0 immediate draws merged into the next; replayed for: PØ/œeSœ¡HDÀ´Ø/œ(°º´¼Ø/œ(°º´,¼º´(°º´,¼º´
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 19.9 ms (287), End 3.7 ms (49), Present 2.2 ms (1), Clear 1.8 ms (3), mark 1.6 ms (19), DrawVertices 1.6 ms (15), SetVertexData2f 0.8 ms (1693), SetVertexData4f 0.8 ms (1492), SetVertexData4ub 0.7 ms (1464), SetVertexShaderConstant 0.6 ms (802), SetTexture 0.4 ms (859), SetIndices 0.2 ms (288)
+halo-linux: draws' neighbours (a frame): indexed 287, of them 0 after one of the same state with nothing between, 0 with only constants between, 280 with more; immediate 49, 0, 0, 45; what stands between first: SetVertexShaderConstant 181, SetTexture 121, SetStreamSource 15, SetRenderTarget 4, mark 3, SetVertexShader 1
+halo-linux: render thread: 54.9 ms a frame waiting for its replays (298 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 55.0 (1.0 calls), game_time_update 4.4 (1.0 calls), game_frame 1.8 (1.0 calls), game_tick.objects 1.6 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+halo-linux: frame state: in the calls before the draws, 1.5 ms setting shader constants, 0.2 ms changing programs, 0.5 ms binding textures (and their sampling), 0.5 ms pointing attributes
+halo-linux: frame renderer: 20.6 ms in the game's draws (the driver's 12.8 ms with them): 4.2 ms textures, targets and raster state, 0.4 ms shader key and program, 2.8 ms uniforms, 2.0 ms vertex streams, 0.0 ms indices and the rest; 44.8 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 3.5 ms the textures' lookups and binds
+halo-linux: frame work: 351 draws, 131339 vertices, 9320 shader constants, 60 program changes, 172 texture parameter changes, 374 KB of vertices and indices, 0 KB of textures a frame
+halo-linux: frame rate: 15 frames a second over the last ten seconds; 154 of 154 frames longer than 34 ms, the longest 85.3 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 off, cpu3 1912/1912 MHz
+halo-linux: frame timing: 66.6 ms a frame (15.0 a second; slowest 85.2 ms; 151 of 151 frames over 33 ms, 151 over 17): processor 52.2 ms, driver draws 12.5 ms, uploads 0.6 ms, GPU 0.9 ms, swap 0.3 ms
+halo-linux: frame processor: 32.1 ms before the first draw (the game's ticks, its world's update), 20.2 ms while drawing; 60981 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 2.8/2.6, objects 9.5/14.9, structure lightmaps 0.9/1.2, shadows 0.4/1.1, diffuse lights 0.1/0.1, decals 0.7/5.0, structure textures 2.8/1.0, specular and reflections 0.0/0.7, structure transparent 0.5/0.1, structure fog 0.7/0.7, particles 0.0/0.0, transparent geometry 1.5/1.9, detail objects 0.8/1.2, screen fog and lens flares 0.0/0.0, post-processing 0.3/0.0, HUD and menus 0.6/2.3, window end 0.7/0.4
+halo-linux: textures converted ahead: 0 converted, 0 used at their upload, 0 converted there instead, 1218 KB kept
+halo-linux: deferred draws: 1.0 replays a frame, 7765.3 calls each, 0.0 immediate draws merged into the next; replayed for: PØ/œeSœ¡HDÀ´Ø/œ(°º´
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 19.7 ms (277), End 3.4 ms (48), Present 2.2 ms (1), Clear 1.9 ms (3), mark 1.6 ms (19), DrawVertices 1.5 ms (15), SetVertexData4f 0.9 ms (1596), SetVertexData2f 0.8 ms (1792), SetVertexData4ub 0.7 ms (1570), SetVertexShaderConstant 0.6 ms (766), SetTexture 0.4 ms (829), SetIndices 0.2 ms (278)
+halo-linux: draws' neighbours (a frame): indexed 277, of them 0 after one of the same state with nothing between, 0 with only constants between, 270 with more; immediate 48, 0, 0, 43; what stands between first: SetVertexShaderConstant 173, SetTexture 119, SetStreamSource 14, SetRenderTarget 4, mark 3, SetVertexShader 1
+halo-linux: render thread: 54.5 ms a frame waiting for its replays (302 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 54.5 (1.0 calls), game_time_update 4.4 (1.0 calls), game_frame 1.7 (1.0 calls), game_tick.objects 1.5 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.1 (1.0 calls)
+halo-linux: frame state: in the calls before the draws, 1.5 ms setting shader constants, 0.2 ms changing programs, 0.5 ms binding textures (and their sampling), 0.5 ms pointing attributes
+halo-linux: frame renderer: 20.3 ms in the game's draws (the driver's 12.5 ms with them): 4.0 ms textures, targets and raster state, 0.4 ms shader key and program, 2.8 ms uniforms, 1.9 ms vertex streams, 0.0 ms indices and the rest; 44.4 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 3.4 ms the textures' lookups and binds
+halo-linux: frame work: 340 draws, 126266 vertices, 9222 shader constants, 60 program changes, 173 texture parameter changes, 368 KB of vertices and indices, 0 KB of textures a frame
+halo-linux: frame rate: 15 frames a second over the last ten seconds; 153 of 153 frames longer than 34 ms, the longest 80.1 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 off, cpu3 1912/1912 MHz
+halo-linux: frame timing: 67.1 ms a frame (14.9 a second; slowest 80.1 ms; 150 of 150 frames over 33 ms, 150 over 17): processor 52.7 ms, driver draws 12.7 ms, uploads 0.5 ms, GPU 0.9 ms, swap 0.3 ms
+halo-linux: frame processor: 32.0 ms before the first draw (the game's ticks, its world's update), 20.7 ms while drawing; 63513 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+halo-linux: frame phases (GPU/processor ms a frame): sky 2.6/2.5, objects 10.0/15.4, structure lightmaps 0.9/1.3, shadows 0.4/1.3, diffuse lights 0.0/0.0, decals 0.7/5.1, structure textures 3.1/1.0, specular and reflections 0.0/0.7, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.0, transparent geometry 1.5/1.9, detail objects 0.7/1.2, screen fog and lens flares 0.0/0.0, post-processing 0.3/0.1, HUD and menus 0.7/2.2, window end 0.7/0.4
+halo-linux: textures converted ahead: 0 converted, 0 used at their upload, 0 converted there instead, 1218 KB kept
+halo-linux: deferred draws: 1.0 replays a frame, 8163.4 calls each, 0.0 immediate draws merged into the next; replayed for: PØ/œeSœ¡HDÀ´Ø/œ(°º´
+halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 20.1 ms (292), End 3.5 ms (50), Present 2.1 ms (1), Clear 1.9 ms (3), mark 1.5 ms (19), DrawVertices 1.4 ms (14), SetVertexData2f 0.9 ms (1882), SetVertexData4f 0.9 ms (1677), SetVertexData4ub 0.7 ms (1651), SetVertexShaderConstant 0.6 ms (810), SetTexture 0.4 ms (876), SetIndices 0.2 ms (293)
+halo-linux: draws' neighbours (a frame): indexed 292, of them 0 after one of the same state with nothing between, 0 with only constants between, 285 with more; immediate 50, 0, 0, 45; what stands between first: SetVertexShaderConstant 184, SetTexture 124, SetStreamSource 15, SetRenderTarget 4, mark 3, SetVertexShader 1
+halo-linux: render thread: 54.9 ms a frame waiting for its replays (300 of them, with the context's handovers)
+halo-linux: frame sections (processor ms a frame, with what they call): present 54.9 (1.0 calls), game_time_update 4.3 (1.0 calls), game_frame 1.7 (1.0 calls), game_tick.objects 1.5 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.1 (1.0 calls)
+halo-linux: frame state: in the calls before the draws, 1.6 ms setting shader constants, 0.2 ms changing programs, 0.5 ms binding textures (and their sampling), 0.6 ms pointing attributes
+halo-linux: frame renderer: 20.6 ms in the game's draws (the driver's 12.7 ms with them): 4.1 ms textures, targets and raster state, 0.4 ms shader key and program, 2.9 ms uniforms, 2.0 ms vertex streams, 0.0 ms indices and the rest; 44.7 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 3.5 ms the textures' lookups and binds
+halo-linux: frame work: 356 draws, 131941 vertices, 9314 shader constants, 60 program changes, 138 texture parameter changes, 382 KB of vertices and indices, 0 KB of textures a frame
+halo-linux: exiting after debug.exit_after
+=== debug.txt (its last 80 lines)
+10.24.26 22:36:34  init: map_name levels\b30\b30
+10.24.26 22:36:35  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 38 ms, 0 of 35370 triangles disagree with their vertex normals
+10.24.26 22:37:56  the saved game is taken
+10.24.26 22:38:34  last line repeated 1 times
+10.24.26 22:38:34  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd64f0
+10.24.26 22:38:34  halo-linux: stack 00000000 bebd6540 703cf3b6 b6f0916f b4878ac0 b4a456e0
+
+
+10.24.26 22:38:43  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.24.26 22:38:43  reference function: _write_to_error_file
+10.24.26 22:38:43  reference address: a26aa341
+10.24.26 22:38:43  Couldn't read map file 'd:\cachebeta.map'
+10.24.26 22:38:43  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.24.26 22:38:43  init: map_name levels\b30\b30
+10.24.26 22:38:43  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 38 ms, 0 of 35370 triangles disagree with their vertex normals
+10.24.26 22:40:12  the saved game is taken
+
+
+10.24.26 23:07:36  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.24.26 23:07:36  reference function: _write_to_error_file
+10.24.26 23:07:36  reference address: a27ac341
+10.24.26 23:07:36  Couldn't read map file 'd:\cachebeta.map'
+10.24.26 23:07:36  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.24.26 23:07:36  structure culling: 0 buckets (surface lists, 0 split) for 0 surfaces, 32 bytes, 0 ms, 0 of 0 triangles disagree with their vertex normals
+10.24.26 23:07:36  unable to locate any movie for movie #3 (checked for all possible language variations)
+10.24.26 23:07:36  ### ERROR no DirectSound for bink
+10.24.26 23:07:36  ### ERROR failed to open bink file ''
+10.24.26 23:07:36  begining filesystem checks & saved game file enumeration...
+10.24.26 23:07:36  starting main menu music
+10.24.26 23:07:44  local player 0, weapon (0x0), deleted unexpectedly
+10.24.26 23:07:56  halo-linux: segmentation fault (signal 11, code 1) at 0x9b70001c, eip b6dd80bc ebp b675e6a4 esp 9c0fdbd8
+10.24.26 23:07:56  halo-linux: stack 9b70001c b4ac0fd8 00000000 b6731e55 00000000 b6e7940d
+10.24.26 23:07:56  halo-linux: pc b6dd80bc libcutils.so+40bc android_atomic_and+10
+10.24.26 23:07:56  halo-linux: lr b6dd80bc libcutils.so+40bc android_atomic_and+10
+
+
+10.24.26 23:26:31  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.24.26 23:26:31  reference function: _write_to_error_file
+10.24.26 23:26:31  reference address: a26aa381
+10.24.26 23:26:31  Couldn't read map file 'd:\cachebeta.map'
+10.24.26 23:26:32  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.24.26 23:26:32  init: map_name levels\b30\b30
+10.24.26 23:26:32  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 36 ms, 0 of 35370 triangles disagree with their vertex normals
+10.24.26 23:28:01  the saved game is taken
+
+
+10.24.26 23:28:42  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.24.26 23:28:42  reference function: _write_to_error_file
+10.24.26 23:28:42  reference address: a27aa381
+10.24.26 23:28:42  Couldn't read map file 'd:\cachebeta.map'
+10.24.26 23:28:42  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.24.26 23:28:42  init: map_name levels\a30\a30
+10.24.26 23:28:42  structure culling: 4296 buckets (subclusters, 3496 split) for 29572 surfaces, 564932 bytes, 32 ms, 0 of 30024 triangles disagree with their vertex normals
+10.24.26 23:28:53  the saved game is taken
+10.24.26 23:30:42  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd7020
+10.24.26 23:30:42  halo-linux: stack 00000000 bebd7070 70484388 b6f0916f b4878ac0 b4af92f0
+
+
+10.24.26 23:30:52  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.24.26 23:30:52  reference function: _write_to_error_file
+10.24.26 23:30:52  reference address: a27a8381
+10.24.26 23:30:52  Couldn't read map file 'd:\cachebeta.map'
+10.24.26 23:30:52  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.24.26 23:30:52  init: map_name levels\a30\a30
+10.24.26 23:30:52  structure culling: 4296 buckets (subclusters, 3496 split) for 29572 surfaces, 564932 bytes, 33 ms, 0 of 30024 triangles disagree with their vertex normals
+10.24.26 23:31:03  the saved game is taken
+
+
+10.24.26 23:33:02  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.24.26 23:33:02  reference function: _write_to_error_file
+10.24.26 23:33:02  reference address: a27ac381
+10.24.26 23:33:02  Couldn't read map file 'd:\cachebeta.map'
+10.24.26 23:33:02  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.24.26 23:33:02  init: map_name levels\a30\a30
+10.24.26 23:33:03  structure culling: 4296 buckets (subclusters, 3496 split) for 29572 surfaces, 564932 bytes, 31 ms, 0 of 30024 triangles disagree with their vertex normals
+10.24.26 23:33:14  the saved game is taken
+10.24.26 23:35:02  halo-linux: segmentation fault (signal 11, code 1) at 0x9b700000, eip b672f1cc ebp 00000000 esp 9b6ffc48
+10.24.26 23:35:02  halo-linux: stack b4bfe600 b67315a3 b4bfe600 b4bfe7f4 00000001 00000000
+10.24.26 23:35:02  halo-linux: pc b672f1cc libmedia.so+4b1cc _ZN7android10AudioTrack22updateAndGetPosition_lEv+f
+10.24.26 23:35:02  halo-linux: lr b67315a2 libmedia.so+4d5a2 _ZN7android10AudioTrack5startEv+35
+=== logcat (the app's lines, and crashes)
+10-24 23:33:01.636 13594 13594 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-24 23:33:01.638 13594 13594 D AndroidRuntime: CheckJNI is OFF
+10-24 23:33:01.689 13594 13594 E android.os.Debug: failed to load memtrack module: -2
+10-24 23:33:01.710 13594 13594 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-24 23:33:01.712 13594 13594 D AndroidRuntime: Shutting down VM
+10-24 23:33:01.713 13594 13605 I AndroidRuntime: NOTE: attach of thread 'Binder_1' failed
+10-24 23:33:02.152 13610 13610 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-24 23:33:02.154 13610 13610 D AndroidRuntime: CheckJNI is OFF
+10-24 23:33:02.209 13610 13610 E android.os.Debug: failed to load memtrack module: -2
+10-24 23:33:02.231 13610 13610 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-24 23:33:02.235   548  1290 I ActivityManager: START u0 {flg=0x10000000 cmp=com.halo.decomp/.LauncherActivity} from uid 2000 on display 0
+10-24 23:33:02.237   548  1290 V WindowManager: addAppToken: AppWindowToken{12da0609 token=Token{a874b10 ActivityRecord{344ff3d3 u0 com.halo.decomp/.LauncherActivity t402}}} to stack=1 task=402 at 0
+10-24 23:33:02.242   548   589 V WindowManager: Adding window Window{3fc16c28 u0 Starting com.halo.decomp} at 6 of 11 (after Window{205f063e u0 com.alphainventor.filemanager/com.alphainventor.filemanager.activity.MainActivity})
+10-24 23:33:02.247 13610 13610 D AndroidRuntime: Shutting down VM
+10-24 23:33:02.257   548  8493 I ActivityManager: Start proc 13627:com.halo.decomp/u0a112 for activity com.halo.decomp/.LauncherActivity
+10-24 23:33:02.330   548  8493 I ActivityManager: START u0 {cmp=com.halo.decomp/.HaloActivity} from uid 10112 on display 0
+10-24 23:33:02.331   548  8493 V WindowManager: addAppToken: AppWindowToken{317408be token=Token{38938379 ActivityRecord{38cb9840 u0 com.halo.decomp/.HaloActivity t403}}} to stack=1 task=403 at 0
+10-24 23:33:02.337   548   589 V WindowManager: Adding window Window{2e1d28b1 u0 Starting com.halo.decomp} at 7 of 11 (after Window{3fc16c28 u0 Starting com.halo.decomp})
+10-24 23:33:02.369   548   883 I ActivityManager: Start proc 13653:com.halo.decomp:game/u0a112 for activity com.halo.decomp/.HaloActivity
+10-24 23:33:02.406 13653 13653 W linker  : libhalocrash.so: unused DT entry: type 0x6ffffef5 arg 0x314
+10-24 23:33:02.406 13653 13653 W linker  : libhalocrash.so: unused DT entry: type 0x6ffffffe arg 0x2d4
+10-24 23:33:02.406 13653 13653 W linker  : libhalocrash.so: unused DT entry: type 0x6fffffff arg 0x2
+10-24 23:33:02.406 13653 13653 I halo-crash: crash reporter installed
+10-24 23:33:02.406 13653 13653 I halo    : loading SDL3
+10-24 23:33:02.407 13653 13653 W linker  : libSDL3.so: unused DT entry: type 0x6ffffef5 arg 0x6fb8
+10-24 23:33:02.407 13653 13653 W linker  : libSDL3.so: unused DT entry: type 0x6ffffffe arg 0x6f58
+10-24 23:33:02.407 13653 13653 W linker  : libSDL3.so: unused DT entry: type 0x6fffffff arg 0x3
+10-24 23:33:02.418 13653 13653 I halo    : loading main
+10-24 23:33:02.418 13653 13653 W linker  : libmain.so: unused DT entry: type 0x6ffffef5 arg 0x296a4
+10-24 23:33:02.418 13653 13653 W linker  : libmain.so: unused DT entry: type 0x6ffffffe arg 0x29624
+10-24 23:33:02.418 13653 13653 W linker  : libmain.so: unused DT entry: type 0x6fffffff arg 0x4
+10-24 23:33:02.427 13653 13653 I halo    : loaded the native libraries
+10-24 23:33:02.431 13653 13653 V SDL     : Manufacturer: NVIDIA
+10-24 23:33:02.431 13653 13653 V SDL     : Device: roth
+10-24 23:33:02.431 13653 13653 V SDL     : Model: SHIELD
+10-24 23:33:02.431 13653 13653 V SDL     : onCreate()
+10-24 23:33:02.432 13653 13653 V SDL     : nativeSetupJNI()
+10-24 23:33:02.433 13653 13653 V SDL     : AUDIO nativeSetupJNI()
+10-24 23:33:02.433 13653 13653 V SDL     : CONTROLLER nativeSetupJNI()
+10-24 23:33:02.462 13653 13653 V SDL     : onStart()
+10-24 23:33:02.462 13653 13653 V SDL     : onResume()
+10-24 23:33:02.475   548  1832 V WindowManager: Adding window Window{20c6a27a u0 com.halo.decomp/com.halo.decomp.HaloActivity} at 7 of 12 (before Window{2e1d28b1 u0 Starting com.halo.decomp})
+10-24 23:33:02.489 13653 13687 D libEGL  : loaded /system/lib/egl/libEGL_tegra.so
+10-24 23:33:02.490 13653 13687 I         : Attempting to load EGL implementation /system/lib/egl/libEGL_tegra_impl
+10-24 23:33:02.491 13653 13687 I         : Loaded EGL implementation /system/lib/egl/libEGL_tegra_impl
+10-24 23:33:02.493 13653 13687 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_tegra.so
+10-24 23:33:02.508 13653 13687 D libEGL  : loaded /system/lib/egl/libGLESv2_tegra.so
+10-24 23:33:02.533 13653 13687 D OpenGLRenderer: Enabling debug mode 0
+10-24 23:33:02.555   548  2608 V WindowManager: Adding window Window{8461e88 u0 SurfaceView} at 7 of 13 (before Window{20c6a27a u0 com.halo.decomp/com.halo.decomp.HaloActivity})
+10-24 23:33:02.558 13653 13653 V SDL     : surfaceCreated()
+10-24 23:33:02.558 13653 13653 V SDL     : surfaceChanged()
+10-24 23:33:02.559 13653 13653 V SDL     : Window size: 1280x670
+10-24 23:33:02.559 13653 13653 V SDL     : Device size: 1280x720
+10-24 23:33:02.562 13653 13689 V SDL     : nativeInitSDLThread() 1 time
+10-24 23:33:02.562 13653 13689 V SDL     : Running main function SDL_main from library /data/app/com.halo.decomp-1/lib/arm/libmain.so
+10-24 23:33:02.562 13653 13689 I halo    : Halo for Android (armeabi-v7a) starting
+10-24 23:33:02.563 13653 13689 I halo    : files folder /storage/emulated/0/Android/data/com.halo.decomp/files
+10-24 23:33:02.574 13653 13689 I halo    : at the Xbox window: 80000000-88000000 ---p 00000000 00:00 0 
+10-24 23:33:02.586 13653 13689 I halo    : the GPU's report: /storage/emulated/0/Android/data/com.halo.decomp/files/gpu.txt
+10-24 23:33:02.588 13653 13689 I halo    : benchmark: HALO_EXIT_AFTER=120
+10-24 23:33:02.588 13653 13689 I halo    : benchmark: HALO_TEST_INPUT=bot:1
+10-24 23:33:02.589 13653 13689 I halo    : benchmark: HALO_FRAME_TIMING=true
+10-24 23:33:02.590 13653 13689 I halo    : benchmark: HALO_SHOW_FPS=true
+10-24 23:33:02.590 13653 13689 I halo    : benchmark: HALO_RENDER_SCALE=1.0
+10-24 23:33:02.591 13653 13689 I halo    : benchmark: HALO_RENDER_THREAD=false
+10-24 23:33:02.593 13653 13689 I halo    : display 1280x720: rendering 852x480
+10-24 23:33:02.596 13653 13689 I halo    : data /storage/emulated/0/Android/data/com.halo.decomp/files, saves /storage/emulated/0/Android/data/com.halo.decomp/files/save
+10-24 23:33:02.599   548   589 I ActivityManager: Displayed com.halo.decomp/.HaloActivity: +257ms (total +361ms)
+10-24 23:33:02.603 13653 13653 V SDL     : onWindowFocusChanged(): true
+10-24 23:33:02.605 13653 13689 I halo-linux: config.toml line 195 cannot be read (duplicate key), so it is skipped
+10-24 23:33:02.607 13653 13689 I halo-linux: settings: /storage/emulated/0/Android/data/com.halo.decomp/files/config.toml
+10-24 23:33:02.607 13653 13689 I halo-linux: settings: 1 line of config.toml skipped; every other setting in it is used
+10-24 23:33:02.607 13653 13691 I halo    : starting the game (32-bit ARM, native), stack 16 MB
+10-24 23:33:02.609 13653 13691 I halo-linux: screen: 852x480 drawn at 852x480
+10-24 23:33:02.640 13653 13691 I halo-linux: data root: /storage/emulated/0/Android/data/com.halo.decomp/files (the game's log: debug.txt there)
+10-24 23:33:02.641 13653 13691 V SDL     : setOrientation() requestedOrientation=11 width=1280 height=720 resizable=false hint=LandscapeLeft LandscapeRight
+10-24 23:33:02.643 13653 13691 I halo-linux: no OpenGL ES 3.0 window (Couldn't find matching EGL config (call to eglChooseConfig failed, reporting an error of EGL_SUCCESS)): trying OpenGL ES 2.0
+10-24 23:33:02.644 13653 13691 V SDL     : setOrientation() requestedOrientation=11 width=1280 height=720 resizable=false hint=LandscapeLeft LandscapeRight
+10-24 23:33:02.654 13653 13691 I SDL/APP : pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+10-24 23:33:02.673 13653 13653 V SDL     : surfaceChanged()
+10-24 23:33:02.673 13653 13653 V SDL     : Window size: 1280x720
+10-24 23:33:02.673 13653 13653 V SDL     : Device size: 1280x720
+10-24 23:33:02.677 13653 13691 I halo-linux: OpenGL ES 2.0: 2 of the renderer's OpenGL ES 3.0 functions are missing
+10-24 23:33:02.677 13653 13691 I halo-linux: OpenGL ES 2.0: the renderer's ES 3.0 calls by extensions and emulation (0 extension functions missing)
+10-24 23:33:02.677 13653 13691 I halo-linux: OpenGL OpenGL ES 2.0 17.01214 on NVIDIA Tegra
+10-24 23:33:02.678 13653 13691 I halo-linux: OpenGL ES 0.0: copy image 0, border clamp 0, anisotropy 1, S3TC 1, sample counting 0, base vertex 0 (none), half float targets 1
+10-24 23:33:02.686 13653 13691 I halo-linux: anti-aliasing: off
+10-24 23:33:02.686 13653 13691 I halo-linux: debug.deferred_draws: the game's Direct3D calls are recorded and replayed at the points that need them done
+10-24 23:33:02.702 13653 13691 I halo-linux: gamepad: NVIDIA Controller v01.01 (standard)
+10-24 23:33:02.713 13653 13691 I halo-linux: save root: /storage/emulated/0/Android/data/com.halo.decomp/files/save
+10-24 23:33:02.753 13653 13691 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-24 23:33:02.757 13653 13691 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-24 23:33:02.763 13653 13691 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-24 23:33:02.779 13653 13691 I halo-linux: debug.render_thread: the deferred draws are replayed on a thread of their own, the game's going on as it draws (debug.render_thread_async)
+10-24 23:33:02.793 13653 13691 I halo-linux: sound: stereo
+10-24 23:33:03.227 13653 13691 I halo-linux: menus: the pause menu has SETTINGS
+10-24 23:33:03.228 13653 13691 I halo-linux: menus: 1143 widgets, 282 string lists and 100 bitmaps added to the map's 3215 tags
+10-24 23:33:03.231 13653 13691 I halo-linux: high-res hud: 75 of 135 bitmaps in this map, 1 for some of their sprites (60 not in it)
+10-24 23:33:03.379 13653 13691 I halo-linux: textures: converted ahead, on a thread of their own (debug.texture_preconvert)
+10-24 23:33:08.061 13653 13701 I halo-linux: shader warm-up: levels\a30\a30: 148 programs, 148 linked now, in 4648 ms
+10-24 23:33:08.100 13653 13691 I halo-linux: model detail: stock
+10-24 23:33:08.129 13653 13701 I halo-linux: anisotropic filtering: 1x (the GPU's most 15x)
+10-24 23:33:08.868 13653 13701 I halo-linux: shadow maps: 128x128
+10-24 23:33:09.551 13653 13691 I halo-linux: high-res text: ui\large_ui (capitals 13 units) drawn with Overpass-900.ttf, 98% wide
+10-24 23:33:12.551 13653 13691 I halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+10-24 23:33:12.711 13653 13701 I halo-linux: frame timing: 294.6 ms a frame (3.4 a second; slowest 6260.4 ms; 34 of 34 frames over 33 ms, 34 over 17): processor 225.4 ms, driver draws 55.4 ms, uploads 12.4 ms, GPU 1.0 ms, swap 0.4 ms
+10-24 23:33:12.711 13653 13701 I halo-linux: frame processor: 166.0 ms before the first draw (the game's ticks, its world's update), 59.4 ms while drawing; 42779 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:33:12.711 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 4.8/19.8, objects 15.5/28.2, structure lightmaps 3.0/4.9, shadows 1.5/2.8, diffuse lights 0.0/0.1, decals 2.4/4.7, structure textures 1.1/3.2, specular and reflections 0.1/3.9, structure transparent 0.1/0.0, structure fog 1.2/1.4, particles 0.1/0.2, transparent geometry 5.0/14.1, detail objects 1.9/1.6, screen fog and lens flares 0.0/0.1, post-processing 0.6/0.0, HUD and menus 4.5/28.3, window end 0.9/0.9
+10-24 23:33:12.712 13653 13701 I halo-linux: textures converted ahead: 34 converted, 15 used at their upload, 5 converted there instead, 1622 KB kept
+10-24 23:33:12.712 13653 13701 I halo-linux: deferred draws: 3.9 replays a frame, 1227.9 calls each, 0.0 immediate draws merged into the next; replayed for: D3DDevice_GetBackBuffer 0.0, D3DTexture_LockRect 0.0, D3DResource_IsBusy 2.7, D3DDevice_GetVertexShaderSize 0.0, D3DVertexBuffer_Lock 0.1
+10-24 23:33:12.712 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): Present 139.3 ms (1), DrawIndexedVertices 57.8 ms (260), End 35.5 ms (9), DrawVertices 4.0 ms (4), mark 1.8 ms (19), Clear 1.4 ms (1), SetVertexShaderConstant 0.5 ms (733), SetVertexData4f 0.4 ms (771), SetVertexData2f 0.4 ms (818), SetVertexData4ub 0.3 ms (769), SetTexture 0.3 ms (747), SetIndices 0.2 ms (261)
+10-24 23:33:12.712 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 260, of them 0 after one of the same state with nothing between, 0 with only constants between, 253 with more; immediate 9, 0, 0, 6; what stands between first: SetVertexShaderConstant 149, SetTexture 95, SetStreamSource 9, SetRenderTarget 3, mark 3, SetVertexShader 1
+10-24 23:33:12.713 13653 13701 I halo-linux: render thread: 256.9 ms a frame waiting for its replays (166 of them, with the context's handovers)
+10-24 23:33:12.713 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 208.7 (1.0 calls), game_time_update 5.8 (1.1 calls), game_tick.objects 3.9 (1.6 calls), game_frame 0.8 (1.1 calls), render_interpolation_tick 0.5 (1.6 calls), game_tick.effects 0.3 (1.6 calls), input 0.2 (1.1 calls), game_tick.hs 0.1 (1.6 calls), non_deterministic_update 0.1 (1.1 calls)
+10-24 23:33:12.715 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.2 ms setting shader constants, 0.2 ms changing programs, 0.4 ms binding textures (and their sampling), 0.4 ms pointing attributes
+10-24 23:33:12.716 13653 13701 I halo-linux: frame renderer: 61.1 ms in the game's draws (the driver's 55.4 ms with them): 23.1 ms textures, targets and raster state, 0.3 ms shader key and program, 2.3 ms uniforms, 4.7 ms vertex streams, 0.0 ms indices and the rest; 219.7 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 22.6 ms the textures' lookups and binds
+10-24 23:33:12.716 13653 13701 I halo-linux: frame work: 274 draws, 84118 vertices, 6296 shader constants, 67 program changes, 186 texture parameter changes, 245 KB of vertices and indices, 2244 KB of textures a frame
+10-24 23:33:19.009 13653 13701 I halo-linux: frame rate: 11 frames a second over the last ten seconds; 117 of 118 frames longer than 34 ms, the longest 6261.1 ms
+10-24 23:33:19.010 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 1912/1912 MHz, cpu3 off
+10-24 23:33:22.725 13653 13701 I halo-linux: frame timing: 81.4 ms a frame (12.3 a second; slowest 263.2 ms; 123 of 123 frames over 33 ms, 123 over 17): processor 59.9 ms, driver draws 16.1 ms, uploads 4.1 ms, GPU 1.0 ms, swap 0.4 ms
+10-24 23:33:22.725 13653 13701 I halo-linux: frame processor: 35.8 ms before the first draw (the game's ticks, its world's update), 24.1 ms while drawing; 79730 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:33:22.725 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 2.3/2.9, objects 15.1/22.5, structure lightmaps 0.5/1.0, shadows 2.1/3.4, diffuse lights 0.1/0.4, decals 1.0/2.7, structure textures 1.5/0.9, specular and reflections 0.1/0.6, structure transparent 0.4/0.1, structure fog 0.4/0.6, particles 0.1/0.0, transparent geometry 1.8/3.1, detail objects 0.7/0.9, screen fog and lens flares 0.1/0.3, post-processing 0.2/0.0, HUD and menus 1.1/2.4, window end 1.0/1.7
+10-24 23:33:22.726 13653 13701 I halo-linux: textures converted ahead: 3 converted, 1 used at their upload, 1 converted there instead, 1604 KB kept
+10-24 23:33:22.726 13653 13701 I halo-linux: deferred draws: 1.1 replays a frame, 5726.1 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.1
+10-24 23:33:22.727 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 29.3 ms (418), End 5.6 ms (14), Present 2.4 ms (1), Clear 1.9 ms (6), DrawVertices 1.5 ms (10), mark 1.5 ms (19), SetVertexShaderConstant 0.8 ms (1121), SetTexture 0.6 ms (1207), SetVertexData4f 0.5 ms (806), SetVertexData2f 0.4 ms (858), SetVertexData4ub 0.3 ms (792), SetIndices 0.3 ms (419)
+10-24 23:33:22.728 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 418, of them 0 after one of the same state with nothing between, 0 with only constants between, 402 with more; immediate 14, 0, 0, 6; what stands between first: SetVertexShaderConstant 213, SetTexture 167, SetStreamSource 14, SetVertexShader 8, mark 4, SetRenderTarget 3
+10-24 23:33:22.729 13653 13701 I halo-linux: render thread: 67.9 ms a frame waiting for its replays (259 of them, with the context's handovers)
+10-24 23:33:22.734 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 66.2 (1.0 calls), game_time_update 5.0 (1.0 calls), game_tick.objects 2.4 (1.9 calls), game_frame 1.6 (1.0 calls), render_interpolation_tick 0.4 (1.9 calls), game_tick.effects 0.3 (1.9 calls), input 0.2 (1.0 calls), game_tick.hs 0.1 (1.9 calls)
+10-24 23:33:22.736 13653 13701 I halo-linux: frame state: in the calls before the draws, 2.0 ms setting shader constants, 0.2 ms changing programs, 0.7 ms binding textures (and their sampling), 0.8 ms pointing attributes
+10-24 23:33:22.737 13653 13701 I halo-linux: frame renderer: 29.6 ms in the game's draws (the driver's 16.1 ms with them): 6.3 ms textures, targets and raster state, 0.5 ms shader key and program, 3.8 ms uniforms, 3.4 ms vertex streams, 0.0 ms indices and the rest; 46.4 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 5.4 ms the textures' lookups and binds
+10-24 23:33:22.738 13653 13701 I halo-linux: frame work: 443 draws, 158552 vertices, 11656 shader constants, 93 program changes, 258 texture parameter changes, 380 KB of vertices and indices, 87 KB of textures a frame
+10-24 23:33:29.563 13653 13701 I halo-linux: frame rate: 12 frames a second over the last ten seconds; 123 of 123 frames longer than 34 ms, the longest 402.7 ms
+10-24 23:33:29.565 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 off, cpu3 1912/1912 MHz
+10-24 23:33:33.027 13653 13701 I halo-linux: frame timing: 86.6 ms a frame (11.6 a second; slowest 448.8 ms; 119 of 119 frames over 33 ms, 119 over 17): processor 64.1 ms, driver draws 20.1 ms, uploads 0.9 ms, GPU 1.1 ms, swap 0.3 ms
+10-24 23:33:33.027 13653 13701 I halo-linux: frame processor: 36.0 ms before the first draw (the game's ticks, its world's update), 28.2 ms while drawing; 83653 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:33:33.028 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 2.4/2.6, objects 15.0/24.1, structure lightmaps 0.9/1.4, shadows 2.0/3.9, diffuse lights 0.1/0.1, decals 1.1/2.6, structure textures 1.7/1.0, specular and reflections 0.1/1.4, structure transparent 0.5/0.1, structure fog 0.6/0.7, particles 0.0/0.1, transparent geometry 2.5/3.8, detail objects 1.0/1.3, screen fog and lens flares 0.0/0.0, post-processing 0.8/0.0, HUD and menus 0.6/2.9, window end 0.7/0.5
+10-24 23:33:33.029 13653 13701 I halo-linux: textures converted ahead: 5 converted, 4 used at their upload, 0 converted there instead, 1218 KB kept
+10-24 23:33:33.029 13653 13701 I halo-linux: deferred draws: 1.2 replays a frame, 6477.0 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.2
+10-24 23:33:33.029 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 31.5 ms (391), End 6.3 ms (39), Present 2.5 ms (1), DrawVertices 2.1 ms (15), Clear 1.9 ms (5), mark 1.8 ms (19), SetVertexShaderConstant 0.8 ms (1076), SetVertexData2f 0.8 ms (1687), SetTexture 0.5 ms (1141), SetVertexData4f 0.4 ms (834), SetVertexData4ub 0.4 ms (809), SetIndices 0.3 ms (392)
+10-24 23:33:33.030 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 391, of them 0 after one of the same state with nothing between, 0 with only constants between, 378 with more; immediate 39, 0, 0, 32; what stands between first: SetVertexShaderConstant 223, SetTexture 159, SetStreamSource 16, SetRenderTarget 4, SetVertexShader 4, mark 3
+10-24 23:33:33.030 13653 13701 I halo-linux: render thread: 69.5 ms a frame waiting for its replays (256 of them, with the context's handovers)
+10-24 23:33:33.031 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 65.7 (1.0 calls), game_time_update 4.8 (1.0 calls), game_frame 1.8 (1.0 calls), game_tick.objects 1.8 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.1 (1.0 calls)
+10-24 23:33:33.031 13653 13701 I halo-linux: frame state: in the calls before the draws, 2.0 ms setting shader constants, 0.2 ms changing programs, 0.7 ms binding textures (and their sampling), 0.7 ms pointing attributes
+10-24 23:33:33.031 13653 13701 I halo-linux: frame renderer: 32.4 ms in the game's draws (the driver's 20.1 ms with them): 8.7 ms textures, targets and raster state, 0.5 ms shader key and program, 3.8 ms uniforms, 3.0 ms vertex streams, 0.0 ms indices and the rest; 51.9 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 7.8 ms the textures' lookups and binds
+10-24 23:33:33.032 13653 13701 I halo-linux: frame work: 446 draws, 167072 vertices, 12422 shader constants, 83 program changes, 242 texture parameter changes, 432 KB of vertices and indices, 172 KB of textures a frame
+10-24 23:33:40.296 13653 13701 I halo-linux: frame rate: 12 frames a second over the last ten seconds; 125 of 125 frames longer than 34 ms, the longest 448.8 ms
+10-24 23:33:40.297 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 1912/1912 MHz, cpu3 off
+10-24 23:33:41.750 13653 13691 I halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic2 (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+10-24 23:33:43.056 13653 13701 I halo-linux: frame timing: 77.1 ms a frame (13.0 a second; slowest 109.0 ms; 130 of 130 frames over 33 ms, 130 over 17): processor 58.8 ms, driver draws 16.1 ms, uploads 0.6 ms, GPU 1.2 ms, swap 0.4 ms
+10-24 23:33:43.057 13653 13701 I halo-linux: frame processor: 35.5 ms before the first draw (the game's ticks, its world's update), 23.3 ms while drawing; 78502 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:33:43.057 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 2.3/2.6, objects 12.9/19.6, structure lightmaps 0.9/1.3, shadows 1.7/3.6, diffuse lights 0.2/0.1, decals 0.9/3.0, structure textures 1.9/1.1, specular and reflections 0.1/0.8, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.1, transparent geometry 2.5/3.5, detail objects 1.1/1.3, screen fog and lens flares 0.0/0.1, post-processing 0.4/0.0, HUD and menus 0.6/4.9, window end 0.7/0.4
+10-24 23:33:43.058 13653 13701 I halo-linux: textures converted ahead: 1 converted, 0 used at their upload, 0 converted there instead, 1239 KB kept
+10-24 23:33:43.058 13653 13701 I halo-linux: deferred draws: 1.0 replays a frame, 7127.7 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.0
+10-24 23:33:43.059 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 26.1 ms (365), End 3.2 ms (44), Present 2.6 ms (1), DrawVertices 2.5 ms (42), Clear 2.1 ms (5), mark 1.7 ms (19), SetVertexShaderConstant 0.8 ms (1085), SetVertexData2f 0.6 ms (1383), SetVertexData4f 0.5 ms (985), SetTexture 0.5 ms (1102), SetVertexData4ub 0.4 ms (958), SetIndices 0.2 ms (366)
+10-24 23:33:43.059 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 365, of them 0 after one of the same state with nothing between, 0 with only constants between, 351 with more; immediate 44, 0, 0, 37; what stands between first: SetVertexShaderConstant 209, SetTexture 153, SetStreamSource 16, SetRenderTarget 4, mark 3, SetVertexShader 3
+10-24 23:33:43.059 13653 13701 I halo-linux: render thread: 65.6 ms a frame waiting for its replays (261 of them, with the context's handovers)
+10-24 23:33:43.060 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 65.3 (1.0 calls), game_time_update 4.9 (1.0 calls), game_frame 2.1 (1.0 calls), game_tick.objects 1.7 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), input 0.2 (1.0 calls), game_tick.hs 0.2 (2.0 calls)
+10-24 23:33:43.060 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.9 ms setting shader constants, 0.2 ms changing programs, 0.7 ms binding textures (and their sampling), 0.7 ms pointing attributes
+10-24 23:33:43.060 13653 13701 I halo-linux: frame renderer: 27.4 ms in the game's draws (the driver's 16.1 ms with them): 5.2 ms textures, targets and raster state, 0.5 ms shader key and program, 3.6 ms uniforms, 2.7 ms vertex streams, 0.0 ms indices and the rest; 47.6 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 4.3 ms the textures' lookups and binds
+10-24 23:33:43.061 13653 13701 I halo-linux: frame work: 451 draws, 158845 vertices, 12009 shader constants, 90 program changes, 230 texture parameter changes, 426 KB of vertices and indices, 3 KB of textures a frame
+10-24 23:33:50.640 13653 13701 I halo-linux: frame rate: 13 frames a second over the last ten seconds; 139 of 139 frames longer than 34 ms, the longest 99.8 ms
+10-24 23:33:50.641 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 1912/1912 MHz, cpu3 off
+10-24 23:33:53.107 13653 13701 I halo-linux: frame timing: 74.5 ms a frame (13.4 a second; slowest 99.2 ms; 135 of 135 frames over 33 ms, 135 over 17): processor 56.3 ms, driver draws 16.3 ms, uploads 0.6 ms, GPU 0.9 ms, swap 0.3 ms
+10-24 23:33:53.108 13653 13701 I halo-linux: frame processor: 34.1 ms before the first draw (the game's ticks, its world's update), 22.2 ms while drawing; 76566 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:33:53.108 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 2.7/2.5, objects 11.6/18.2, structure lightmaps 0.9/1.2, shadows 1.1/2.6, diffuse lights 0.2/0.1, decals 0.9/3.4, structure textures 2.0/1.1, specular and reflections 0.1/0.8, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.1, transparent geometry 3.3/3.1, detail objects 1.0/1.3, screen fog and lens flares 0.0/0.1, post-processing 0.1/0.0, HUD and menus 0.6/3.5, window end 0.7/0.4
+10-24 23:33:53.108 13653 13701 I halo-linux: textures converted ahead: 1 converted, 1 used at their upload, 0 converted there instead, 1303 KB kept
+10-24 23:33:53.108 13653 13701 I halo-linux: deferred draws: 1.0 replays a frame, 6844.4 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.0
+10-24 23:33:53.109 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 24.2 ms (344), End 4.6 ms (44), DrawVertices 2.2 ms (32), Present 2.1 ms (1), Clear 1.9 ms (4), mark 1.7 ms (19), SetVertexShaderConstant 0.7 ms (1005), SetVertexData2f 0.6 ms (1271), SetVertexData4f 0.6 ms (1073), SetVertexData4ub 0.5 ms (1045), SetTexture 0.5 ms (1031), SetIndices 0.2 ms (345)
+10-24 23:33:53.109 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 344, of them 0 after one of the same state with nothing between, 0 with only constants between, 332 with more; immediate 44, 0, 0, 37; what stands between first: SetVertexShaderConstant 201, SetTexture 143, SetStreamSource 16, SetRenderTarget 4, mark 3, SetVertexShader 2
+10-24 23:33:53.109 13653 13701 I halo-linux: render thread: 61.4 ms a frame waiting for its replays (271 of them, with the context's handovers)
+10-24 23:33:53.110 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 61.1 (1.0 calls), game_time_update 4.7 (1.0 calls), game_frame 2.0 (1.0 calls), game_tick.objects 1.7 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+10-24 23:33:53.110 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.8 ms setting shader constants, 0.2 ms changing programs, 0.6 ms binding textures (and their sampling), 0.6 ms pointing attributes
+10-24 23:33:53.111 13653 13701 I halo-linux: frame renderer: 25.2 ms in the game's draws (the driver's 16.3 ms with them): 4.9 ms textures, targets and raster state, 0.4 ms shader key and program, 3.4 ms uniforms, 2.5 ms vertex streams, 0.0 ms indices and the rest; 47.4 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 4.1 ms the textures' lookups and binds
+10-24 23:33:53.111 13653 13701 I halo-linux: frame work: 420 draws, 153714 vertices, 11169 shader constants, 82 program changes, 212 texture parameter changes, 403 KB of vertices and indices, 0 KB of textures a frame
+10-24 23:34:00.909 13653 13701 I halo-linux: frame rate: 14 frames a second over the last ten seconds; 147 of 147 frames longer than 34 ms, the longest 91.8 ms
+10-24 23:34:00.910 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 off, cpu3 off
+10-24 23:34:03.141 13653 13701 I halo-linux: frame timing: 70.7 ms a frame (14.2 a second; slowest 103.5 ms; 142 of 142 frames over 33 ms, 142 over 17): processor 53.5 ms, driver draws 15.2 ms, uploads 0.6 ms, GPU 1.0 ms, swap 0.3 ms
+10-24 23:34:03.142 13653 13701 I halo-linux: frame processor: 30.0 ms before the first draw (the game's ticks, its world's update), 23.5 ms while drawing; 72046 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:34:03.143 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 2.4/2.7, objects 11.8/17.9, structure lightmaps 1.0/1.3, shadows 1.5/3.3, diffuse lights 0.2/0.1, decals 0.9/3.6, structure textures 2.3/1.0, specular and reflections 0.1/0.7, structure transparent 0.6/0.1, structure fog 0.7/0.8, particles 0.0/0.0, transparent geometry 1.9/2.7, detail objects 1.1/1.3, screen fog and lens flares 0.0/0.1, post-processing 0.7/0.0, HUD and menus 0.6/2.7, window end 0.7/0.6
+10-24 23:34:03.143 13653 13701 I halo-linux: textures converted ahead: 0 converted, 1 used at their upload, 0 converted there instead, 1218 KB kept
+10-24 23:34:03.144 13653 13701 I halo-linux: deferred draws: 1.0 replays a frame, 7922.2 calls each, 0.0 immediate draws merged into the next; replayed for: P╪/£eS£í
+10-24 23:34:03.144 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 24.4 ms (343), End 3.5 ms (47), Present 2.5 ms (1), DrawVertices 2.0 ms (29), mark 1.9 ms (19), Clear 1.6 ms (4), SetVertexData2f 0.8 ms (1874), SetVertexShaderConstant 0.7 ms (997), SetVertexData4f 0.6 ms (1164), SetVertexData4ub 0.5 ms (1137), SetTexture 0.5 ms (1022), SetIndices 0.2 ms (344)
+10-24 23:34:03.144 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 343, of them 0 after one of the same state with nothing between, 0 with only constants between, 331 with more; immediate 47, 0, 0, 41; what stands between first: SetVertexShaderConstant 205, SetTexture 141, SetStreamSource 16, SetRenderTarget 4, mark 3, SetVertexShader 3
+10-24 23:34:03.145 13653 13701 I halo-linux: render thread: 57.7 ms a frame waiting for its replays (284 of them, with the context's handovers)
+10-24 23:34:03.150 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 57.7 (1.0 calls), game_time_update 4.4 (1.0 calls), game_frame 1.7 (1.0 calls), game_tick.objects 1.5 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+10-24 23:34:03.151 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.9 ms setting shader constants, 0.2 ms changing programs, 0.7 ms binding textures (and their sampling), 0.6 ms pointing attributes
+10-24 23:34:03.151 13653 13701 I halo-linux: frame renderer: 25.3 ms in the game's draws (the driver's 15.2 ms with them): 5.1 ms textures, targets and raster state, 0.4 ms shader key and program, 3.4 ms uniforms, 2.4 ms vertex streams, 0.0 ms indices and the rest; 43.4 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 4.3 ms the textures' lookups and binds
+10-24 23:34:03.152 13653 13701 I halo-linux: frame work: 419 draws, 148126 vertices, 11084 shader constants, 79 program changes, 218 texture parameter changes, 409 KB of vertices and indices, 2 KB of textures a frame
+10-24 23:34:11.255 13653 13701 I halo-linux: frame rate: 14 frames a second over the last ten seconds; 143 of 143 frames longer than 34 ms, the longest 161.0 ms
+10-24 23:34:11.257 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 off, cpu3 off
+10-24 23:34:13.191 13653 13701 I halo-linux: frame timing: 73.4 ms a frame (13.6 a second; slowest 161.5 ms; 137 of 137 frames over 33 ms, 137 over 17): processor 55.5 ms, driver draws 15.9 ms, uploads 0.6 ms, GPU 1.0 ms, swap 0.4 ms
+10-24 23:34:13.191 13653 13701 I halo-linux: frame processor: 32.1 ms before the first draw (the game's ticks, its world's update), 23.4 ms while drawing; 71197 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:34:13.192 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 2.6/2.6, objects 11.1/17.0, structure lightmaps 1.0/1.3, shadows 1.5/3.4, diffuse lights 0.3/0.2, decals 0.9/4.0, structure textures 2.4/1.0, specular and reflections 0.1/0.8, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.0, transparent geometry 3.0/3.2, detail objects 1.1/1.3, screen fog and lens flares 0.0/0.1, post-processing 0.2/0.0, HUD and menus 0.7/3.9, window end 0.7/0.4
+10-24 23:34:13.192 13653 13701 I halo-linux: textures converted ahead: 1 converted, 1 used at their upload, 0 converted there instead, 1218 KB kept
+10-24 23:34:13.192 13653 13701 I halo-linux: deferred draws: 1.0 replays a frame, 7670.1 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.0
+10-24 23:34:13.192 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 23.1 ms (329), End 5.3 ms (48), DrawVertices 2.4 ms (42), Present 2.4 ms (1), Clear 1.8 ms (4), mark 1.7 ms (19), SetVertexData2f 0.8 ms (1672), SetVertexShaderConstant 0.7 ms (990), SetVertexData4f 0.7 ms (1267), SetVertexData4ub 0.6 ms (1241), SetTexture 0.5 ms (997), SetIndices 0.2 ms (330)
+10-24 23:34:13.193 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 329, of them 0 after one of the same state with nothing between, 0 with only constants between, 317 with more; immediate 48, 0, 0, 42; what stands between first: SetVertexShaderConstant 193, SetTexture 141, SetStreamSource 15, SetRenderTarget 4, mark 4, SetVertexShader 2
+10-24 23:34:13.193 13653 13701 I halo-linux: render thread: 59.7 ms a frame waiting for its replays (275 of them, with the context's handovers)
+10-24 23:34:13.193 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 59.4 (1.0 calls), game_time_update 4.8 (1.0 calls), game_frame 2.0 (1.0 calls), game_tick.objects 1.7 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+10-24 23:34:13.193 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.8 ms setting shader constants, 0.2 ms changing programs, 0.6 ms binding textures (and their sampling), 0.6 ms pointing attributes
+10-24 23:34:13.194 13653 13701 I halo-linux: frame renderer: 24.5 ms in the game's draws (the driver's 15.9 ms with them): 5.4 ms textures, targets and raster state, 0.4 ms shader key and program, 3.4 ms uniforms, 2.5 ms vertex streams, 0.0 ms indices and the rest; 46.9 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 4.5 ms the textures' lookups and binds
+10-24 23:34:13.194 13653 13701 I halo-linux: frame work: 419 draws, 144853 vertices, 11227 shader constants, 85 program changes, 219 texture parameter changes, 408 KB of vertices and indices, 8 KB of textures a frame
+10-24 23:34:21.502 13653 13701 I halo-linux: frame rate: 14 frames a second over the last ten seconds; 149 of 149 frames longer than 34 ms, the longest 91.7 ms
+10-24 23:34:21.504 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 off, cpu3 off
+10-24 23:34:23.236 13653 13701 I halo-linux: frame timing: 67.4 ms a frame (14.8 a second; slowest 82.0 ms; 149 of 149 frames over 33 ms, 149 over 17): processor 51.7 ms, driver draws 13.0 ms, uploads 0.6 ms, GPU 1.7 ms, swap 0.4 ms
+10-24 23:34:23.237 13653 13701 I halo-linux: frame processor: 30.4 ms before the first draw (the game's ticks, its world's update), 21.4 ms while drawing; 65000 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:34:23.238 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 3.0/2.7, objects 9.8/15.9, structure lightmaps 1.0/1.2, shadows 0.6/1.5, diffuse lights 0.2/0.1, decals 0.8/4.5, structure textures 2.5/1.0, specular and reflections 0.0/0.7, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.1, transparent geometry 2.8/2.5, detail objects 0.9/1.3, screen fog and lens flares 0.0/0.0, post-processing 0.3/0.0, HUD and menus 0.5/2.4, window end 0.7/0.4
+10-24 23:34:23.238 13653 13701 I halo-linux: textures converted ahead: 0 converted, 0 used at their upload, 0 converted there instead, 1218 KB kept
+10-24 23:34:23.239 13653 13701 I halo-linux: deferred draws: 1.0 replays a frame, 7684.2 calls each, 0.0 immediate draws merged into the next; replayed for: D3DResource_IsBusy 0.0
+10-24 23:34:23.239 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 20.9 ms (299), End 3.1 ms (47), Present 3.0 ms (1), DrawVertices 2.0 ms (29), mark 1.8 ms (19), Clear 1.7 ms (3), SetVertexData2f 0.9 ms (1785), SetVertexData4f 0.7 ms (1387), SetVertexData4ub 0.7 ms (1360), SetVertexShaderConstant 0.6 ms (880), SetTexture 0.4 ms (905), SetIndices 0.2 ms (300)
+10-24 23:34:23.240 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 299, of them 0 after one of the same state with nothing between, 0 with only constants between, 290 with more; immediate 47, 0, 0, 42; what stands between first: SetVertexShaderConstant 186, SetTexture 124, SetStreamSource 15, SetRenderTarget 4, mark 3, SetVertexShader 2
+10-24 23:34:23.240 13653 13701 I halo-linux: render thread: 54.6 ms a frame waiting for its replays (299 of them, with the context's handovers)
+10-24 23:34:23.240 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 54.5 (1.0 calls), game_time_update 4.5 (1.0 calls), game_frame 1.8 (1.0 calls), game_tick.objects 1.6 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+10-24 23:34:23.241 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.6 ms setting shader constants, 0.2 ms changing programs, 0.6 ms binding textures (and their sampling), 0.6 ms pointing attributes
+10-24 23:34:23.242 13653 13701 I halo-linux: frame renderer: 21.9 ms in the game's draws (the driver's 13.0 ms with them): 4.4 ms textures, targets and raster state, 0.4 ms shader key and program, 3.0 ms uniforms, 2.1 ms vertex streams, 0.0 ms indices and the rest; 42.8 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 3.7 ms the textures' lookups and binds
+10-24 23:34:23.244 13653 13701 I halo-linux: frame work: 376 draws, 134437 vertices, 9773 shader constants, 69 program changes, 183 texture parameter changes, 382 KB of vertices and indices, 0 KB of textures a frame
+10-24 23:34:31.785 13653 13701 I halo-linux: frame rate: 15 frames a second over the last ten seconds; 153 of 153 frames longer than 34 ms, the longest 82.8 ms
+10-24 23:34:31.787 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 off, cpu3 off
+10-24 23:34:33.248 13653 13701 I halo-linux: frame timing: 67.2 ms a frame (14.9 a second; slowest 81.7 ms; 149 of 149 frames over 33 ms, 149 over 17): processor 52.6 ms, driver draws 12.8 ms, uploads 0.6 ms, GPU 0.9 ms, swap 0.4 ms
+10-24 23:34:33.248 13653 13701 I halo-linux: frame processor: 32.2 ms before the first draw (the game's ticks, its world's update), 20.4 ms while drawing; 63542 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:34:33.249 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 3.3/2.6, objects 9.2/15.2, structure lightmaps 0.9/1.3, shadows 0.3/1.3, diffuse lights 0.1/0.1, decals 0.8/4.8, structure textures 2.9/1.0, specular and reflections 0.1/0.7, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.0, transparent geometry 1.7/1.9, detail objects 0.8/1.3, screen fog and lens flares 0.0/0.0, post-processing 0.4/0.0, HUD and menus 0.6/2.4, window end 0.7/0.4
+10-24 23:34:33.249 13653 13701 I halo-linux: textures converted ahead: 0 converted, 0 used at their upload, 0 converted there instead, 1218 KB kept
+10-24 23:34:33.249 13653 13701 I halo-linux: deferred draws: 1.0 replays a frame, 7560.7 calls each, 0.0 immediate draws merged into the next; replayed for: P╪/£eS£íHD└┤╪/£(░║┤╝╪/£(░║┤,╝║┤(░║┤,╝║┤
+10-24 23:34:33.250 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 19.9 ms (287), End 3.7 ms (49), Present 2.2 ms (1), Clear 1.8 ms (3), mark 1.6 ms (19), DrawVertices 1.6 ms (15), SetVertexData2f 0.8 ms (1693), SetVertexData4f 0.8 ms (1492), SetVertexData4ub 0.7 ms (1464), SetVertexShaderConstant 0.6 ms (802), SetTexture 0.4 ms (859), SetIndices 0.2 ms (288)
+10-24 23:34:33.250 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 287, of them 0 after one of the same state with nothing between, 0 with only constants between, 280 with more; immediate 49, 0, 0, 45; what stands between first: SetVertexShaderConstant 181, SetTexture 121, SetStreamSource 15, SetRenderTarget 4, mark 3, SetVertexShader 1
+10-24 23:34:33.250 13653 13701 I halo-linux: render thread: 54.9 ms a frame waiting for its replays (298 of them, with the context's handovers)
+10-24 23:34:33.251 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 55.0 (1.0 calls), game_time_update 4.4 (1.0 calls), game_frame 1.8 (1.0 calls), game_tick.objects 1.6 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.2 (1.0 calls)
+10-24 23:34:33.251 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.5 ms setting shader constants, 0.2 ms changing programs, 0.5 ms binding textures (and their sampling), 0.5 ms pointing attributes
+10-24 23:34:33.251 13653 13701 I halo-linux: frame renderer: 20.6 ms in the game's draws (the driver's 12.8 ms with them): 4.2 ms textures, targets and raster state, 0.4 ms shader key and program, 2.8 ms uniforms, 2.0 ms vertex streams, 0.0 ms indices and the rest; 44.8 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 3.5 ms the textures' lookups and binds
+10-24 23:34:33.252 13653 13701 I halo-linux: frame work: 351 draws, 131339 vertices, 9320 shader constants, 60 program changes, 172 texture parameter changes, 374 KB of vertices and indices, 0 KB of textures a frame
+10-24 23:34:42.078 13653 13701 I halo-linux: frame rate: 15 frames a second over the last ten seconds; 154 of 154 frames longer than 34 ms, the longest 85.3 ms
+10-24 23:34:42.080 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 off, cpu3 1912/1912 MHz
+10-24 23:34:43.304 13653 13701 I halo-linux: frame timing: 66.6 ms a frame (15.0 a second; slowest 85.2 ms; 151 of 151 frames over 33 ms, 151 over 17): processor 52.2 ms, driver draws 12.5 ms, uploads 0.6 ms, GPU 0.9 ms, swap 0.3 ms
+10-24 23:34:43.304 13653 13701 I halo-linux: frame processor: 32.1 ms before the first draw (the game's ticks, its world's update), 20.2 ms while drawing; 60981 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:34:43.304 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 2.8/2.6, objects 9.5/14.9, structure lightmaps 0.9/1.2, shadows 0.4/1.1, diffuse lights 0.1/0.1, decals 0.7/5.0, structure textures 2.8/1.0, specular and reflections 0.0/0.7, structure transparent 0.5/0.1, structure fog 0.7/0.7, particles 0.0/0.0, transparent geometry 1.5/1.9, detail objects 0.8/1.2, screen fog and lens flares 0.0/0.0, post-processing 0.3/0.0, HUD and menus 0.6/2.3, window end 0.7/0.4
+10-24 23:34:43.305 13653 13701 I halo-linux: textures converted ahead: 0 converted, 0 used at their upload, 0 converted there instead, 1218 KB kept
+10-24 23:34:43.305 13653 13701 I halo-linux: deferred draws: 1.0 replays a frame, 7765.3 calls each, 0.0 immediate draws merged into the next; replayed for: P╪/£eS£íHD└┤╪/£(░║┤
+10-24 23:34:43.306 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 19.7 ms (277), End 3.4 ms (48), Present 2.2 ms (1), Clear 1.9 ms (3), mark 1.6 ms (19), DrawVertices 1.5 ms (15), SetVertexData4f 0.9 ms (1596), SetVertexData2f 0.8 ms (1792), SetVertexData4ub 0.7 ms (1570), SetVertexShaderConstant 0.6 ms (766), SetTexture 0.4 ms (829), SetIndices 0.2 ms (278)
+10-24 23:34:43.306 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 277, of them 0 after one of the same state with nothing between, 0 with only constants between, 270 with more; immediate 48, 0, 0, 43; what stands between first: SetVertexShaderConstant 173, SetTexture 119, SetStreamSource 14, SetRenderTarget 4, mark 3, SetVertexShader 1
+10-24 23:34:43.306 13653 13701 I halo-linux: render thread: 54.5 ms a frame waiting for its replays (302 of them, with the context's handovers)
+10-24 23:34:43.307 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 54.5 (1.0 calls), game_time_update 4.4 (1.0 calls), game_frame 1.7 (1.0 calls), game_tick.objects 1.5 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.1 (1.0 calls)
+10-24 23:34:43.307 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.5 ms setting shader constants, 0.2 ms changing programs, 0.5 ms binding textures (and their sampling), 0.5 ms pointing attributes
+10-24 23:34:43.307 13653 13701 I halo-linux: frame renderer: 20.3 ms in the game's draws (the driver's 12.5 ms with them): 4.0 ms textures, targets and raster state, 0.4 ms shader key and program, 2.8 ms uniforms, 1.9 ms vertex streams, 0.0 ms indices and the rest; 44.4 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 3.4 ms the textures' lookups and binds
+10-24 23:34:43.308 13653 13701 I halo-linux: frame work: 340 draws, 126266 vertices, 9222 shader constants, 60 program changes, 173 texture parameter changes, 368 KB of vertices and indices, 0 KB of textures a frame
+10-24 23:34:52.301 13653 13701 I halo-linux: frame rate: 15 frames a second over the last ten seconds; 153 of 153 frames longer than 34 ms, the longest 80.1 ms
+10-24 23:34:52.302 13653 13701 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 off, cpu2 off, cpu3 1912/1912 MHz
+10-24 23:34:53.368 13653 13701 I halo-linux: frame timing: 67.1 ms a frame (14.9 a second; slowest 80.1 ms; 150 of 150 frames over 33 ms, 150 over 17): processor 52.7 ms, driver draws 12.7 ms, uploads 0.5 ms, GPU 0.9 ms, swap 0.3 ms
+10-24 23:34:53.369 13653 13701 I halo-linux: frame processor: 32.0 ms before the first draw (the game's ticks, its world's update), 20.7 ms while drawing; 63513 of the frame's vertices in draws with attributes not aligned for four (vertex types 24 11 34 15)
+10-24 23:34:53.369 13653 13701 I halo-linux: frame phases (GPU/processor ms a frame): sky 2.6/2.5, objects 10.0/15.4, structure lightmaps 0.9/1.3, shadows 0.4/1.3, diffuse lights 0.0/0.0, decals 0.7/5.1, structure textures 3.1/1.0, specular and reflections 0.0/0.7, structure transparent 0.4/0.1, structure fog 0.7/0.6, particles 0.0/0.0, transparent geometry 1.5/1.9, detail objects 0.7/1.2, screen fog and lens flares 0.0/0.0, post-processing 0.3/0.1, HUD and menus 0.7/2.2, window end 0.7/0.4
+10-24 23:34:53.370 13653 13701 I halo-linux: textures converted ahead: 0 converted, 0 used at their upload, 0 converted there instead, 1218 KB kept
+10-24 23:34:53.370 13653 13701 I halo-linux: deferred draws: 1.0 replays a frame, 8163.4 calls each, 0.0 immediate draws merged into the next; replayed for: P╪/£eS£íHD└┤╪/£(░║┤
+10-24 23:34:53.370 13653 13701 I halo-linux: replay by call (ms a frame, calls a frame): DrawIndexedVertices 20.1 ms (292), End 3.5 ms (50), Present 2.1 ms (1), Clear 1.9 ms (3), mark 1.5 ms (19), DrawVertices 1.4 ms (14), SetVertexData2f 0.9 ms (1882), SetVertexData4f 0.9 ms (1677), SetVertexData4ub 0.7 ms (1651), SetVertexShaderConstant 0.6 ms (810), SetTexture 0.4 ms (876), SetIndices 0.2 ms (293)
+10-24 23:34:53.371 13653 13701 I halo-linux: draws' neighbours (a frame): indexed 292, of them 0 after one of the same state with nothing between, 0 with only constants between, 285 with more; immediate 50, 0, 0, 45; what stands between first: SetVertexShaderConstant 184, SetTexture 124, SetStreamSource 15, SetRenderTarget 4, mark 3, SetVertexShader 1
+10-24 23:34:53.371 13653 13701 I halo-linux: render thread: 54.9 ms a frame waiting for its replays (300 of them, with the context's handovers)
+10-24 23:34:53.371 13653 13701 I halo-linux: frame sections (processor ms a frame, with what they call): present 54.9 (1.0 calls), game_time_update 4.3 (1.0 calls), game_frame 1.7 (1.0 calls), game_tick.objects 1.5 (2.0 calls), render_interpolation_tick 0.4 (2.0 calls), game_tick.effects 0.3 (2.0 calls), game_tick.hs 0.2 (2.0 calls), input 0.1 (1.0 calls)
+10-24 23:34:53.371 13653 13701 I halo-linux: frame state: in the calls before the draws, 1.6 ms setting shader constants, 0.2 ms changing programs, 0.5 ms binding textures (and their sampling), 0.6 ms pointing attributes
+10-24 23:34:53.371 13653 13701 I halo-linux: frame renderer: 20.6 ms in the game's draws (the driver's 12.7 ms with them): 4.1 ms textures, targets and raster state, 0.4 ms shader key and program, 2.9 ms uniforms, 2.0 ms vertex streams, 0.0 ms indices and the rest; 44.7 ms of the processor's elsewhere (the game's own rendering code, the renderer's other calls); of the first, 3.5 ms the textures' lookups and binds
+10-24 23:34:53.371 13653 13701 I halo-linux: frame work: 356 draws, 131941 vertices, 9314 shader constants, 60 program changes, 138 texture parameter changes, 382 KB of vertices and indices, 0 KB of textures a frame
+10-24 23:35:02.701 13653 13691 I halo-linux: exiting after debug.exit_after
+10-24 23:35:02.712 13653 13708 F halo-crash: signal 11 (code 1) at 0x9b700000 in thread 13708
+10-24 23:35:02.712 13653 13708 F halo-crash: r0 00000000 r1 00000000 r2 0057a000 r3 9b700000 sp 9b6ffc48 cpsr 80070030
+10-24 23:35:02.712 13653 13708 F halo-crash: pc b672f1cc libmedia.so+4b1cc _ZN7android10AudioTrack22updateAndGetPosition_lEv+f
+10-24 23:35:02.712 13653 13708 F halo-crash: lr b67315a2 libmedia.so+4d5a2 _ZN7android10AudioTrack5startEv+35
+10-24 23:35:02.712 13653 13708 F halo-crash: on the stack b67315a2 libmedia.so+4d5a2 _ZN7android10AudioTrack5startEv+35
+10-24 23:35:02.712 13653 13708 F halo-crash: on the stack a4622130 libwilhelm.so+13130 ?+0
+10-24 23:35:02.712 13653 13708 F halo-crash: on the stack a463032a libwilhelm.so+2132a ?+0
+10-24 23:35:02.712 13653 13708 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x9b700000 in tid 13708 (SDLAudioP15)
+10-24 23:35:02.712 13653 13708 I libc    : Suppressing debuggerd output because prctl(PR_GET_DUMPABLE)==0
+10-24 23:35:02.761   548 27914 I WindowState: WIN DEATH: Window{20c6a27a u0 com.halo.decomp/com.halo.decomp.HaloActivity}
+10-24 23:35:02.761   548 27914 W WindowManager: Force-removing child win Window{8461e88 u0 SurfaceView} from container Window{20c6a27a u0 com.halo.decomp/com.halo.decomp.HaloActivity}
+10-24 23:35:02.977   548   880 I ActivityManager: Process com.halo.decomp:game (pid 13653) has died
+10-24 23:35:02.978   548   880 W ActivityManager: Force removing ActivityRecord{38cb9840 u0 com.halo.decomp/.HaloActivity t403}: app died, no saved state
+10-24 23:35:07.864 16149 16149 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-24 23:35:07.866 16149 16149 D AndroidRuntime: CheckJNI is OFF
+10-24 23:35:07.917 16149 16149 E android.os.Debug: failed to load memtrack module: -2
+10-24 23:35:07.943 16149 16149 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-24 23:35:07.944   548   701 I ActivityManager: Force stopping com.halo.decomp appid=10112 user=0: from pid 16149
+10-24 23:35:07.944   548   701 I ActivityManager: Killing 13627:com.halo.decomp/u0a112 (adj 9): stop com.halo.decomp
+10-24 23:35:07.953   548   883 W ActivityManager: Spurious death for ProcessRecord{14019348 13627:com.halo.decomp/u0a112}, curProc for 13627: null
+10-24 23:35:07.953 16149 16149 D AndroidRuntime: Shutting down VM
