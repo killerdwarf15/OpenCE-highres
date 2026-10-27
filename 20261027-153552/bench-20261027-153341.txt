@@ -1,0 +1,449 @@
+﻿=== benchmark 20261027-153341: level b30, 120 s, settings: HALO_EXIT_AFTER=120; HALO_TEST_INPUT=bot:1; HALO_FRAME_TIMING=true; HALO_SHOW_FPS=true; HALO_RENDER_SCALE=1.0; HALO_GL_ASYNC_TEXTURES=true; HALO_TEXTURE_BUSY_TRACKING=true; HALO_FRAME_TIMING=false; HALO_STUTTER_LOG=true
+=== device: SHIELD  / Android 5.1 
+=== startup.txt
+Halo (armeabi-v7a) Oct 27 2026 20:25:35: library loaded, process com.halo.decomp, Tue Oct 27 16:33:20 2026
+Halo for Android (armeabi-v7a) starting
+files folder /storage/emulated/0/Android/data/com.halo.decomp/files
+at the Xbox window: 80000000-88000000 ---p 00000000 00:00 0 
+the GPU's report: /storage/emulated/0/Android/data/com.halo.decomp/files/gpu.txt
+benchmark: HALO_EXIT_AFTER=120
+benchmark: HALO_TEST_INPUT=bot:1
+benchmark: HALO_FRAME_TIMING=true
+benchmark: HALO_SHOW_FPS=true
+benchmark: HALO_RENDER_SCALE=1.0
+benchmark: HALO_GL_ASYNC_TEXTURES=true
+benchmark: HALO_TEXTURE_BUSY_TRACKING=true
+benchmark: HALO_FRAME_TIMING=false
+benchmark: HALO_STUTTER_LOG=true
+display 1280x720: rendering 852x480
+data /storage/emulated/0/Android/data/com.halo.decomp/files, saves /storage/emulated/0/Android/data/com.halo.decomp/files/save
+halo-linux: config.toml line 484 cannot be read (duplicate key), so it is skipped: true and false are lowercase, gl_async_textures = false
+halo-linux: config.toml line 489 cannot be read (duplicate key), so it is skipped: true and false are lowercase, texture_busy_tracking = false
+halo-linux: settings: /storage/emulated/0/Android/data/com.halo.decomp/files/config.toml
+halo-linux: settings: 2 lines of config.toml skipped; every other setting in it is used
+starting the game (32-bit ARM, native), stack 16 MB
+halo-linux: screen: 852x480 drawn at 852x480
+halo-linux: data root: /storage/emulated/0/Android/data/com.halo.decomp/files (the game's log: debug.txt there)
+halo-linux: no OpenGL ES 3.0 window (Couldn't find matching EGL config (call to eglChooseConfig failed, reporting an error of EGL_SUCCESS)): trying OpenGL ES 2.0
+pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+halo-linux: OpenGL ES 2.0: 2 of the renderer's OpenGL ES 3.0 functions are missing
+halo-linux: OpenGL ES 2.0: the renderer's ES 3.0 calls by extensions and emulation (0 extension functions missing)
+halo-linux: debug.gl_queue: the OpenGL calls recorded, and done in order where they must be
+halo-linux: debug.gl_async_textures: textures and buffers named from names the GL thread made ahead, texture uploads recorded with a copy of their texels
+halo-linux: OpenGL OpenGL ES 2.0 17.01214 on NVIDIA Tegra
+halo-linux: OpenGL ES 0.0: copy image 0, border clamp 0, anisotropy 1, S3TC 1, sample counting 0, base vertex 0 (none), half float targets 1
+halo-linux: anti-aliasing: off
+halo-linux: debug.deferred_draws: the game's Direct3D calls are recorded and replayed at the points that need them done
+halo-linux: debug.stutter_log: frames longer than 150 ms logged with what held them up
+halo-linux: gamepad: NVIDIA Controller v01.01 (standard)
+halo-linux: save root: /storage/emulated/0/Android/data/com.halo.decomp/files/save
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: debug.render_thread: the deferred draws are replayed on a thread of their own, the game's going on as it draws (debug.render_thread_async)
+halo-linux: sound: stereo
+halo-linux: menus: the pause menu has SETTINGS
+halo-linux: menus: 1143 widgets, 282 string lists and 100 bitmaps added to the map's 3325 tags
+halo-linux: high-res hud: 60 of 135 bitmaps in this map, 1 for some of their sprites (75 not in it)
+halo-linux: textures: converted ahead, on a thread of their own (debug.texture_preconvert)
+halo-linux: model detail: stock
+halo-linux: debug.gl_thread: the queued OpenGL calls done on a thread of their own, which holds the context (its waits spun: debug.spin_waits)
+halo-linux: anisotropic filtering: 1x (the GPU's most 15x)
+halo-linux: stutter: a slow draw, 37.5 ms (DrawElements, 74 vertices): program 3 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a slow draw, 21.3 ms (DrawElements, 4 vertices): program 5 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a slow draw, 30.3 ms (DrawElements, 31 vertices): program 8 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a slow draw, 24.0 ms (DrawElements, 46 vertices): program 12 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a 1292 ms frame, 0.0 s in (the ring's oldest event is after its start): game: context held (the game's thread) 633 ms (1, longest 633); game: the game's rendering 566 ms (1, longest 566); game: handed over a texture's draws and waited for their replay 544 ms (6, longest 179); render: replay 543 ms (7, longest 179, 8); render: replayed call (DrawIndexedVertices) 541 ms (6, longest 179); render: context held (CreateShader) 373 ms (6, longest 155); game: texture waited for (sky\ring\ring clear afternoon) 181 ms (1, longest 181, 341); game: texture waited for (sky\planets\threshold clear afternoon) 166 ms (1, longest 166, 341); render: context waited for (CreateShader) 144 ms (5, longest 43); gl: piece 143 ms (10, longest 39, 594); gl: driver call (DrawElements) 132 ms (5, longest 38); io: map read (waited for) 124 ms (6, longest 85, 22954)
+halo-linux: stutter: its longest: game context held (the game's thread) 633 ms at +93 ms; game the game's rendering 566 ms at +726 ms; game texture waited for (sky\ring\ring clear afternoon) 181 ms at +971 ms [341]; game handed over a texture's draws and waited for their replay 179 ms at +971 ms; render replay 179 ms at +971 ms [1]; render replayed call (DrawIndexedVertices) 179 ms at +971 ms
+halo-linux: shader warm-up: levels\b30\b30: 361 programs drawn as first drawn before (361 on its layout list), in 2601 ms
+halo-linux: shader warm-up: levels\b30\b30: 815 programs, 815 linked now, in 9792 ms
+halo-linux: texture busy tracking: 121 textures asked about in ten seconds: 107 not busy, 0 waited for their last draws' replay, 14 with this frame's draws handed over and replayed (544.8 ms waited in all)
+halo-linux: stutter: a slow draw, 66.6 ms (DrawElements, 763 vertices): program 17 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a slow draw, 65.8 ms (DrawElements, 2098 vertices): program 23 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a slow draw, 70.4 ms (DrawElements, 608 vertices): program 25 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a 12862 ms frame, 1.3 s in: render: replay 12698 ms (11, longest 12396, 1694); game: present 12396 ms (1, longest 12396); game: the context taken back (halo_screen_commit) 12396 ms (1, longest 12396); game: waited for the render thread, the draws done 12396 ms (1, longest 12396); render: replayed call (Present) 12395 ms (1, longest 12395); render: context held (CreateShader) 7992 ms (339, longest 193); gl: piece 3000 ms (46, longest 2380, 9043); render: context waited for (Finish) 2599 ms (1, longest 2599); gl: driver call (DrawArrays) 2506 ms (91, longest 66); game: the game's rendering 434 ms (1, longest 434); game: handed over a texture's draws and waited for their replay 304 ms (10, longest 220); render: replayed call (DrawIndexedVertices) 236 ms (25, longest 76)
+halo-linux: stutter: its longest: game present 12396 ms at -1 ms; game the context taken back (halo_screen_commit) 12396 ms at -1 ms; game waited for the render thread, the draws done 12396 ms at -1 ms; render replay 12396 ms at -1 ms [1]; render replayed call (Present) 12395 ms at -1 ms; render context waited for (Finish) 2599 ms at +9795 ms
+halo-linux: stutter: 2 frames longer than 150 ms in the last ten seconds
+halo-linux: stutter: a slow draw, 37.5 ms (DrawElements, 6 vertices): program 54 (drawn before), this combination new; framebuffer 8, blend off 0x302/0x303; attributes 0:4x0x1406 4:4x0x1406
+halo-linux: OpenGL ES 2.0: a render target copied into level 0 (128x128) of texture 120: done (0x0)
+halo-linux: OpenGL ES 2.0: a render target copied into level 1 (64x64) of texture 120: done (0x0)
+halo-linux: OpenGL ES 2.0: a render target copied into level 2 (32x32) of texture 120: done (0x0)
+halo-linux: OpenGL ES 2.0: a render target copied into level 3 (16x16) of texture 120: done (0x0)
+halo-linux: stutter: a slow draw, 67.3 ms (DrawElements, 2176 vertices): program 93 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: shadow maps: 128x128
+halo-linux: stutter: a 189 ms frame, 17.3 s in: game: the game's rendering 188 ms (1, longest 203); gl: piece 180 ms (26, longest 75, 3502); game: handed over a texture's draws and waited for their replay 172 ms (6, longest 76); render: replay 170 ms (7, longest 74, 3720); render: waited for the GL thread's room 131 ms (12, longest 74); game: texture waited for (weapons\assault rifle\fp\bitmaps\numbers_plate) 77 ms (1, longest 77, 2); gl: driver call (DrawElements) 70 ms (2, longest 67); game: texture waited for (weapons\assault rifle\fp\bitmaps\compass_plate) 46 ms (3, longest 51, 6); render: replayed call (DrawIndexedVertices) 40 ms (9, longest 9); render: texture fetched 26 ms (8, longest 5, 8); game: texture waited for (rasterizer\linear corner fade) 25 ms (1, longest 25); game: texture waited for (weapons\assault rifle\bitmaps\bolt) 24 ms (1, longest 24, 5)
+halo-linux: stutter: its longest: game the game's rendering 203 ms at -15 ms; game texture waited for (weapons\assault rifle\fp\bitmaps\numbers_plate) 77 ms at +43 ms [2]; game handed over a texture's draws and waited for their replay 76 ms at +43 ms; gl piece 75 ms at +42 ms [135]; render replay 74 ms at +43 ms [1]; render waited for the GL thread's room 74 ms at +43 ms
+halo-linux: texture: vehicles\warthog\bitmaps\headlight flares (stage 0, usage 1): not loaded yet, type 0 of 0, format 14, 64x64, 6 mipmaps
+halo-linux: stutter: a slow draw, 36.6 ms (DrawElements, 6 vertices): program 156 (drawn before), this combination new; framebuffer 8, blend off 0x1/0x303; attributes 0:4x0x1406 4:4x0x1406
+halo-linux: frame rate: 27 frames a second over the last ten seconds; 94 of 273 frames longer than 34 ms, the longest 12862.3 ms
+halo-linux: frame times (these ten seconds, 272 frames): average 12.2 fps (81.8 ms); 1% low 0.1 fps, 0.1% low 0.1 fps; 99th percentile 1292.5 ms, 99.9th 12862.3 ms, the longest 12862.3 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: 1 frames longer than 150 ms in the last ten seconds
+halo-linux: texture busy tracking: 16301 textures asked about in ten seconds: 16259 not busy, 1 waited for their last draws' replay, 41 with this frame's draws handed over and replayed (593.4 ms waited in all)
+halo-linux: high-res text: ui\large_ui (capitals 13 units) drawn with Overpass-900.ttf, 98% wide
+halo-linux: frame rate: 48 frames a second over the last ten seconds; 3 of 486 frames longer than 34 ms, the longest 93.7 ms
+halo-linux: frame times (these ten seconds, 486 frames): average 48.2 fps (20.7 ms); 1% low 18.0 fps, 0.1% low 10.7 fps; 99th percentile 33.8 ms, 99.9th 93.7 ms, the longest 93.7 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+halo-linux: texture busy tracking: 2085 textures asked about in ten seconds: 2080 not busy, 1 waited for their last draws' replay, 4 with this frame's draws handed over and replayed (44.9 ms waited in all)
+halo-linux: stutter: a slow draw, 68.1 ms (DrawElements, 301 vertices): program 224 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: frame rate: 38 frames a second over the last ten seconds; 26 of 388 frames longer than 34 ms, the longest 91.2 ms
+halo-linux: frame times (these ten seconds, 388 frames): average 38.2 fps (26.2 ms); 1% low 12.9 fps, 0.1% low 11.0 fps; 99th percentile 56.0 ms, 99.9th 91.2 ms, the longest 91.2 ms
+halo-linux: frame times (the run since 20 s, 388 frames): average 38.2 fps (26.2 ms); 1% low 12.9 fps, 0.1% low 11.0 fps; 99th percentile 56.0 ms, 99.9th 91.2 ms, the longest 91.2 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: a slow draw, 66.9 ms (DrawElements, 200 vertices): program 246 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a slow draw, 67.5 ms (DrawElements, 608 vertices): program 307 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+halo-linux: texture busy tracking: 8872 textures asked about in ten seconds: 8835 not busy, 4 waited for their last draws' replay, 33 with this frame's draws handed over and replayed (735.8 ms waited in all)
+halo-linux: stutter: a slow draw, 23.5 ms (DrawElements, 6 vertices): program 208 (drawn before), this combination new; framebuffer 10, blend on 0x1/0x303; attributes 0:4x0x1406 4:4x0x1406 9:4x0x1406
+halo-linux: stutter: a slow draw, 22.1 ms (DrawElements, 6 vertices): program 390 (drawn before), this combination new; framebuffer 13, blend on 0x1/0x302; attributes 0:4x0x1406 4:4x0x1406 9:4x0x1406
+halo-linux: frame rate: 24 frames a second over the last ten seconds; 205 of 241 frames longer than 34 ms, the longest 142.0 ms
+halo-linux: frame times (these ten seconds, 241 frames): average 23.6 fps (42.3 ms); 1% low 7.1 fps, 0.1% low 7.0 fps; 99th percentile 138.2 ms, 99.9th 142.0 ms, the longest 142.0 ms
+halo-linux: frame times (the run since 20 s, 629 frames): average 30.9 fps (32.3 ms); 1% low 8.9 fps, 0.1% low 7.0 fps; 99th percentile 85.4 ms, 99.9th 142.0 ms, the longest 142.0 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: a slow draw, 23.7 ms (DrawElements, 6 vertices): program 392 (drawn before), this combination drawn before; framebuffer 13, blend on 0x0/0x302; attributes 0:4x0x1406 4:4x0x1406 9:4x0x1406
+halo-linux: stutter: a slow draw, 21.1 ms (DrawElements, 6 vertices): program 386 (drawn before), this combination drawn before; framebuffer 10, blend on 0x8001/0x302; attributes 0:4x0x1406 4:4x0x1406 9:4x0x1406
+halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+halo-linux: texture busy tracking: 9435 textures asked about in ten seconds: 9414 not busy, 2 waited for their last draws' replay, 19 with this frame's draws handed over and replayed (564.0 ms waited in all)
+halo-linux: texture: effects\particles\lens flare\bitmaps\flares pr overcharge (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 32x32, 5 mipmaps
+halo-linux: frame rate: 22 frames a second over the last ten seconds; 205 of 220 frames longer than 34 ms, the longest 80.3 ms
+halo-linux: frame times (these ten seconds, 220 frames): average 21.5 fps (46.5 ms); 1% low 12.8 fps, 0.1% low 12.5 fps; 99th percentile 75.7 ms, 99.9th 80.3 ms, the longest 80.3 ms
+halo-linux: frame times (the run since 20 s, 849 frames): average 27.8 fps (36.0 ms); 1% low 9.6 fps, 0.1% low 7.0 fps; 99th percentile 79.8 ms, 99.9th 142.0 ms, the longest 142.0 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+halo-linux: stutter: a 159 ms frame, 67.1 s in: game: the main loop's own (between frames) (the map lost) 114 ms (1, longest 121); gl: piece 51 ms (7, longest 12, 887); game: game_time_update 23 ms (2, longest 13); render: replay 16 ms (1, longest 22, 353); render: replayed call (Present) 16 ms (1, longest 16); render: waited for the frame before shown 15 ms (1, longest 15); game: game_tick.objects 13 ms (3, longest 6); game: the game's rendering 13 ms (1, longest 13); game: game_tick.ai 6 ms (3, longest 2); gl: driver call (DrawElements) 5 ms (4, longest 2); game: game_frame 1 ms (1, longest 1)
+halo-linux: stutter: its longest: game the main loop's own (between frames) (the map lost) 121 ms at -6 ms; render replay 22 ms at -6 ms [353]; render replayed call (Present) 16 ms at -0 ms; render waited for the frame before shown 15 ms at +0 ms; game the game's rendering 13 ms at +127 ms; game game_time_update 13 ms at +115 ms
+halo-linux: frame rate: 26 frames a second over the last ten seconds; 183 of 260 frames longer than 34 ms, the longest 159.2 ms
+halo-linux: frame times (these ten seconds, 260 frames): average 25.5 fps (39.2 ms); 1% low 8.6 fps, 0.1% low 6.3 fps; 99th percentile 72.3 ms, 99.9th 159.2 ms, the longest 159.2 ms
+halo-linux: frame times (the run since 20 s, 1109 frames): average 27.2 fps (36.7 ms); 1% low 9.6 fps, 0.1% low 6.3 fps; 99th percentile 75.5 ms, 99.9th 159.2 ms, the longest 159.2 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: 1 frames longer than 150 ms in the last ten seconds
+halo-linux: texture busy tracking: 10030 textures asked about in ten seconds: 10007 not busy, 5 waited for their last draws' replay, 18 with this frame's draws handed over and replayed (374.8 ms waited in all)
+halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic2 (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+halo-linux: frame rate: 26 frames a second over the last ten seconds; 193 of 262 frames longer than 34 ms, the longest 130.8 ms
+halo-linux: frame times (these ten seconds, 262 frames): average 25.6 fps (39.0 ms); 1% low 9.9 fps, 0.1% low 7.6 fps; 99th percentile 71.3 ms, 99.9th 130.8 ms, the longest 130.8 ms
+halo-linux: frame times (the run since 20 s, 1371 frames): average 26.9 fps (37.2 ms); 1% low 9.6 fps, 0.1% low 6.3 fps; 99th percentile 74.6 ms, 99.9th 159.2 ms, the longest 159.2 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+halo-linux: texture busy tracking: 1290 textures asked about in ten seconds: 1285 not busy, 1 waited for their last draws' replay, 4 with this frame's draws handed over and replayed (132.7 ms waited in all)
+halo-linux: frame rate: 23 frames a second over the last ten seconds; 223 of 235 frames longer than 34 ms, the longest 63.5 ms
+halo-linux: frame times (these ten seconds, 235 frames): average 23.1 fps (43.3 ms); 1% low 16.1 fps, 0.1% low 15.8 fps; 99th percentile 61.0 ms, 99.9th 63.5 ms, the longest 63.5 ms
+halo-linux: frame times (the run since 20 s, 1606 frames): average 26.3 fps (38.1 ms); 1% low 10.2 fps, 0.1% low 6.3 fps; 99th percentile 72.3 ms, 99.9th 159.2 ms, the longest 159.2 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+halo-linux: frame rate: 25 frames a second over the last ten seconds; 184 of 258 frames longer than 34 ms, the longest 148.7 ms
+halo-linux: frame times (these ten seconds, 258 frames): average 25.3 fps (39.6 ms); 1% low 9.7 fps, 0.1% low 6.7 fps; 99th percentile 57.5 ms, 99.9th 148.7 ms, the longest 148.7 ms
+halo-linux: frame times (the run since 20 s, 1864 frames): average 26.1 fps (38.3 ms); 1% low 10.0 fps, 0.1% low 6.3 fps; 99th percentile 72.1 ms, 99.9th 159.2 ms, the longest 159.2 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+halo-linux: stutter: a slow draw, 37.7 ms (DrawElements, 258 vertices): program 587 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x1; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+halo-linux: stutter: a slow draw, 22.6 ms (DrawElements, 66 vertices): program 591 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 4:2x0x1406 9:4x0x1401n 11:2x0x1401n
+halo-linux: texture busy tracking: 325 textures asked about in ten seconds: 324 not busy, 0 waited for their last draws' replay, 1 with this frame's draws handed over and replayed (37.2 ms waited in all)
+halo-linux: frame rate: 27 frames a second over the last ten seconds; 192 of 270 frames longer than 34 ms, the longest 119.7 ms
+halo-linux: frame times (these ten seconds, 270 frames): average 26.5 fps (37.7 ms); 1% low 8.5 fps, 0.1% low 8.4 fps; 99th percentile 114.6 ms, 99.9th 119.7 ms, the longest 119.7 ms
+halo-linux: frame times (the run since 20 s, 2134 frames): average 26.2 fps (38.2 ms); 1% low 10.0 fps, 0.1% low 6.5 fps; 99th percentile 72.0 ms, 99.9th 148.7 ms, the longest 159.2 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+halo-linux: exiting after debug.exit_after
+=== debug.txt (its last 80 lines)
+10.27.26 15:44:21  reference address: a24118d1
+10.27.26 15:44:21  Couldn't read map file 'd:\cachebeta.map'
+10.27.26 15:44:21  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.27.26 15:44:21  init: map_name levels\b30\b30
+10.27.26 15:44:22  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 36 ms, 0 of 35370 triangles disagree with their vertex normals
+10.27.26 15:45:29  the saved game is taken
+10.27.26 15:46:21  last line repeated 3 times
+10.27.26 15:46:21  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd64f0
+10.27.26 15:46:21  halo-linux: stack 00000000 bebd6540 703cf3b6 b6f0916f b4878ac0 b4a45750
+
+
+10.27.26 16:06:51  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.27.26 16:06:51  reference function: _write_to_error_file
+10.27.26 16:06:51  reference address: a25108f1
+10.27.26 16:06:51  Couldn't read map file 'd:\cachebeta.map'
+10.27.26 16:06:51  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.27.26 16:06:51  init: map_name levels\b30\b30
+10.27.26 16:06:51  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 39 ms, 0 of 35370 triangles disagree with their vertex normals
+10.27.26 16:07:58  the saved game is taken
+
+
+10.27.26 16:09:02  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.27.26 16:09:02  reference function: _write_to_error_file
+10.27.26 16:09:02  reference address: a25108f1
+10.27.26 16:09:02  Couldn't read map file 'd:\cachebeta.map'
+10.27.26 16:09:02  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.27.26 16:09:02  init: map_name levels\b30\b30
+10.27.26 16:09:02  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 35 ms, 0 of 35370 triangles disagree with their vertex normals
+10.27.26 16:10:10  the saved game is taken
+
+
+10.27.26 16:11:12  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.27.26 16:11:12  reference function: _write_to_error_file
+10.27.26 16:11:12  reference address: a240e8f1
+10.27.26 16:11:12  Couldn't read map file 'd:\cachebeta.map'
+10.27.26 16:11:12  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.27.26 16:11:12  init: map_name levels\b30\b30
+10.27.26 16:11:12  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 38 ms, 0 of 35370 triangles disagree with their vertex normals
+10.27.26 16:12:19  the saved game is taken
+
+
+10.27.26 16:28:59  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.27.26 16:28:59  reference function: _write_to_error_file
+10.27.26 16:28:59  reference address: a25109e1
+10.27.26 16:28:59  Couldn't read map file 'd:\cachebeta.map'
+10.27.26 16:28:59  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.27.26 16:28:59  init: map_name levels\b30\b30
+10.27.26 16:28:59  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 39 ms, 0 of 35370 triangles disagree with their vertex normals
+10.27.26 16:30:06  the saved game is taken
+10.27.26 16:30:59  last line repeated 3 times
+10.27.26 16:30:59  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd7020
+10.27.26 16:30:59  halo-linux: stack 00000000 bebd7070 70484388 b6f0916f b4878ac0 b4b22070
+
+
+10.27.26 16:31:10  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.27.26 16:31:10  reference function: _write_to_error_file
+10.27.26 16:31:10  reference address: a240e9e1
+10.27.26 16:31:10  Couldn't read map file 'd:\cachebeta.map'
+10.27.26 16:31:10  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.27.26 16:31:10  init: map_name levels\b30\b30
+10.27.26 16:31:10  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 35 ms, 0 of 35370 triangles disagree with their vertex normals
+10.27.26 16:32:17  the saved game is taken
+10.27.26 16:33:10  last line repeated 3 times
+10.27.26 16:33:10  halo-linux: segmentation fault (signal 11, code 1) at 0x9acfe000, eip b672f1cc ebp 00000000 esp 9acfdc48
+10.27.26 16:33:10  halo-linux: stack af9b9280 b67315a3 af9b9280 af9b9474 00000001 00000000
+10.27.26 16:33:10  halo-linux: pc b672f1cc libmedia.so+4b1cc _ZN7android10AudioTrack22updateAndGetPosition_lEv+f
+10.27.26 16:33:10  halo-linux: lr b67315a2 libmedia.so+4d5a2 _ZN7android10AudioTrack5startEv+35
+
+
+10.27.26 16:33:20  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.27.26 16:33:20  reference function: _write_to_error_file
+10.27.26 16:33:20  reference address: a240e9e1
+10.27.26 16:33:20  Couldn't read map file 'd:\cachebeta.map'
+10.27.26 16:33:20  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.27.26 16:33:20  init: map_name levels\b30\b30
+10.27.26 16:33:21  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 36 ms, 0 of 35370 triangles disagree with their vertex normals
+10.27.26 16:34:27  the saved game is taken
+10.27.26 16:35:20  last line repeated 3 times
+10.27.26 16:35:20  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd7020
+10.27.26 16:35:20  halo-linux: stack 00000000 bebd7070 70484388 b6f0916f b4878ac0 b4bff3e0
+=== logcat (the app's lines, and crashes)
+10-27 16:33:19.403  3646  3646 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-27 16:33:19.405  3646  3646 D AndroidRuntime: CheckJNI is OFF
+10-27 16:33:19.457  3646  3646 E android.os.Debug: failed to load memtrack module: -2
+10-27 16:33:19.478  3646  3646 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-27 16:33:19.480  3646  3646 D AndroidRuntime: Shutting down VM
+10-27 16:33:19.481  3646  3657 I AndroidRuntime: NOTE: attach of thread 'Binder_1' failed
+10-27 16:33:19.918  3662  3662 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-27 16:33:19.920  3662  3662 D AndroidRuntime: CheckJNI is OFF
+10-27 16:33:19.974  3662  3662 E android.os.Debug: failed to load memtrack module: -2
+10-27 16:33:19.995  3662  3662 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-27 16:33:19.997   548  1578 I ActivityManager: START u0 {flg=0x10000000 cmp=com.halo.decomp/.LauncherActivity} from uid 2000 on display 0
+10-27 16:33:19.999   548  1578 V WindowManager: addAppToken: AppWindowToken{1c8bcd23 token=Token{1d39b652 ActivityRecord{3bdbdadd u0 com.halo.decomp/.LauncherActivity t793}}} to stack=1 task=793 at 0
+10-27 16:33:20.009   548   589 V WindowManager: Adding window Window{a29bdaa u0 Starting com.halo.decomp} at 5 of 10 (after Window{205f063e u0 com.alphainventor.filemanager/com.alphainventor.filemanager.activity.MainActivity})
+10-27 16:33:20.028  3662  3662 D AndroidRuntime: Shutting down VM
+10-27 16:33:20.038  3662  3673 I AndroidRuntime: NOTE: attach of thread 'Binder_1' failed
+10-27 16:33:20.046   548   883 I ActivityManager: Start proc 3677:com.halo.decomp/u0a112 for activity com.halo.decomp/.LauncherActivity
+10-27 16:33:20.098   548 16362 I ActivityManager: START u0 {cmp=com.halo.decomp/.HaloActivity} from uid 10112 on display 0
+10-27 16:33:20.100   548 16362 V WindowManager: addAppToken: AppWindowToken{139a4513 token=Token{2a785802 ActivityRecord{2c2e354d u0 com.halo.decomp/.HaloActivity t794}}} to stack=1 task=794 at 0
+10-27 16:33:20.113   548   589 V WindowManager: Adding window Window{3304e55a u0 Starting com.halo.decomp} at 6 of 11 (after Window{a29bdaa u0 Starting com.halo.decomp})
+10-27 16:33:20.145   548  1578 I ActivityManager: Start proc 3709:com.halo.decomp:game/u0a112 for activity com.halo.decomp/.HaloActivity
+10-27 16:33:20.186  3709  3709 W linker  : libhalocrash.so: unused DT entry: type 0x6ffffef5 arg 0x314
+10-27 16:33:20.187  3709  3709 W linker  : libhalocrash.so: unused DT entry: type 0x6ffffffe arg 0x2d4
+10-27 16:33:20.187  3709  3709 W linker  : libhalocrash.so: unused DT entry: type 0x6fffffff arg 0x2
+10-27 16:33:20.187  3709  3709 I halo-crash: crash reporter installed
+10-27 16:33:20.187  3709  3709 I halo    : loading SDL3
+10-27 16:33:20.188  3709  3709 W linker  : libSDL3.so: unused DT entry: type 0x6ffffef5 arg 0x6fb8
+10-27 16:33:20.188  3709  3709 W linker  : libSDL3.so: unused DT entry: type 0x6ffffffe arg 0x6f58
+10-27 16:33:20.188  3709  3709 W linker  : libSDL3.so: unused DT entry: type 0x6fffffff arg 0x3
+10-27 16:33:20.196  3709  3709 I halo    : loading main
+10-27 16:33:20.197  3709  3709 W linker  : libmain.so: unused DT entry: type 0x6ffffef5 arg 0x29878
+10-27 16:33:20.197  3709  3709 W linker  : libmain.so: unused DT entry: type 0x6ffffffe arg 0x297f8
+10-27 16:33:20.197  3709  3709 W linker  : libmain.so: unused DT entry: type 0x6fffffff arg 0x4
+10-27 16:33:20.203  3709  3709 I halo    : loaded the native libraries
+10-27 16:33:20.209  3709  3709 V SDL     : Manufacturer: NVIDIA
+10-27 16:33:20.209  3709  3709 V SDL     : Device: roth
+10-27 16:33:20.209  3709  3709 V SDL     : Model: SHIELD
+10-27 16:33:20.209  3709  3709 V SDL     : onCreate()
+10-27 16:33:20.210  3709  3709 V SDL     : nativeSetupJNI()
+10-27 16:33:20.210  3709  3709 V SDL     : AUDIO nativeSetupJNI()
+10-27 16:33:20.210  3709  3709 V SDL     : CONTROLLER nativeSetupJNI()
+10-27 16:33:20.235  3709  3709 V SDL     : onStart()
+10-27 16:33:20.235  3709  3709 V SDL     : onResume()
+10-27 16:33:20.252   548 16362 V WindowManager: Adding window Window{3070e4ac u0 com.halo.decomp/com.halo.decomp.HaloActivity} at 6 of 11 (before Window{3304e55a u0 Starting com.halo.decomp})
+10-27 16:33:20.262  3709  3737 D libEGL  : loaded /system/lib/egl/libEGL_tegra.so
+10-27 16:33:20.262  3709  3737 I         : Attempting to load EGL implementation /system/lib/egl/libEGL_tegra_impl
+10-27 16:33:20.264  3709  3737 I         : Loaded EGL implementation /system/lib/egl/libEGL_tegra_impl
+10-27 16:33:20.265  3709  3737 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_tegra.so
+10-27 16:33:20.279  3709  3737 D libEGL  : loaded /system/lib/egl/libGLESv2_tegra.so
+10-27 16:33:20.302  3709  3737 D OpenGLRenderer: Enabling debug mode 0
+10-27 16:33:20.327   548 29793 V WindowManager: Adding window Window{2891590a u0 SurfaceView} at 6 of 12 (before Window{3070e4ac u0 com.halo.decomp/com.halo.decomp.HaloActivity})
+10-27 16:33:20.330  3709  3709 V SDL     : surfaceCreated()
+10-27 16:33:20.330  3709  3709 V SDL     : surfaceChanged()
+10-27 16:33:20.331  3709  3709 V SDL     : Window size: 1280x670
+10-27 16:33:20.331  3709  3709 V SDL     : Device size: 1280x720
+10-27 16:33:20.335  3709  3742 V SDL     : nativeInitSDLThread() 1 time
+10-27 16:33:20.335  3709  3742 V SDL     : Running main function SDL_main from library /data/app/com.halo.decomp-1/lib/arm/libmain.so
+10-27 16:33:20.335  3709  3742 I halo    : Halo for Android (armeabi-v7a) starting
+10-27 16:33:20.338  3709  3742 I halo    : files folder /storage/emulated/0/Android/data/com.halo.decomp/files
+10-27 16:33:20.348  3709  3742 I halo    : at the Xbox window: 80000000-88000000 ---p 00000000 00:00 0 
+10-27 16:33:20.361  3709  3742 I halo    : the GPU's report: /storage/emulated/0/Android/data/com.halo.decomp/files/gpu.txt
+10-27 16:33:20.363  3709  3742 I halo    : benchmark: HALO_EXIT_AFTER=120
+10-27 16:33:20.363  3709  3742 I halo    : benchmark: HALO_TEST_INPUT=bot:1
+10-27 16:33:20.363  3709  3742 I halo    : benchmark: HALO_FRAME_TIMING=true
+10-27 16:33:20.363  3709  3742 I halo    : benchmark: HALO_SHOW_FPS=true
+10-27 16:33:20.363  3709  3742 I halo    : benchmark: HALO_RENDER_SCALE=1.0
+10-27 16:33:20.363  3709  3742 I halo    : benchmark: HALO_GL_ASYNC_TEXTURES=true
+10-27 16:33:20.364  3709  3742 I halo    : benchmark: HALO_TEXTURE_BUSY_TRACKING=true
+10-27 16:33:20.364  3709  3742 I halo    : benchmark: HALO_FRAME_TIMING=false
+10-27 16:33:20.364  3709  3742 I halo    : benchmark: HALO_STUTTER_LOG=true
+10-27 16:33:20.365  3709  3742 I halo    : display 1280x720: rendering 852x480
+10-27 16:33:20.369  3709  3742 I halo    : data /storage/emulated/0/Android/data/com.halo.decomp/files, saves /storage/emulated/0/Android/data/com.halo.decomp/files/save
+10-27 16:33:20.372  3709  3742 I halo-linux: config.toml line 484 cannot be read (duplicate key), so it is skipped: true and false are lowercase, gl_async_textures = false
+10-27 16:33:20.377  3709  3709 V SDL     : onWindowFocusChanged(): true
+10-27 16:33:20.377   548   589 I ActivityManager: Displayed com.halo.decomp/.HaloActivity: +259ms (total +364ms)
+10-27 16:33:20.378  3709  3742 I halo-linux: config.toml line 489 cannot be read (duplicate key), so it is skipped: true and false are lowercase, texture_busy_tracking = false
+10-27 16:33:20.380  3709  3742 I halo-linux: settings: /storage/emulated/0/Android/data/com.halo.decomp/files/config.toml
+10-27 16:33:20.380  3709  3742 I halo-linux: settings: 2 lines of config.toml skipped; every other setting in it is used
+10-27 16:33:20.380  3709  3744 I halo    : starting the game (32-bit ARM, native), stack 16 MB
+10-27 16:33:20.381  3709  3744 I halo-linux: screen: 852x480 drawn at 852x480
+10-27 16:33:20.416  3709  3744 I halo-linux: data root: /storage/emulated/0/Android/data/com.halo.decomp/files (the game's log: debug.txt there)
+10-27 16:33:20.417  3709  3744 V SDL     : setOrientation() requestedOrientation=11 width=1280 height=720 resizable=false hint=LandscapeLeft LandscapeRight
+10-27 16:33:20.419  3709  3744 I halo-linux: no OpenGL ES 3.0 window (Couldn't find matching EGL config (call to eglChooseConfig failed, reporting an error of EGL_SUCCESS)): trying OpenGL ES 2.0
+10-27 16:33:20.419  3709  3744 V SDL     : setOrientation() requestedOrientation=11 width=1280 height=720 resizable=false hint=LandscapeLeft LandscapeRight
+10-27 16:33:20.429  3709  3744 I SDL/APP : pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+10-27 16:33:20.446  3709  3709 V SDL     : surfaceChanged()
+10-27 16:33:20.447  3709  3709 V SDL     : Window size: 1280x720
+10-27 16:33:20.447  3709  3709 V SDL     : Device size: 1280x720
+10-27 16:33:20.451  3709  3744 I halo-linux: OpenGL ES 2.0: 2 of the renderer's OpenGL ES 3.0 functions are missing
+10-27 16:33:20.452  3709  3744 I halo-linux: OpenGL ES 2.0: the renderer's ES 3.0 calls by extensions and emulation (0 extension functions missing)
+10-27 16:33:20.453  3709  3744 I halo-linux: debug.gl_queue: the OpenGL calls recorded, and done in order where they must be
+10-27 16:33:20.455  3709  3744 I halo-linux: debug.gl_async_textures: textures and buffers named from names the GL thread made ahead, texture uploads recorded with a copy of their texels
+10-27 16:33:20.456  3709  3744 I halo-linux: OpenGL OpenGL ES 2.0 17.01214 on NVIDIA Tegra
+10-27 16:33:20.457  3709  3744 I halo-linux: OpenGL ES 0.0: copy image 0, border clamp 0, anisotropy 1, S3TC 1, sample counting 0, base vertex 0 (none), half float targets 1
+10-27 16:33:20.464  3709  3744 I halo-linux: anti-aliasing: off
+10-27 16:33:20.464  3709  3744 I halo-linux: debug.deferred_draws: the game's Direct3D calls are recorded and replayed at the points that need them done
+10-27 16:33:20.474  3709  3744 I halo-linux: debug.stutter_log: frames longer than 150 ms logged with what held them up
+10-27 16:33:20.476  3709  3744 I halo-linux: gamepad: NVIDIA Controller v01.01 (standard)
+10-27 16:33:20.486  3709  3744 I halo-linux: save root: /storage/emulated/0/Android/data/com.halo.decomp/files/save
+10-27 16:33:20.537  3709  3744 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-27 16:33:20.544  3709  3744 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-27 16:33:20.549  3709  3744 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-27 16:33:20.566  3709  3744 I halo-linux: debug.render_thread: the deferred draws are replayed on a thread of their own, the game's going on as it draws (debug.render_thread_async)
+10-27 16:33:20.586  3709  3744 I halo-linux: sound: stereo
+10-27 16:33:21.022  3709  3744 I halo-linux: menus: the pause menu has SETTINGS
+10-27 16:33:21.023  3709  3744 I halo-linux: menus: 1143 widgets, 282 string lists and 100 bitmaps added to the map's 3325 tags
+10-27 16:33:21.026  3709  3744 I halo-linux: high-res hud: 60 of 135 bitmaps in this map, 1 for some of their sprites (75 not in it)
+10-27 16:33:21.170  3709  3744 I halo-linux: textures: converted ahead, on a thread of their own (debug.texture_preconvert)
+10-27 16:33:21.201  3709  3744 I halo-linux: model detail: stock
+10-27 16:33:21.201  3709  3752 I halo-linux: debug.gl_thread: the queued OpenGL calls done on a thread of their own, which holds the context (its waits spun: debug.spin_waits)
+10-27 16:33:21.212  3709  3752 I halo-linux: anisotropic filtering: 1x (the GPU's most 15x)
+10-27 16:33:21.413  3709  3769 I halo-linux: stutter: a slow draw, 37.5 ms (DrawElements, 74 vertices): program 3 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:33:21.466  3709  3769 I halo-linux: stutter: a slow draw, 21.3 ms (DrawElements, 4 vertices): program 5 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:33:21.655  3709  3769 I halo-linux: stutter: a slow draw, 30.3 ms (DrawElements, 31 vertices): program 8 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:33:21.747  3709  3769 I halo-linux: stutter: a slow draw, 24.0 ms (DrawElements, 46 vertices): program 12 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:33:21.767  3709  3752 I halo-linux: stutter: a 1292 ms frame, 0.0 s in (the ring's oldest event is after its start): game: context held (the game's thread) 633 ms (1, longest 633); game: the game's rendering 566 ms (1, longest 566); game: handed over a texture's draws and waited for their replay 544 ms (6, longest 179); render: replay 543 ms (7, longest 179, 8); render: replayed call (DrawIndexedVertices) 541 ms (6, longest 179); render: context held (CreateShader) 373 ms (6, longest 155); game: texture waited for (sky\ring\ring clear afternoon) 181 ms (1, longest 181, 341); game: texture waited for (sky\planets\threshold clear afternoon) 166 ms (1, longest 166, 341); render: context waited for (CreateShader) 144 ms (5, longest 43); gl: piece 143 ms (10, longest 39, 594); gl: driver call (DrawElements) 132 ms (5, longest 38); io: map read (waited for) 124 ms (6, longest 85, 22954)
+10-27 16:33:21.767  3709  3752 I halo-linux: stutter: its longest: game context held (the game's thread) 633 ms at +93 ms; game the game's rendering 566 ms at +726 ms; game texture waited for (sky\ring\ring clear afternoon) 181 ms at +971 ms [341]; game handed over a texture's draws and waited for their replay 179 ms at +971 ms; render replay 179 ms at +971 ms [1]; render replayed call (DrawIndexedVertices) 179 ms at +971 ms
+10-27 16:33:34.162  3709  3752 I halo-linux: shader warm-up: levels\b30\b30: 361 programs drawn as first drawn before (361 on its layout list), in 2601 ms
+10-27 16:33:34.162  3709  3752 I halo-linux: shader warm-up: levels\b30\b30: 815 programs, 815 linked now, in 9792 ms
+10-27 16:33:34.164  3709  3744 I halo-linux: texture busy tracking: 121 textures asked about in ten seconds: 107 not busy, 0 waited for their last draws' replay, 14 with this frame's draws handed over and replayed (544.8 ms waited in all)
+10-27 16:33:34.330  3709  3769 I halo-linux: stutter: a slow draw, 66.6 ms (DrawElements, 763 vertices): program 17 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:33:34.446  3709  3769 I halo-linux: stutter: a slow draw, 65.8 ms (DrawElements, 2098 vertices): program 23 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:33:34.522  3709  3769 I halo-linux: stutter: a slow draw, 70.4 ms (DrawElements, 608 vertices): program 25 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:33:34.629  3709  3752 I halo-linux: stutter: a 12862 ms frame, 1.3 s in: render: replay 12698 ms (11, longest 12396, 1694); game: present 12396 ms (1, longest 12396); game: the context taken back (halo_screen_commit) 12396 ms (1, longest 12396); game: waited for the render thread, the draws done 12396 ms (1, longest 12396); render: replayed call (Present) 12395 ms (1, longest 12395); render: context held (CreateShader) 7992 ms (339, longest 193); gl: piece 3000 ms (46, longest 2380, 9043); render: context waited for (Finish) 2599 ms (1, longest 2599); gl: driver call (DrawArrays) 2506 ms (91, longest 66); game: the game's rendering 434 ms (1, longest 434); game: handed over a texture's draws and waited for their replay 304 ms (10, longest 220); render: replayed call (DrawIndexedVertices) 236 ms (25, longest 76)
+10-27 16:33:34.631  3709  3752 I halo-linux: stutter: its longest: game present 12396 ms at -1 ms; game the context taken back (halo_screen_commit) 12396 ms at -1 ms; game waited for the render thread, the draws done 12396 ms at -1 ms; render replay 12396 ms at -1 ms [1]; render replayed call (Present) 12395 ms at -1 ms; render context waited for (Finish) 2599 ms at +9795 ms
+10-27 16:33:34.631  3709  3752 I halo-linux: stutter: 2 frames longer than 150 ms in the last ten seconds
+10-27 16:33:34.665  3709  3769 I halo-linux: stutter: a slow draw, 37.5 ms (DrawElements, 6 vertices): program 54 (drawn before), this combination new; framebuffer 8, blend off 0x302/0x303; attributes 0:4x0x1406 4:4x0x1406
+10-27 16:33:34.669  3709  3769 I halo-linux: OpenGL ES 2.0: a render target copied into level 0 (128x128) of texture 120: done (0x0)
+10-27 16:33:34.671  3709  3769 I halo-linux: OpenGL ES 2.0: a render target copied into level 1 (64x64) of texture 120: done (0x0)
+10-27 16:33:34.672  3709  3769 I halo-linux: OpenGL ES 2.0: a render target copied into level 2 (32x32) of texture 120: done (0x0)
+10-27 16:33:34.672  3709  3769 I halo-linux: OpenGL ES 2.0: a render target copied into level 3 (16x16) of texture 120: done (0x0)
+10-27 16:33:37.922  3709  3769 I halo-linux: stutter: a slow draw, 67.3 ms (DrawElements, 2176 vertices): program 93 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:33:37.966  3709  3744 I halo-linux: shadow maps: 128x128
+10-27 16:33:37.996  3709  3752 I halo-linux: stutter: a 189 ms frame, 17.3 s in: game: the game's rendering 188 ms (1, longest 203); gl: piece 180 ms (26, longest 75, 3502); game: handed over a texture's draws and waited for their replay 172 ms (6, longest 76); render: replay 170 ms (7, longest 74, 3720); render: waited for the GL thread's room 131 ms (12, longest 74); game: texture waited for (weapons\assault rifle\fp\bitmaps\numbers_plate) 77 ms (1, longest 77, 2); gl: driver call (DrawElements) 70 ms (2, longest 67); game: texture waited for (weapons\assault rifle\fp\bitmaps\compass_plate) 46 ms (3, longest 51, 6); render: replayed call (DrawIndexedVertices) 40 ms (9, longest 9); render: texture fetched 26 ms (8, longest 5, 8); game: texture waited for (rasterizer\linear corner fade) 25 ms (1, longest 25); game: texture waited for (weapons\assault rifle\bitmaps\bolt) 24 ms (1, longest 24, 5)
+10-27 16:33:37.998  3709  3752 I halo-linux: stutter: its longest: game the game's rendering 203 ms at -15 ms; game texture waited for (weapons\assault rifle\fp\bitmaps\numbers_plate) 77 ms at +43 ms [2]; game handed over a texture's draws and waited for their replay 76 ms at +43 ms; gl piece 75 ms at +42 ms [135]; render replay 74 ms at +43 ms [1]; render waited for the GL thread's room 74 ms at +43 ms
+10-27 16:33:38.969  3709  3744 I halo-linux: texture: vehicles\warthog\bitmaps\headlight flares (stage 0, usage 1): not loaded yet, type 0 of 0, format 14, 64x64, 6 mipmaps
+10-27 16:33:42.018  3709  3769 I halo-linux: stutter: a slow draw, 36.6 ms (DrawElements, 6 vertices): program 156 (drawn before), this combination new; framebuffer 8, blend off 0x1/0x303; attributes 0:4x0x1406 4:4x0x1406
+10-27 16:33:42.732  3709  3752 I halo-linux: frame rate: 27 frames a second over the last ten seconds; 94 of 273 frames longer than 34 ms, the longest 12862.3 ms
+10-27 16:33:42.733  3709  3752 I halo-linux: frame times (these ten seconds, 272 frames): average 12.2 fps (81.8 ms); 1% low 0.1 fps, 0.1% low 0.1 fps; 99th percentile 1292.5 ms, 99.9th 12862.3 ms, the longest 12862.3 ms
+10-27 16:33:42.734  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:33:44.633  3709  3752 I halo-linux: stutter: 1 frames longer than 150 ms in the last ten seconds
+10-27 16:33:44.919  3709  3744 I halo-linux: texture busy tracking: 16301 textures asked about in ten seconds: 16259 not busy, 1 waited for their last draws' replay, 41 with this frame's draws handed over and replayed (593.4 ms waited in all)
+10-27 16:33:45.462  3709  3744 I halo-linux: high-res text: ui\large_ui (capitals 13 units) drawn with Overpass-900.ttf, 98% wide
+10-27 16:33:52.814  3709  3752 I halo-linux: frame rate: 48 frames a second over the last ten seconds; 3 of 486 frames longer than 34 ms, the longest 93.7 ms
+10-27 16:33:52.814  3709  3752 I halo-linux: frame times (these ten seconds, 486 frames): average 48.2 fps (20.7 ms); 1% low 18.0 fps, 0.1% low 10.7 fps; 99th percentile 33.8 ms, 99.9th 93.7 ms, the longest 93.7 ms
+10-27 16:33:52.816  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:33:54.653  3709  3752 I halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+10-27 16:33:57.183  3709  3744 I halo-linux: texture busy tracking: 2085 textures asked about in ten seconds: 2080 not busy, 1 waited for their last draws' replay, 4 with this frame's draws handed over and replayed (44.9 ms waited in all)
+10-27 16:33:59.484  3709  3769 I halo-linux: stutter: a slow draw, 68.1 ms (DrawElements, 301 vertices): program 224 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:34:02.963  3709  3752 I halo-linux: frame rate: 38 frames a second over the last ten seconds; 26 of 388 frames longer than 34 ms, the longest 91.2 ms
+10-27 16:34:02.964  3709  3752 I halo-linux: frame times (these ten seconds, 388 frames): average 38.2 fps (26.2 ms); 1% low 12.9 fps, 0.1% low 11.0 fps; 99th percentile 56.0 ms, 99.9th 91.2 ms, the longest 91.2 ms
+10-27 16:34:02.965  3709  3752 I halo-linux: frame times (the run since 20 s, 388 frames): average 38.2 fps (26.2 ms); 1% low 12.9 fps, 0.1% low 11.0 fps; 99th percentile 56.0 ms, 99.9th 91.2 ms, the longest 91.2 ms
+10-27 16:34:02.966  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:34:03.290  3709  3769 I halo-linux: stutter: a slow draw, 66.9 ms (DrawElements, 200 vertices): program 246 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:34:04.433  3709  3769 I halo-linux: stutter: a slow draw, 67.5 ms (DrawElements, 608 vertices): program 307 (drawn before), this combination new; framebuffer 10, blend off 0x302/0x303; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:34:04.690  3709  3752 I halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+10-27 16:34:06.400  3709  3744 I halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+10-27 16:34:07.268  3709  3744 I halo-linux: texture busy tracking: 8872 textures asked about in ten seconds: 8835 not busy, 4 waited for their last draws' replay, 33 with this frame's draws handed over and replayed (735.8 ms waited in all)
+10-27 16:34:10.904  3709  3769 I halo-linux: stutter: a slow draw, 23.5 ms (DrawElements, 6 vertices): program 208 (drawn before), this combination new; framebuffer 10, blend on 0x1/0x303; attributes 0:4x0x1406 4:4x0x1406 9:4x0x1406
+10-27 16:34:11.078  3709  3769 I halo-linux: stutter: a slow draw, 22.1 ms (DrawElements, 6 vertices): program 390 (drawn before), this combination new; framebuffer 13, blend on 0x1/0x302; attributes 0:4x0x1406 4:4x0x1406 9:4x0x1406
+10-27 16:34:13.156  3709  3752 I halo-linux: frame rate: 24 frames a second over the last ten seconds; 205 of 241 frames longer than 34 ms, the longest 142.0 ms
+10-27 16:34:13.158  3709  3752 I halo-linux: frame times (these ten seconds, 241 frames): average 23.6 fps (42.3 ms); 1% low 7.1 fps, 0.1% low 7.0 fps; 99th percentile 138.2 ms, 99.9th 142.0 ms, the longest 142.0 ms
+10-27 16:34:13.159  3709  3752 I halo-linux: frame times (the run since 20 s, 629 frames): average 30.9 fps (32.3 ms); 1% low 8.9 fps, 0.1% low 7.0 fps; 99th percentile 85.4 ms, 99.9th 142.0 ms, the longest 142.0 ms
+10-27 16:34:13.160  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:34:13.437  3709  3769 I halo-linux: stutter: a slow draw, 23.7 ms (DrawElements, 6 vertices): program 392 (drawn before), this combination drawn before; framebuffer 13, blend on 0x0/0x302; attributes 0:4x0x1406 4:4x0x1406 9:4x0x1406
+10-27 16:34:14.681  3709  3769 I halo-linux: stutter: a slow draw, 21.1 ms (DrawElements, 6 vertices): program 386 (drawn before), this combination drawn before; framebuffer 10, blend on 0x8001/0x302; attributes 0:4x0x1406 4:4x0x1406 9:4x0x1406
+10-27 16:34:14.695  3709  3752 I halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+10-27 16:34:17.480  3709  3744 I halo-linux: texture busy tracking: 9435 textures asked about in ten seconds: 9414 not busy, 2 waited for their last draws' replay, 19 with this frame's draws handed over and replayed (564.0 ms waited in all)
+10-27 16:34:22.686  3709  3744 I halo-linux: texture: effects\particles\lens flare\bitmaps\flares pr overcharge (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 32x32, 5 mipmaps
+10-27 16:34:23.377  3709  3752 I halo-linux: frame rate: 22 frames a second over the last ten seconds; 205 of 220 frames longer than 34 ms, the longest 80.3 ms
+10-27 16:34:23.379  3709  3752 I halo-linux: frame times (these ten seconds, 220 frames): average 21.5 fps (46.5 ms); 1% low 12.8 fps, 0.1% low 12.5 fps; 99th percentile 75.7 ms, 99.9th 80.3 ms, the longest 80.3 ms
+10-27 16:34:23.380  3709  3752 I halo-linux: frame times (the run since 20 s, 849 frames): average 27.8 fps (36.0 ms); 1% low 9.6 fps, 0.1% low 7.0 fps; 99th percentile 79.8 ms, 99.9th 142.0 ms, the longest 142.0 ms
+10-27 16:34:23.382  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:34:24.696  3709  3752 I halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+10-27 16:34:27.766  3709  3752 I halo-linux: stutter: a 159 ms frame, 67.1 s in: game: the main loop's own (between frames) (the map lost) 114 ms (1, longest 121); gl: piece 51 ms (7, longest 12, 887); game: game_time_update 23 ms (2, longest 13); render: replay 16 ms (1, longest 22, 353); render: replayed call (Present) 16 ms (1, longest 16); render: waited for the frame before shown 15 ms (1, longest 15); game: game_tick.objects 13 ms (3, longest 6); game: the game's rendering 13 ms (1, longest 13); game: game_tick.ai 6 ms (3, longest 2); gl: driver call (DrawElements) 5 ms (4, longest 2); game: game_frame 1 ms (1, longest 1)
+10-27 16:34:27.767  3709  3752 I halo-linux: stutter: its longest: game the main loop's own (between frames) (the map lost) 121 ms at -6 ms; render replay 22 ms at -6 ms [353]; render replayed call (Present) 16 ms at -0 ms; render waited for the frame before shown 15 ms at +0 ms; game the game's rendering 13 ms at +127 ms; game game_time_update 13 ms at +115 ms
+10-27 16:34:33.569  3709  3752 I halo-linux: frame rate: 26 frames a second over the last ten seconds; 183 of 260 frames longer than 34 ms, the longest 159.2 ms
+10-27 16:34:33.571  3709  3752 I halo-linux: frame times (these ten seconds, 260 frames): average 25.5 fps (39.2 ms); 1% low 8.6 fps, 0.1% low 6.3 fps; 99th percentile 72.3 ms, 99.9th 159.2 ms, the longest 159.2 ms
+10-27 16:34:33.571  3709  3752 I halo-linux: frame times (the run since 20 s, 1109 frames): average 27.2 fps (36.7 ms); 1% low 9.6 fps, 0.1% low 6.3 fps; 99th percentile 75.5 ms, 99.9th 159.2 ms, the longest 159.2 ms
+10-27 16:34:33.572  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:34:34.706  3709  3752 I halo-linux: stutter: 1 frames longer than 150 ms in the last ten seconds
+10-27 16:34:35.310  3709  3744 I halo-linux: texture busy tracking: 10030 textures asked about in ten seconds: 10007 not busy, 5 waited for their last draws' replay, 18 with this frame's draws handed over and replayed (374.8 ms waited in all)
+10-27 16:34:38.947  3709  3744 I halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic2 (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+10-27 16:34:43.798  3709  3752 I halo-linux: frame rate: 26 frames a second over the last ten seconds; 193 of 262 frames longer than 34 ms, the longest 130.8 ms
+10-27 16:34:43.799  3709  3752 I halo-linux: frame times (these ten seconds, 262 frames): average 25.6 fps (39.0 ms); 1% low 9.9 fps, 0.1% low 7.6 fps; 99th percentile 71.3 ms, 99.9th 130.8 ms, the longest 130.8 ms
+10-27 16:34:43.800  3709  3752 I halo-linux: frame times (the run since 20 s, 1371 frames): average 26.9 fps (37.2 ms); 1% low 9.6 fps, 0.1% low 6.3 fps; 99th percentile 74.6 ms, 99.9th 159.2 ms, the longest 159.2 ms
+10-27 16:34:43.802  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:34:44.707  3709  3752 I halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+10-27 16:34:47.116  3709  3744 I halo-linux: texture busy tracking: 1290 textures asked about in ten seconds: 1285 not busy, 1 waited for their last draws' replay, 4 with this frame's draws handed over and replayed (132.7 ms waited in all)
+10-27 16:34:53.966  3709  3752 I halo-linux: frame rate: 23 frames a second over the last ten seconds; 223 of 235 frames longer than 34 ms, the longest 63.5 ms
+10-27 16:34:53.967  3709  3752 I halo-linux: frame times (these ten seconds, 235 frames): average 23.1 fps (43.3 ms); 1% low 16.1 fps, 0.1% low 15.8 fps; 99th percentile 61.0 ms, 99.9th 63.5 ms, the longest 63.5 ms
+10-27 16:34:53.967  3709  3752 I halo-linux: frame times (the run since 20 s, 1606 frames): average 26.3 fps (38.1 ms); 1% low 10.2 fps, 0.1% low 6.3 fps; 99th percentile 72.3 ms, 99.9th 159.2 ms, the longest 159.2 ms
+10-27 16:34:53.969  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:34:54.724  3709  3752 I halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+10-27 16:35:04.176  3709  3752 I halo-linux: frame rate: 25 frames a second over the last ten seconds; 184 of 258 frames longer than 34 ms, the longest 148.7 ms
+10-27 16:35:04.178  3709  3752 I halo-linux: frame times (these ten seconds, 258 frames): average 25.3 fps (39.6 ms); 1% low 9.7 fps, 0.1% low 6.7 fps; 99th percentile 57.5 ms, 99.9th 148.7 ms, the longest 148.7 ms
+10-27 16:35:04.182  3709  3752 I halo-linux: frame times (the run since 20 s, 1864 frames): average 26.1 fps (38.3 ms); 1% low 10.0 fps, 0.1% low 6.3 fps; 99th percentile 72.1 ms, 99.9th 159.2 ms, the longest 159.2 ms
+10-27 16:35:04.189  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:35:04.746  3709  3752 I halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+10-27 16:35:11.214  3709  3769 I halo-linux: stutter: a slow draw, 37.7 ms (DrawElements, 258 vertices): program 587 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x1; attributes 0:3x0x1406 1:1x0x1405i 2:1x0x1405i 3:1x0x1405i 4:2x0x1402n 5:2x0x1401n 6:1x0x1402n
+10-27 16:35:11.237  3709  3769 I halo-linux: stutter: a slow draw, 22.6 ms (DrawElements, 66 vertices): program 591 (its first draw), this combination new; framebuffer 10, blend on 0x302/0x303; attributes 0:3x0x1406 4:2x0x1406 9:4x0x1401n 11:2x0x1401n
+10-27 16:35:11.824  3709  3744 I halo-linux: texture busy tracking: 325 textures asked about in ten seconds: 324 not busy, 0 waited for their last draws' replay, 1 with this frame's draws handed over and replayed (37.2 ms waited in all)
+10-27 16:35:14.360  3709  3752 I halo-linux: frame rate: 27 frames a second over the last ten seconds; 192 of 270 frames longer than 34 ms, the longest 119.7 ms
+10-27 16:35:14.361  3709  3752 I halo-linux: frame times (these ten seconds, 270 frames): average 26.5 fps (37.7 ms); 1% low 8.5 fps, 0.1% low 8.4 fps; 99th percentile 114.6 ms, 99.9th 119.7 ms, the longest 119.7 ms
+10-27 16:35:14.362  3709  3752 I halo-linux: frame times (the run since 20 s, 2134 frames): average 26.2 fps (38.2 ms); 1% low 10.0 fps, 0.1% low 6.5 fps; 99th percentile 72.0 ms, 99.9th 148.7 ms, the longest 159.2 ms
+10-27 16:35:14.363  3709  3752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-27 16:35:14.780  3709  3752 I halo-linux: stutter: 0 frames longer than 150 ms in the last ten seconds
+10-27 16:35:20.518  3709  3744 I halo-linux: exiting after debug.exit_after
+10-27 16:35:20.593   548   883 I WindowState: WIN DEATH: Window{3070e4ac u0 com.halo.decomp/com.halo.decomp.HaloActivity}
+10-27 16:35:20.593   548   883 W WindowManager: Force-removing child win Window{2891590a u0 SurfaceView} from container Window{3070e4ac u0 com.halo.decomp/com.halo.decomp.HaloActivity}
+10-27 16:35:20.808   548 29793 I ActivityManager: Process com.halo.decomp:game (pid 3709) has died
+10-27 16:35:20.809   548 29793 W ActivityManager: Force removing ActivityRecord{2c2e354d u0 com.halo.decomp/.HaloActivity t794}: app died, no saved state
+10-27 16:35:26.941  4260  4260 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-27 16:35:26.943  4260  4260 D AndroidRuntime: CheckJNI is OFF
+10-27 16:35:26.994  4260  4260 E android.os.Debug: failed to load memtrack module: -2
+10-27 16:35:27.015  4260  4260 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-27 16:35:27.016   548   563 I ActivityManager: Force stopping com.halo.decomp appid=10112 user=0: from pid 4260
+10-27 16:35:27.017   548   563 I ActivityManager: Killing 3677:com.halo.decomp/u0a112 (adj 9): stop com.halo.decomp
+10-27 16:35:27.026   548 10303 W ActivityManager: Spurious death for ProcessRecord{1d5a7ac5 3677:com.halo.decomp/u0a112}, curProc for 3677: null
+10-27 16:35:27.027  4260  4260 D AndroidRuntime: Shutting down VM
