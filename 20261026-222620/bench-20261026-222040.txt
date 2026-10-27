@@ -1,0 +1,446 @@
+﻿=== benchmark 20261026-222040: level b30, 120 s, settings: HALO_EXIT_AFTER=120; HALO_TEST_INPUT=bot:1; HALO_FRAME_TIMING=true; HALO_SHOW_FPS=true; HALO_RENDER_SCALE=1.0; HALO_GL_CONTEXT_TEST=true; HALO_EXIT_AFTER=20; HALO_FRAME_TIMING=false
+=== device: SHIELD  / Android 5.1 
+=== startup.txt
+Halo (armeabi-v7a) Oct 27 2026 03:17:23: library loaded, process com.halo.decomp, Mon Oct 26 23:20:32 2026
+Halo for Android (armeabi-v7a) starting
+files folder /storage/emulated/0/Android/data/com.halo.decomp/files
+at the Xbox window: 80000000-88000000 ---p 00000000 00:00 0 
+the GPU's report: /storage/emulated/0/Android/data/com.halo.decomp/files/gpu.txt
+benchmark: HALO_EXIT_AFTER=120
+benchmark: HALO_TEST_INPUT=bot:1
+benchmark: HALO_FRAME_TIMING=true
+benchmark: HALO_SHOW_FPS=true
+benchmark: HALO_RENDER_SCALE=1.0
+benchmark: HALO_GL_CONTEXT_TEST=true
+benchmark: HALO_EXIT_AFTER=20
+benchmark: HALO_FRAME_TIMING=false
+display 1280x720: rendering 852x480
+data /storage/emulated/0/Android/data/com.halo.decomp/files, saves /storage/emulated/0/Android/data/com.halo.decomp/files/save
+halo-linux: config.toml line 484 cannot be read (duplicate key), so it is skipped: true and false are lowercase, gl_async_textures = false
+halo-linux: config.toml line 489 cannot be read (duplicate key), so it is skipped: true and false are lowercase, texture_busy_tracking = false
+halo-linux: settings: /storage/emulated/0/Android/data/com.halo.decomp/files/config.toml
+halo-linux: settings: 2 lines of config.toml skipped; every other setting in it is used
+starting the game (32-bit ARM, native), stack 16 MB
+halo-linux: screen: 852x480 drawn at 852x480
+halo-linux: data root: /storage/emulated/0/Android/data/com.halo.decomp/files (the game's log: debug.txt there)
+halo-linux: no OpenGL ES 3.0 window (Couldn't find matching EGL config (call to eglChooseConfig failed, reporting an error of EGL_SUCCESS)): trying OpenGL ES 2.0
+pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+halo-linux: OpenGL ES 2.0: 2 of the renderer's OpenGL ES 3.0 functions are missing
+halo-linux: OpenGL ES 2.0: the renderer's ES 3.0 calls by extensions and emulation (0 extension functions missing)
+halo-linux: gl context test: one thread alone (A): 3000 draws in 167.4 ms, 55.8 us a draw
+halo-linux: gl context test: two unshared contexts at once (A and B): both threads' 3000 draws done in 276.9 ms (276.8 and 240.7 ms each, 92.3 us a draw each); speedup 1.21 over one thread doing both (2 parallel, 1 one after the other), 4 processors online
+halo-linux: gl context test: two contexts sharing objects at once (A and C): both threads' 3000 draws done in 435.4 ms (435.4 and 384.8 ms each, 145.1 us a draw each); speedup 0.77 over one thread doing both (2 parallel, 1 one after the other), 4 processors online
+halo-linux: gl context test: one thread alone again: 172.3 ms (the first 167.4)
+halo-linux: gl draw cost test: all of it (a program change, 16 uniform vectors, 2 textures, a 7 KB upload into a shared buffer, 3 pointers, 300 vertices): 54.4 us a draw
+halo-linux: gl draw cost test: no program change: 47.5 us a draw
+halo-linux: gl draw cost test: a program change every 8th draw: 47.6 us a draw
+halo-linux: gl draw cost test: the draws sorted by program (4 changes in all): 47.5 us a draw
+halo-linux: gl draw cost test: no uniforms: 53.3 us a draw
+halo-linux: gl draw cost test: 64 uniform vectors, not 16: 55.2 us a draw
+halo-linux: gl draw cost test: no texture binds: 52.3 us a draw
+halo-linux: gl draw cost test: no upload (the vertices already there): 48.9 us a draw
+halo-linux: gl draw cost test: each upload into a buffer of its own (64 of them, round): 27.2 us a draw
+halo-linux: gl draw cost test: the shared buffer orphaned at each wrap: 51.6 us a draw
+halo-linux: gl draw cost test: the vertices from memory (client arrays, no buffer): 51.4 us a draw
+halo-linux: gl draw cost test: no upload, no pointers: 52.2 us a draw
+halo-linux: gl draw cost test: 60 vertices, not 300: 21.4 us a draw
+halo-linux: gl draw cost test: the draw alone (nothing changed before it): 39.6 us a draw
+halo-linux: gl buffer test: one 512 KB stream buffer: 56.0 us a draw
+halo-linux: gl buffer test: one 512 KB dynamic buffer: 57.6 us a draw
+halo-linux: gl buffer test: one 512 KB static buffer: 48.7 us a draw
+halo-linux: gl buffer test: one 16 MB stream buffer (the game's): 52.1 us a draw
+halo-linux: gl buffer test: one 16 MB dynamic buffer: 52.4 us a draw
+halo-linux: gl buffer test: one 16 MB stream buffer, no uploads: 13.1 us a draw
+halo-linux: gl buffer test: 64 buffers of 8 KB, stream: 25.4 us a draw
+halo-linux: gl buffer test: 64 buffers of 8 KB, dynamic: 25.4 us a draw
+halo-linux: gl buffer test: 64 buffers of 8 KB, no uploads: 14.1 us a draw
+halo-linux: gl buffer test: 256 buffers of 8 KB, stream: 23.6 us a draw
+halo-linux: gl buffer test: 16 buffers of 64 KB, stream: 49.5 us a draw
+halo-linux: gl buffer test: 8 buffers of 256 KB, stream: 51.1 us a draw
+halo-linux: gl buffer test: 4 buffers of 1 MB, stream: 60.2 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; static vertices and indices: 14.2 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; indices uploaded each draw into a 2 MB buffer: 16.9 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; indices uploaded each draw into a 4 KB buffer of their own: 21.9 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; 7 KB written into another 16 MB buffer each draw: 23.0 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; 7 KB written into another 8 KB buffer each draw: 22.7 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; attributes not aligned for four: 13.9 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; attributes not aligned, indices into 4 KB buffers: 21.4 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; attributes not aligned, indices into a 2 MB buffer: 15.8 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; indices into a 2 MB buffer; the game-sized programs (192 vertex constants, 32 a draw; 4 samplers, 8 fragment constants): 19.7 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; indices into a 2 MB buffer; 4 textures bound: 18.2 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; indices into a 2 MB buffer; 2 textures, their filtering and wrapping set each draw: 18.1 us a draw
+halo-linux: gl source test: vertices in a 16 MB buffer never written; indices into a 2 MB buffer; game-sized programs, 4 textures, their filtering and wrapping each draw: 22.8 us a draw
+halo-linux: gl fill test: the game-shaped draw: 22.5 us a draw making the calls, 22.7 with the GPU done
+halo-linux: gl fill test: the game-shaped draw, raster state changed as the game's (blend, enables, cull, depth mask): 26.9 us a draw making the calls, 27.1 with the GPU done
+halo-linux: gl fill test: triangles over a quarter of 64x64 (266 quads, 1596 indices): 22.0 us a draw making the calls, 22.3 with the GPU done
+halo-linux: gl fill test: the same over a quarter of 128x128: 21.7 us a draw making the calls, 21.9 with the GPU done
+halo-linux: gl fill test: the same over a quarter of 256x240: 21.6 us a draw making the calls, 21.8 with the GPU done
+halo-linux: gl fill test: the same over a quarter of 426x240 (render scale 0.5): 21.8 us a draw making the calls, 21.9 with the GPU done
+halo-linux: gl fill test: the same over a quarter of 852x480 (the game's picture): 20.5 us a draw making the calls, 20.7 with the GPU done
+halo-linux: gl fill test: the same, 852x480, raster state changed as the game's: 25.9 us a draw making the calls, 26.2 with the GPU done
+halo-linux: gl geometry test: zero vertices (no area), the strip: 22.0 us a draw making the calls, 22.3 with the GPU done
+halo-linux: gl geometry test: the grid's vertices, the strip: 22.1 us a draw making the calls, 22.3 with the GPU done
+halo-linux: gl geometry test: zero vertices, the quads: 21.5 us a draw making the calls, 21.7 with the GPU done
+halo-linux: gl geometry test: the grid's quads, 64x64: 40.6 us a draw making the calls, 41.8 with the GPU done
+halo-linux: gl geometry test: the grid's quads off the screen (clipped away): 21.8 us a draw making the calls, 22.0 with the GPU done
+halo-linux: gl geometry test: the grid's quads, 426x240: 81.8 us a draw making the calls, 83.8 with the GPU done
+halo-linux: gl geometry test: the grid's quads, 852x480: 228.7 us a draw making the calls, 234.1 with the GPU done
+halo-linux: gl geometry test: the grid's quads, 64x64, the small programs (16 vertex constants, 2 samplers): 18.5 us a draw making the calls, 18.8 with the GPU done
+halo-linux: gl geometry test: the grid's quads off the screen, the small programs: 19.6 us a draw making the calls, 19.8 with the GPU done
+halo-linux: gl overlap test: 64x64, static indices: 40.6 us a draw making the calls, 41.8 with the GPU done
+halo-linux: gl overlap test: 64x64, the processor 10 us busier a draw: 41.2 us a draw making the calls, 42.2 with the GPU done
+halo-linux: gl overlap test: 64x64, 20 us busier: 43.0 us a draw making the calls, 43.9 with the GPU done
+halo-linux: gl overlap test: off the screen, static indices: 20.1 us a draw making the calls, 20.3 with the GPU done
+halo-linux: gl overlap test: off the screen, 10 us busier: 31.7 us a draw making the calls, 32.0 with the GPU done
+halo-linux: gl overlap test: off the screen, 20 us busier: 42.3 us a draw making the calls, 42.5 with the GPU done
+halo-linux: gl overlap test: 64x64, indices uploaded into a 2 MB buffer each draw: 52.5 us a draw making the calls, 52.7 with the GPU done
+halo-linux: gl overlap test: 64x64, indices uploaded into a 4 KB buffer of their own: 49.6 us a draw making the calls, 50.2 with the GPU done
+halo-linux: gl overlap test: 64x64, indices from memory: 51.9 us a draw making the calls, 52.1 with the GPU done
+halo-linux: gl overlap test: off the screen, small programs, static indices: 17.9 us a draw making the calls, 18.2 with the GPU done
+halo-linux: gl overlap test: off the screen, small programs, indices into a 2 MB buffer: 31.8 us a draw making the calls, 31.9 with the GPU done
+halo-linux: gl overlap test: off the screen, small programs, indices into 4 KB buffers: 30.3 us a draw making the calls, 30.5 with the GPU done
+halo-linux: gl overlap test: off the screen, small programs, indices from memory: 28.8 us a draw making the calls, 28.8 with the GPU done
+halo-linux: gl overlap test: 64x64, small programs, static indices: 18.2 us a draw making the calls, 18.5 with the GPU done
+halo-linux: gl overlap test: 64x64, small programs, indices into a 2 MB buffer: 33.7 us a draw making the calls, 33.8 with the GPU done
+halo-linux: gl overlap test: 64x64, small programs, indices from memory: 30.1 us a draw making the calls, 30.2 with the GPU done
+halo-linux: gl overlap test: 64x64, static indices, 600 bytes uploaded into the 2 MB buffer each draw, not read: 40.4 us a draw making the calls, 41.6 with the GPU done
+halo-linux: gl overlap test: 64x64, static indices, 3.2 KB uploaded, not read: 40.3 us a draw making the calls, 41.6 with the GPU done
+halo-linux: gl overlap test: off the screen, small programs, 600 bytes uploaded, not read: 18.1 us a draw making the calls, 18.4 with the GPU done
+halo-linux: gl overlap test: off the screen, small programs, 3.2 KB uploaded, not read: 19.9 us a draw making the calls, 20.1 with the GPU done
+halo-linux: gl program test: 1 programs (1 made), changed every  draw: 16.4 us a draw making the calls, 16.6 with the GPU done
+halo-linux: gl program test: 4 programs (4 made), changed every  draw: 20.5 us a draw making the calls, 20.8 with the GPU done
+halo-linux: gl program test: 16 programs (16 made), changed every  draw: 21.5 us a draw making the calls, 21.8 with the GPU done
+halo-linux: gl program test: 32 programs (32 made), changed every  draw: 22.6 us a draw making the calls, 22.8 with the GPU done
+halo-linux: gl program test: 64 programs (64 made), changed every  draw: 24.1 us a draw making the calls, 24.3 with the GPU done
+halo-linux: gl program test: 96 programs (96 made), changed every  draw: 24.3 us a draw making the calls, 24.5 with the GPU done
+halo-linux: gl program test: 128 programs (128 made), changed every  draw: 25.4 us a draw making the calls, 25.6 with the GPU done
+halo-linux: gl program test: 160 programs (160 made), changed every  draw: 25.1 us a draw making the calls, 25.3 with the GPU done
+halo-linux: gl program test: 4 programs (4 made), changed every third draw: 18.1 us a draw making the calls, 18.2 with the GPU done
+halo-linux: gl program test: 64 programs (64 made), changed every third draw: 18.8 us a draw making the calls, 19.0 with the GPU done
+halo-linux: gl program test: 160 programs (160 made), changed every third draw: 19.2 us a draw making the calls, 19.4 with the GPU done
+halo-linux: debug.gl_queue: the OpenGL calls recorded, and done in order where they must be
+halo-linux: debug.gl_async_textures: textures and buffers named from names the GL thread made ahead, texture uploads recorded with a copy of their texels
+halo-linux: OpenGL OpenGL ES 2.0 17.01214 on NVIDIA Tegra
+halo-linux: OpenGL ES 0.0: copy image 0, border clamp 0, anisotropy 1, S3TC 1, sample counting 0, base vertex 0 (none), half float targets 1
+halo-linux: anti-aliasing: off
+halo-linux: debug.deferred_draws: the game's Direct3D calls are recorded and replayed at the points that need them done
+halo-linux: gamepad: NVIDIA Controller v01.01 (standard)
+halo-linux: save root: /storage/emulated/0/Android/data/com.halo.decomp/files/save
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+halo-linux: debug.render_thread: the deferred draws are replayed on a thread of their own, the game's going on as it draws (debug.render_thread_async)
+halo-linux: sound: stereo
+halo-linux: menus: the pause menu has SETTINGS
+halo-linux: menus: 1143 widgets, 282 string lists and 100 bitmaps added to the map's 3325 tags
+halo-linux: high-res hud: 60 of 135 bitmaps in this map, 1 for some of their sprites (75 not in it)
+halo-linux: textures: converted ahead, on a thread of their own (debug.texture_preconvert)
+halo-linux: model detail: stock
+halo-linux: debug.gl_thread: the queued OpenGL calls done on a thread of their own, which holds the context (its waits spun: debug.spin_waits)
+halo-linux: anisotropic filtering: 1x (the GPU's most 15x)
+halo-linux: shader warm-up: levels\b30\b30: 676 programs, 676 linked now, in 8519 ms
+halo-linux: texture busy tracking: 4139 textures asked about in ten seconds: 4094 not busy, 0 waited for their last draws' replay, 45 with this frame's draws handed over and replayed (962.0 ms waited in all)
+halo-linux: shadow maps: 128x128
+halo-linux: texture: vehicles\warthog\bitmaps\headlight flares (stage 0, usage 1): not loaded yet, type 0 of 0, format 14, 64x64, 6 mipmaps
+halo-linux: frame rate: 26 frames a second over the last ten seconds; 42 of 262 frames longer than 34 ms, the longest 9193.9 ms
+halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 1912/1912 MHz, cpu3 1912/1912 MHz
+halo-linux: exiting after debug.exit_after
+=== debug.txt (its last 80 lines)
+10.26.26 22:16:28  Couldn't read map file 'd:\cachebeta.map'
+10.26.26 22:16:28  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.26.26 22:16:28  init: map_name levels\b30\b30
+10.26.26 22:16:28  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 37 ms, 0 of 35370 triangles disagree with their vertex normals
+10.26.26 22:17:34  the saved game is taken
+
+
+10.26.26 22:18:36  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.26.26 22:18:36  reference function: _write_to_error_file
+10.26.26 22:18:36  reference address: a25d72c1
+10.26.26 22:18:36  Couldn't read map file 'd:\cachebeta.map'
+10.26.26 22:18:37  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.26.26 22:18:37  init: map_name levels\b30\b30
+10.26.26 22:18:37  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 35 ms, 0 of 35370 triangles disagree with their vertex normals
+10.26.26 22:19:41  the saved game is taken
+10.26.26 22:20:36  last line repeated 3 times
+10.26.26 22:20:36  halo-linux: segmentation fault (signal 11, code 1) at 0x9b0fe000, eip b672f1cc ebp 00000000 esp 9b0fdc48
+10.26.26 22:20:36  halo-linux: stack af9c0880 b67315a3 af9c0880 af9c0a74 00000001 00000000
+10.26.26 22:20:36  halo-linux: pc b672f1cc libmedia.so+4b1cc _ZN7android10AudioTrack22updateAndGetPosition_lEv+f
+10.26.26 22:20:36  halo-linux: lr b67315a2 libmedia.so+4d5a2 _ZN7android10AudioTrack5startEv+35
+
+
+10.26.26 22:20:45  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.26.26 22:20:45  reference function: _write_to_error_file
+10.26.26 22:20:45  reference address: a26ce2c1
+10.26.26 22:20:45  Couldn't read map file 'd:\cachebeta.map'
+10.26.26 22:20:45  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.26.26 22:20:45  init: map_name levels\a30\a30
+10.26.26 22:20:46  structure culling: 4296 buckets (subclusters, 3496 split) for 29572 surfaces, 564932 bytes, 33 ms, 0 of 30024 triangles disagree with their vertex normals
+10.26.26 22:20:56  the saved game is taken
+10.26.26 22:22:45  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd64f0
+10.26.26 22:22:45  halo-linux: stack 00000000 bebd6540 703cf3b6 b6f0916f b4878ac0 b4bf9670
+
+
+10.26.26 22:56:35  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.26.26 22:56:35  reference function: _write_to_error_file
+10.26.26 22:56:35  reference address: a26d6351
+10.26.26 22:56:35  Couldn't read map file 'd:\cachebeta.map'
+10.26.26 22:56:35  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.26.26 22:56:35  init: map_name levels\b30\b30
+10.26.26 22:56:36  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 39 ms, 0 of 35370 triangles disagree with their vertex normals
+10.26.26 22:57:43  the saved game is taken
+
+
+10.26.26 22:58:46  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.26.26 22:58:46  reference function: _write_to_error_file
+10.26.26 22:58:46  reference address: a25d4351
+10.26.26 22:58:46  Couldn't read map file 'd:\cachebeta.map'
+10.26.26 22:58:46  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.26.26 22:58:46  init: map_name levels\b30\b30
+10.26.26 22:58:47  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 35 ms, 0 of 35370 triangles disagree with their vertex normals
+10.26.26 22:59:51  the saved game is taken
+10.26.26 23:00:46  last line repeated 3 times
+10.26.26 23:00:46  halo-linux: segmentation fault (signal 11, code 1) at 0x9b0fe000, eip b672f1cc ebp 00000000 esp 9b0fdc48
+10.26.26 23:00:46  halo-linux: stack af9c3880 b67315a3 af9c3880 af9c3a74 00000001 00000000
+10.26.26 23:00:46  halo-linux: pc b672f1cc libmedia.so+4b1cc _ZN7android10AudioTrack22updateAndGetPosition_lEv+f
+10.26.26 23:00:46  halo-linux: lr b67315a2 libmedia.so+4d5a2 _ZN7android10AudioTrack5startEv+35
+
+
+10.26.26 23:00:57  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.26.26 23:00:57  reference function: _write_to_error_file
+10.26.26 23:00:57  reference address: a25c6351
+10.26.26 23:00:57  Couldn't read map file 'd:\cachebeta.map'
+10.26.26 23:00:57  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.26.26 23:00:57  init: map_name levels\a30\a30
+10.26.26 23:00:57  structure culling: 4296 buckets (subclusters, 3496 split) for 29572 surfaces, 564932 bytes, 30 ms, 0 of 30024 triangles disagree with their vertex normals
+10.26.26 23:01:07  the saved game is taken
+10.26.26 23:02:57  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd7020
+10.26.26 23:02:57  halo-linux: stack 00000000 bebd7070 70484388 b6f0916f b4878ac0 a0caa2a0
+
+
+10.26.26 23:21:18  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.26.26 23:21:18  reference function: _write_to_error_file
+10.26.26 23:21:18  reference address: a26d4851
+10.26.26 23:21:18  Couldn't read map file 'd:\cachebeta.map'
+10.26.26 23:21:19  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.26.26 23:21:19  init: map_name levels\b30\b30
+10.26.26 23:21:19  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 49 ms, 0 of 35370 triangles disagree with their vertex normals
+10.26.26 23:21:38  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd7020
+10.26.26 23:21:38  halo-linux: stack 00000000 bebd7070 70484388 b6f0916f b4878ac0 9f457c50
+=== logcat (the app's lines, and crashes)
+10-26 23:20:31.208 14929 14929 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 23:20:31.210 14929 14929 D AndroidRuntime: CheckJNI is OFF
+10-26 23:20:31.266 14929 14929 E android.os.Debug: failed to load memtrack module: -2
+10-26 23:20:31.291 14929 14929 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-26 23:20:31.293 14929 14929 D AndroidRuntime: Shutting down VM
+10-26 23:20:31.738 14953 14953 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 23:20:31.740 14953 14953 D AndroidRuntime: CheckJNI is OFF
+10-26 23:20:31.792 14953 14953 E android.os.Debug: failed to load memtrack module: -2
+10-26 23:20:31.813 14953 14953 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-26 23:20:31.816   548   880 I ActivityManager: START u0 {flg=0x10000000 cmp=com.halo.decomp/.LauncherActivity} from uid 2000 on display 0
+10-26 23:20:31.818   548   880 V WindowManager: addAppToken: AppWindowToken{1508e651 token=Token{32efdf78 ActivityRecord{14f5f8db u0 com.halo.decomp/.LauncherActivity t679}}} to stack=1 task=679 at 0
+10-26 23:20:31.825   548   589 V WindowManager: Adding window Window{44b2590 u0 Starting com.halo.decomp} at 5 of 10 (after Window{205f063e u0 com.alphainventor.filemanager/com.alphainventor.filemanager.activity.MainActivity})
+10-26 23:20:31.829 14953 14953 D AndroidRuntime: Shutting down VM
+10-26 23:20:31.844   548  8493 I ActivityManager: Start proc 14968:com.halo.decomp/u0a112 for activity com.halo.decomp/.LauncherActivity
+10-26 23:20:31.907   548   563 I ActivityManager: START u0 {cmp=com.halo.decomp/.HaloActivity} from uid 10112 on display 0
+10-26 23:20:31.912   548   563 V WindowManager: addAppToken: AppWindowToken{2cff05c1 token=Token{2dd616a8 ActivityRecord{2822cecb u0 com.halo.decomp/.HaloActivity t680}}} to stack=1 task=680 at 0
+10-26 23:20:31.928   548   589 V WindowManager: Adding window Window{1a7b12c0 u0 Starting com.halo.decomp} at 6 of 11 (after Window{44b2590 u0 Starting com.halo.decomp})
+10-26 23:20:31.966   548  1218 I ActivityManager: Start proc 14991:com.halo.decomp:game/u0a112 for activity com.halo.decomp/.HaloActivity
+10-26 23:20:32.004 14991 14991 W linker  : libhalocrash.so: unused DT entry: type 0x6ffffef5 arg 0x314
+10-26 23:20:32.004 14991 14991 W linker  : libhalocrash.so: unused DT entry: type 0x6ffffffe arg 0x2d4
+10-26 23:20:32.004 14991 14991 W linker  : libhalocrash.so: unused DT entry: type 0x6fffffff arg 0x2
+10-26 23:20:32.004 14991 14991 I halo-crash: crash reporter installed
+10-26 23:20:32.004 14991 14991 I halo    : loading SDL3
+10-26 23:20:32.004 14991 14991 W linker  : libSDL3.so: unused DT entry: type 0x6ffffef5 arg 0x6fb8
+10-26 23:20:32.004 14991 14991 W linker  : libSDL3.so: unused DT entry: type 0x6ffffffe arg 0x6f58
+10-26 23:20:32.004 14991 14991 W linker  : libSDL3.so: unused DT entry: type 0x6fffffff arg 0x3
+10-26 23:20:32.014 14991 14991 I halo    : loading main
+10-26 23:20:32.015 14991 14991 W linker  : libmain.so: unused DT entry: type 0x6ffffef5 arg 0x29844
+10-26 23:20:32.015 14991 14991 W linker  : libmain.so: unused DT entry: type 0x6ffffffe arg 0x297c4
+10-26 23:20:32.015 14991 14991 W linker  : libmain.so: unused DT entry: type 0x6fffffff arg 0x4
+10-26 23:20:32.024 14991 14991 I halo    : loaded the native libraries
+10-26 23:20:32.029 14991 14991 V SDL     : Manufacturer: NVIDIA
+10-26 23:20:32.029 14991 14991 V SDL     : Device: roth
+10-26 23:20:32.029 14991 14991 V SDL     : Model: SHIELD
+10-26 23:20:32.029 14991 14991 V SDL     : onCreate()
+10-26 23:20:32.030 14991 14991 V SDL     : nativeSetupJNI()
+10-26 23:20:32.030 14991 14991 V SDL     : AUDIO nativeSetupJNI()
+10-26 23:20:32.030 14991 14991 V SDL     : CONTROLLER nativeSetupJNI()
+10-26 23:20:32.058 14991 14991 V SDL     : onStart()
+10-26 23:20:32.059 14991 14991 V SDL     : onResume()
+10-26 23:20:32.073   548   564 V WindowManager: Adding window Window{252e07a2 u0 com.halo.decomp/com.halo.decomp.HaloActivity} at 6 of 11 (before Window{1a7b12c0 u0 Starting com.halo.decomp})
+10-26 23:20:32.085 14991 15021 D libEGL  : loaded /system/lib/egl/libEGL_tegra.so
+10-26 23:20:32.085 14991 15021 I         : Attempting to load EGL implementation /system/lib/egl/libEGL_tegra_impl
+10-26 23:20:32.087 14991 15021 I         : Loaded EGL implementation /system/lib/egl/libEGL_tegra_impl
+10-26 23:20:32.089 14991 15021 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_tegra.so
+10-26 23:20:32.105 14991 15021 D libEGL  : loaded /system/lib/egl/libGLESv2_tegra.so
+10-26 23:20:32.130 14991 15021 D OpenGLRenderer: Enabling debug mode 0
+10-26 23:20:32.150   548   701 V WindowManager: Adding window Window{1cd8abf0 u0 SurfaceView} at 6 of 12 (before Window{252e07a2 u0 com.halo.decomp/com.halo.decomp.HaloActivity})
+10-26 23:20:32.153 14991 14991 V SDL     : surfaceCreated()
+10-26 23:20:32.153 14991 14991 V SDL     : surfaceChanged()
+10-26 23:20:32.154 14991 14991 V SDL     : Window size: 1280x670
+10-26 23:20:32.154 14991 14991 V SDL     : Device size: 1280x720
+10-26 23:20:32.158 14991 15025 V SDL     : nativeInitSDLThread() 1 time
+10-26 23:20:32.158 14991 15025 V SDL     : Running main function SDL_main from library /data/app/com.halo.decomp-2/lib/arm/libmain.so
+10-26 23:20:32.159 14991 15025 I halo    : Halo for Android (armeabi-v7a) starting
+10-26 23:20:32.159 14991 15025 I halo    : files folder /storage/emulated/0/Android/data/com.halo.decomp/files
+10-26 23:20:32.174 14991 15025 I halo    : at the Xbox window: 80000000-88000000 ---p 00000000 00:00 0 
+10-26 23:20:32.175 14991 15021 E libEGL  : error opening cache file /data/data/com.halo.decomp/cache/com.android.opengl.shaders_cache: Permission denied (13)
+10-26 23:20:32.189 14991 15025 I halo    : the GPU's report: /storage/emulated/0/Android/data/com.halo.decomp/files/gpu.txt
+10-26 23:20:32.191 14991 15025 I halo    : benchmark: HALO_EXIT_AFTER=120
+10-26 23:20:32.191 14991 15025 I halo    : benchmark: HALO_TEST_INPUT=bot:1
+10-26 23:20:32.194 14991 15025 I halo    : benchmark: HALO_FRAME_TIMING=true
+10-26 23:20:32.197 14991 15025 I halo    : benchmark: HALO_SHOW_FPS=true
+10-26 23:20:32.198 14991 15025 I halo    : benchmark: HALO_RENDER_SCALE=1.0
+10-26 23:20:32.198 14991 15025 I halo    : benchmark: HALO_GL_CONTEXT_TEST=true
+10-26 23:20:32.199 14991 15025 I halo    : benchmark: HALO_EXIT_AFTER=20
+10-26 23:20:32.199 14991 15025 I halo    : benchmark: HALO_FRAME_TIMING=false
+10-26 23:20:32.203   548   589 I ActivityManager: Displayed com.halo.decomp/.HaloActivity: +267ms (total +377ms)
+10-26 23:20:32.204 14991 14991 V SDL     : onWindowFocusChanged(): true
+10-26 23:20:32.204 14991 15025 I halo    : display 1280x720: rendering 852x480
+10-26 23:20:32.207 14991 15025 I halo    : data /storage/emulated/0/Android/data/com.halo.decomp/files, saves /storage/emulated/0/Android/data/com.halo.decomp/files/save
+10-26 23:20:32.210 14991 15025 I halo-linux: config.toml line 484 cannot be read (duplicate key), so it is skipped: true and false are lowercase, gl_async_textures = false
+10-26 23:20:32.216 14991 15025 I halo-linux: config.toml line 489 cannot be read (duplicate key), so it is skipped: true and false are lowercase, texture_busy_tracking = false
+10-26 23:20:32.218 14991 15025 I halo-linux: settings: /storage/emulated/0/Android/data/com.halo.decomp/files/config.toml
+10-26 23:20:32.218 14991 15025 I halo-linux: settings: 2 lines of config.toml skipped; every other setting in it is used
+10-26 23:20:32.219 14991 15027 I halo    : starting the game (32-bit ARM, native), stack 16 MB
+10-26 23:20:32.219 14991 15027 I halo-linux: screen: 852x480 drawn at 852x480
+10-26 23:20:32.248 14991 15027 I halo-linux: data root: /storage/emulated/0/Android/data/com.halo.decomp/files (the game's log: debug.txt there)
+10-26 23:20:32.250 14991 15027 V SDL     : setOrientation() requestedOrientation=11 width=1280 height=720 resizable=false hint=LandscapeLeft LandscapeRight
+10-26 23:20:32.251 14991 15027 I halo-linux: no OpenGL ES 3.0 window (Couldn't find matching EGL config (call to eglChooseConfig failed, reporting an error of EGL_SUCCESS)): trying OpenGL ES 2.0
+10-26 23:20:32.252 14991 15027 V SDL     : setOrientation() requestedOrientation=11 width=1280 height=720 resizable=false hint=LandscapeLeft LandscapeRight
+10-26 23:20:32.258 14991 15027 I SDL/APP : pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+10-26 23:20:32.267 14991 14991 V SDL     : surfaceChanged()
+10-26 23:20:32.268 14991 14991 V SDL     : Window size: 1280x720
+10-26 23:20:32.268 14991 14991 V SDL     : Device size: 1280x720
+10-26 23:20:32.271 14991 15027 I halo-linux: OpenGL ES 2.0: 2 of the renderer's OpenGL ES 3.0 functions are missing
+10-26 23:20:32.272 14991 15027 I halo-linux: OpenGL ES 2.0: the renderer's ES 3.0 calls by extensions and emulation (0 extension functions missing)
+10-26 23:20:33.554 14991 15027 I halo-linux: gl context test: one thread alone (A): 3000 draws in 167.4 ms, 55.8 us a draw
+10-26 23:20:34.530 14991 15027 I halo-linux: gl context test: two unshared contexts at once (A and B): both threads' 3000 draws done in 276.9 ms (276.8 and 240.7 ms each, 92.3 us a draw each); speedup 1.21 over one thread doing both (2 parallel, 1 one after the other), 4 processors online
+10-26 23:20:35.890 14991 15027 I halo-linux: gl context test: two contexts sharing objects at once (A and C): both threads' 3000 draws done in 435.4 ms (435.4 and 384.8 ms each, 145.1 us a draw each); speedup 0.77 over one thread doing both (2 parallel, 1 one after the other), 4 processors online
+10-26 23:20:36.062 14991 15027 I halo-linux: gl context test: one thread alone again: 172.3 ms (the first 167.4)
+10-26 23:20:36.730 14991 15027 I halo-linux: gl draw cost test: all of it (a program change, 16 uniform vectors, 2 textures, a 7 KB upload into a shared buffer, 3 pointers, 300 vertices): 54.4 us a draw
+10-26 23:20:37.309 14991 15027 I halo-linux: gl draw cost test: no program change: 47.5 us a draw
+10-26 23:20:37.925 14991 15027 I halo-linux: gl draw cost test: a program change every 8th draw: 47.6 us a draw
+10-26 23:20:38.510 14991 15027 I halo-linux: gl draw cost test: the draws sorted by program (4 changes in all): 47.5 us a draw
+10-26 23:20:39.154 14991 15027 I halo-linux: gl draw cost test: no uniforms: 53.3 us a draw
+10-26 23:20:39.826 14991 15027 I halo-linux: gl draw cost test: 64 uniform vectors, not 16: 55.2 us a draw
+10-26 23:20:40.574 14991 15027 I halo-linux: gl draw cost test: no texture binds: 52.3 us a draw
+10-26 23:20:41.188 14991 15027 I halo-linux: gl draw cost test: no upload (the vertices already there): 48.9 us a draw
+10-26 23:20:41.520 14991 15027 I halo-linux: gl draw cost test: each upload into a buffer of its own (64 of them, round): 27.2 us a draw
+10-26 23:20:42.162 14991 15027 I halo-linux: gl draw cost test: the shared buffer orphaned at each wrap: 51.6 us a draw
+10-26 23:20:42.800 14991 15027 I halo-linux: gl draw cost test: the vertices from memory (client arrays, no buffer): 51.4 us a draw
+10-26 23:20:43.431 14991 15027 I halo-linux: gl draw cost test: no upload, no pointers: 52.2 us a draw
+10-26 23:20:43.696 14991 15027 I halo-linux: gl draw cost test: 60 vertices, not 300: 21.4 us a draw
+10-26 23:20:44.182 14991 15027 I halo-linux: gl draw cost test: the draw alone (nothing changed before it): 39.6 us a draw
+10-26 23:20:44.865 14991 15027 I halo-linux: gl buffer test: one 512 KB stream buffer: 56.0 us a draw
+10-26 23:20:45.567 14991 15027 I halo-linux: gl buffer test: one 512 KB dynamic buffer: 57.6 us a draw
+10-26 23:20:46.167 14991 15027 I halo-linux: gl buffer test: one 512 KB static buffer: 48.7 us a draw
+10-26 23:20:46.902 14991 15027 I halo-linux: gl buffer test: one 16 MB stream buffer (the game's): 52.1 us a draw
+10-26 23:20:47.646 14991 15027 I halo-linux: gl buffer test: one 16 MB dynamic buffer: 52.4 us a draw
+10-26 23:20:47.847 14991 15027 I halo-linux: gl buffer test: one 16 MB stream buffer, no uploads: 13.1 us a draw
+10-26 23:20:48.176 14991 15027 I halo-linux: gl buffer test: 64 buffers of 8 KB, stream: 25.4 us a draw
+10-26 23:20:48.489 14991 15027 I halo-linux: gl buffer test: 64 buffers of 8 KB, dynamic: 25.4 us a draw
+10-26 23:20:48.683 14991 15027 I halo-linux: gl buffer test: 64 buffers of 8 KB, no uploads: 14.1 us a draw
+10-26 23:20:48.979 14991 15027 I halo-linux: gl buffer test: 256 buffers of 8 KB, stream: 23.6 us a draw
+10-26 23:20:49.598 14991 15027 I halo-linux: gl buffer test: 16 buffers of 64 KB, stream: 49.5 us a draw
+10-26 23:20:50.297 14991 15027 I halo-linux: gl buffer test: 8 buffers of 256 KB, stream: 51.1 us a draw
+10-26 23:20:51.055 14991 15027 I halo-linux: gl buffer test: 4 buffers of 1 MB, stream: 60.2 us a draw
+10-26 23:20:51.266 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; static vertices and indices: 14.2 us a draw
+10-26 23:20:51.539 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; indices uploaded each draw into a 2 MB buffer: 16.9 us a draw
+10-26 23:20:51.858 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; indices uploaded each draw into a 4 KB buffer of their own: 21.9 us a draw
+10-26 23:20:52.209 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; 7 KB written into another 16 MB buffer each draw: 23.0 us a draw
+10-26 23:20:52.538 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; 7 KB written into another 8 KB buffer each draw: 22.7 us a draw
+10-26 23:20:52.758 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; attributes not aligned for four: 13.9 us a draw
+10-26 23:20:53.069 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; attributes not aligned, indices into 4 KB buffers: 21.4 us a draw
+10-26 23:20:53.318 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; attributes not aligned, indices into a 2 MB buffer: 15.8 us a draw
+10-26 23:20:53.610 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; indices into a 2 MB buffer; the game-sized programs (192 vertex constants, 32 a draw; 4 samplers, 8 fragment constants): 19.7 us a draw
+10-26 23:20:53.889 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; indices into a 2 MB buffer; 4 textures bound: 18.2 us a draw
+10-26 23:20:54.162 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; indices into a 2 MB buffer; 2 textures, their filtering and wrapping set each draw: 18.1 us a draw
+10-26 23:20:54.491 14991 15027 I halo-linux: gl source test: vertices in a 16 MB buffer never written; indices into a 2 MB buffer; game-sized programs, 4 textures, their filtering and wrapping each draw: 22.8 us a draw
+10-26 23:20:54.818 14991 15027 I halo-linux: gl fill test: the game-shaped draw: 22.5 us a draw making the calls, 22.7 with the GPU done
+10-26 23:20:55.212 14991 15027 I halo-linux: gl fill test: the game-shaped draw, raster state changed as the game's (blend, enables, cull, depth mask): 26.9 us a draw making the calls, 27.1 with the GPU done
+10-26 23:20:55.541 14991 15027 I halo-linux: gl fill test: triangles over a quarter of 64x64 (266 quads, 1596 indices): 22.0 us a draw making the calls, 22.3 with the GPU done
+10-26 23:20:55.865 14991 15027 I halo-linux: gl fill test: the same over a quarter of 128x128: 21.7 us a draw making the calls, 21.9 with the GPU done
+10-26 23:20:56.187 14991 15027 I halo-linux: gl fill test: the same over a quarter of 256x240: 21.6 us a draw making the calls, 21.8 with the GPU done
+10-26 23:20:56.509 14991 15027 I halo-linux: gl fill test: the same over a quarter of 426x240 (render scale 0.5): 21.8 us a draw making the calls, 21.9 with the GPU done
+10-26 23:20:56.819 14991 15027 I halo-linux: gl fill test: the same over a quarter of 852x480 (the game's picture): 20.5 us a draw making the calls, 20.7 with the GPU done
+10-26 23:20:57.189 14991 15027 I halo-linux: gl fill test: the same, 852x480, raster state changed as the game's: 25.9 us a draw making the calls, 26.2 with the GPU done
+10-26 23:20:57.524 14991 15027 I halo-linux: gl geometry test: zero vertices (no area), the strip: 22.0 us a draw making the calls, 22.3 with the GPU done
+10-26 23:20:57.851 14991 15027 I halo-linux: gl geometry test: the grid's vertices, the strip: 22.1 us a draw making the calls, 22.3 with the GPU done
+10-26 23:20:58.168 14991 15027 I halo-linux: gl geometry test: zero vertices, the quads: 21.5 us a draw making the calls, 21.7 with the GPU done
+10-26 23:20:58.745 14991 15027 I halo-linux: gl geometry test: the grid's quads, 64x64: 40.6 us a draw making the calls, 41.8 with the GPU done
+10-26 23:20:59.067 14991 15027 I halo-linux: gl geometry test: the grid's quads off the screen (clipped away): 21.8 us a draw making the calls, 22.0 with the GPU done
+10-26 23:21:00.154 14991 15027 I halo-linux: gl geometry test: the grid's quads, 426x240: 81.8 us a draw making the calls, 83.8 with the GPU done
+10-26 23:21:03.067 14991 15027 I halo-linux: gl geometry test: the grid's quads, 852x480: 228.7 us a draw making the calls, 234.1 with the GPU done
+10-26 23:21:03.405 14991 15027 I halo-linux: gl geometry test: the grid's quads, 64x64, the small programs (16 vertex constants, 2 samplers): 18.5 us a draw making the calls, 18.8 with the GPU done
+10-26 23:21:03.692 14991 15027 I halo-linux: gl geometry test: the grid's quads off the screen, the small programs: 19.6 us a draw making the calls, 19.8 with the GPU done
+10-26 23:21:04.267 14991 15027 I halo-linux: gl overlap test: 64x64, static indices: 40.6 us a draw making the calls, 41.8 with the GPU done
+10-26 23:21:04.853 14991 15027 I halo-linux: gl overlap test: 64x64, the processor 10 us busier a draw: 41.2 us a draw making the calls, 42.2 with the GPU done
+10-26 23:21:05.473 14991 15027 I halo-linux: gl overlap test: 64x64, 20 us busier: 43.0 us a draw making the calls, 43.9 with the GPU done
+10-26 23:21:05.772 14991 15027 I halo-linux: gl overlap test: off the screen, static indices: 20.1 us a draw making the calls, 20.3 with the GPU done
+10-26 23:21:06.210 14991 15027 I halo-linux: gl overlap test: off the screen, 10 us busier: 31.7 us a draw making the calls, 32.0 with the GPU done
+10-26 23:21:06.781 14991 15027 I halo-linux: gl overlap test: off the screen, 20 us busier: 42.3 us a draw making the calls, 42.5 with the GPU done
+10-26 23:21:07.493 14991 15027 I halo-linux: gl overlap test: 64x64, indices uploaded into a 2 MB buffer each draw: 52.5 us a draw making the calls, 52.7 with the GPU done
+10-26 23:21:08.175 14991 15027 I halo-linux: gl overlap test: 64x64, indices uploaded into a 4 KB buffer of their own: 49.6 us a draw making the calls, 50.2 with the GPU done
+10-26 23:21:08.892 14991 15027 I halo-linux: gl overlap test: 64x64, indices from memory: 51.9 us a draw making the calls, 52.1 with the GPU done
+10-26 23:21:09.167 14991 15027 I halo-linux: gl overlap test: off the screen, small programs, static indices: 17.9 us a draw making the calls, 18.2 with the GPU done
+10-26 23:21:09.608 14991 15027 I halo-linux: gl overlap test: off the screen, small programs, indices into a 2 MB buffer: 31.8 us a draw making the calls, 31.9 with the GPU done
+10-26 23:21:10.029 14991 15027 I halo-linux: gl overlap test: off the screen, small programs, indices into 4 KB buffers: 30.3 us a draw making the calls, 30.5 with the GPU done
+10-26 23:21:10.433 14991 15027 I halo-linux: gl overlap test: off the screen, small programs, indices from memory: 28.8 us a draw making the calls, 28.8 with the GPU done
+10-26 23:21:10.723 14991 15027 I halo-linux: gl overlap test: 64x64, small programs, static indices: 18.2 us a draw making the calls, 18.5 with the GPU done
+10-26 23:21:11.203 14991 15027 I halo-linux: gl overlap test: 64x64, small programs, indices into a 2 MB buffer: 33.7 us a draw making the calls, 33.8 with the GPU done
+10-26 23:21:11.634 14991 15027 I halo-linux: gl overlap test: 64x64, small programs, indices from memory: 30.1 us a draw making the calls, 30.2 with the GPU done
+10-26 23:21:12.208 14991 15027 I halo-linux: gl overlap test: 64x64, static indices, 600 bytes uploaded into the 2 MB buffer each draw, not read: 40.4 us a draw making the calls, 41.6 with the GPU done
+10-26 23:21:12.782 14991 15027 I halo-linux: gl overlap test: 64x64, static indices, 3.2 KB uploaded, not read: 40.3 us a draw making the calls, 41.6 with the GPU done
+10-26 23:21:13.125 14991 15027 I halo-linux: gl overlap test: off the screen, small programs, 600 bytes uploaded, not read: 18.1 us a draw making the calls, 18.4 with the GPU done
+10-26 23:21:13.421 14991 15027 I halo-linux: gl overlap test: off the screen, small programs, 3.2 KB uploaded, not read: 19.9 us a draw making the calls, 20.1 with the GPU done
+10-26 23:21:13.691 14991 15027 I halo-linux: gl program test: 1 programs (1 made), changed every  draw: 16.4 us a draw making the calls, 16.6 with the GPU done
+10-26 23:21:14.032 14991 15027 I halo-linux: gl program test: 4 programs (4 made), changed every  draw: 20.5 us a draw making the calls, 20.8 with the GPU done
+10-26 23:21:14.503 14991 15027 I halo-linux: gl program test: 16 programs (16 made), changed every  draw: 21.5 us a draw making the calls, 21.8 with the GPU done
+10-26 23:21:15.025 14991 15027 I halo-linux: gl program test: 32 programs (32 made), changed every  draw: 22.6 us a draw making the calls, 22.8 with the GPU done
+10-26 23:21:15.754 14991 15027 I halo-linux: gl program test: 64 programs (64 made), changed every  draw: 24.1 us a draw making the calls, 24.3 with the GPU done
+10-26 23:21:16.487 14991 15027 I halo-linux: gl program test: 96 programs (96 made), changed every  draw: 24.3 us a draw making the calls, 24.5 with the GPU done
+10-26 23:21:17.242 14991 15027 I halo-linux: gl program test: 128 programs (128 made), changed every  draw: 25.4 us a draw making the calls, 25.6 with the GPU done
+10-26 23:21:17.975 14991 15027 I halo-linux: gl program test: 160 programs (160 made), changed every  draw: 25.1 us a draw making the calls, 25.3 with the GPU done
+10-26 23:21:18.264 14991 15027 I halo-linux: gl program test: 4 programs (4 made), changed every third draw: 18.1 us a draw making the calls, 18.2 with the GPU done
+10-26 23:21:18.548 14991 15027 I halo-linux: gl program test: 64 programs (64 made), changed every third draw: 18.8 us a draw making the calls, 19.0 with the GPU done
+10-26 23:21:18.836 14991 15027 I halo-linux: gl program test: 160 programs (160 made), changed every third draw: 19.2 us a draw making the calls, 19.4 with the GPU done
+10-26 23:21:18.879 14991 15027 I halo-linux: debug.gl_queue: the OpenGL calls recorded, and done in order where they must be
+10-26 23:21:18.880 14991 15027 I halo-linux: debug.gl_async_textures: textures and buffers named from names the GL thread made ahead, texture uploads recorded with a copy of their texels
+10-26 23:21:18.880 14991 15027 I halo-linux: OpenGL OpenGL ES 2.0 17.01214 on NVIDIA Tegra
+10-26 23:21:18.881 14991 15027 I halo-linux: OpenGL ES 0.0: copy image 0, border clamp 0, anisotropy 1, S3TC 1, sample counting 0, base vertex 0 (none), half float targets 1
+10-26 23:21:18.887 14991 15027 I halo-linux: anti-aliasing: off
+10-26 23:21:18.888 14991 15027 I halo-linux: debug.deferred_draws: the game's Direct3D calls are recorded and replayed at the points that need them done
+10-26 23:21:18.895 14991 15027 I halo-linux: gamepad: NVIDIA Controller v01.01 (standard)
+10-26 23:21:18.906 14991 15027 I halo-linux: save root: /storage/emulated/0/Android/data/com.halo.decomp/files/save
+10-26 23:21:18.943 14991 15027 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-26 23:21:18.947 14991 15027 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-26 23:21:18.951 14991 15027 I halo-linux: map d:\maps\.map (/storage/emulated/0/Android/data/com.halo.decomp/files/maps/.map) cannot be opened: error 2
+10-26 23:21:18.966 14991 15027 I halo-linux: debug.render_thread: the deferred draws are replayed on a thread of their own, the game's going on as it draws (debug.render_thread_async)
+10-26 23:21:18.979 14991 15027 I halo-linux: sound: stereo
+10-26 23:21:19.378 14991 15027 I halo-linux: menus: the pause menu has SETTINGS
+10-26 23:21:19.378 14991 15027 I halo-linux: menus: 1143 widgets, 282 string lists and 100 bitmaps added to the map's 3325 tags
+10-26 23:21:19.382 14991 15027 I halo-linux: high-res hud: 60 of 135 bitmaps in this map, 1 for some of their sprites (75 not in it)
+10-26 23:21:19.541 14991 15027 I halo-linux: textures: converted ahead, on a thread of their own (debug.texture_preconvert)
+10-26 23:21:19.574 14991 15027 I halo-linux: model detail: stock
+10-26 23:21:19.575 14991 15394 I halo-linux: debug.gl_thread: the queued OpenGL calls done on a thread of their own, which holds the context (its waits spun: debug.spin_waits)
+10-26 23:21:19.585 14991 15394 I halo-linux: anisotropic filtering: 1x (the GPU's most 15x)
+10-26 23:21:28.671 14991 15394 I halo-linux: shader warm-up: levels\b30\b30: 676 programs, 676 linked now, in 8519 ms
+10-26 23:21:31.595 14991 15027 I halo-linux: texture busy tracking: 4139 textures asked about in ten seconds: 4094 not busy, 0 waited for their last draws' replay, 45 with this frame's draws handed over and replayed (962.0 ms waited in all)
+10-26 23:21:33.062 14991 15027 I halo-linux: shadow maps: 128x128
+10-26 23:21:34.178 14991 15027 I halo-linux: texture: vehicles\warthog\bitmaps\headlight flares (stage 0, usage 1): not loaded yet, type 0 of 0, format 14, 64x64, 6 mipmaps
+10-26 23:21:37.570 14991 15394 I halo-linux: frame rate: 26 frames a second over the last ten seconds; 42 of 262 frames longer than 34 ms, the longest 9193.9 ms
+10-26 23:21:37.572 14991 15394 I halo-linux: thermal: cpu0 1912/0 MHz, cpu1 1912/1912 MHz, cpu2 1912/1912 MHz, cpu3 1912/1912 MHz
+10-26 23:21:38.900 14991 15027 I halo-linux: exiting after debug.exit_after
+10-26 23:21:38.960   548  4492 I WindowState: WIN DEATH: Window{252e07a2 u0 com.halo.decomp/com.halo.decomp.HaloActivity}
+10-26 23:21:38.960   548  4492 W WindowManager: Force-removing child win Window{1cd8abf0 u0 SurfaceView} from container Window{252e07a2 u0 com.halo.decomp/com.halo.decomp.HaloActivity}
+10-26 23:21:39.075   548 29793 I ActivityManager: Process com.halo.decomp:game (pid 14991) has died
+10-26 23:21:39.077   548 29793 W ActivityManager: Force removing ActivityRecord{2822cecb u0 com.halo.decomp/.HaloActivity t680}: app died, no saved state
+10-26 23:21:39.164 15653 15653 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 23:21:39.167 15653 15653 D AndroidRuntime: CheckJNI is OFF
+10-26 23:21:39.228 15653 15653 E android.os.Debug: failed to load memtrack module: -2
+10-26 23:21:39.256 15653 15653 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-26 23:21:39.258   548   883 I ActivityManager: Force stopping com.halo.decomp appid=10112 user=0: from pid 15653
+10-26 23:21:39.258   548   883 I ActivityManager: Killing 14968:com.halo.decomp/u0a112 (adj 9): stop com.halo.decomp
+10-26 23:21:39.273   548 29793 W ActivityManager: Spurious death for ProcessRecord{ae17d86 14968:com.halo.decomp/u0a112}, curProc for 14968: null
+10-26 23:21:39.273 15653 15653 D AndroidRuntime: Shutting down VM
