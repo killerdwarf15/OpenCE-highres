@@ -1,0 +1,407 @@
+﻿=== benchmark 20261028-155524: level b30, 120 s, settings: HALO_EXIT_AFTER=120; HALO_TEST_INPUT=bot:1; HALO_FRAME_TIMING=true; HALO_SHOW_FPS=true; HALO_RENDER_SCALE=1.0; HALO_GL_ASYNC_TEXTURES=true; HALO_TEXTURE_BUSY_TRACKING=true; HALO_FRAME_TIMING=false; HALO_ASYNC_SAVES=true; HALO_LATENCY_QUEUE=true; HALO_THREAD_PRIORITY=true; HALO_HS_GLOBALS=rasterizer_environment_reflections=false
+=== device: SHIELD  / Android 5.1 
+=== startup.txt
+Halo (armeabi-v7a) Oct 28 2026 20:41:45: library loaded, process com.halo.decomp, Wed Oct 28 16:54:59 2026
+Halo for Android (armeabi-v7a) starting
+files folder /storage/emulated/0/Android/data/com.halo.decomp/files
+at the Xbox window: 80000000-88000000 ---p 00000000 00:00 0 
+the GPU's report: /storage/emulated/0/Android/data/com.halo.decomp/files/gpu.txt
+benchmark: HALO_EXIT_AFTER=120
+benchmark: HALO_TEST_INPUT=bot:1
+benchmark: HALO_FRAME_TIMING=true
+benchmark: HALO_SHOW_FPS=true
+benchmark: HALO_RENDER_SCALE=1.0
+benchmark: HALO_GL_ASYNC_TEXTURES=true
+benchmark: HALO_TEXTURE_BUSY_TRACKING=true
+benchmark: HALO_FRAME_TIMING=false
+benchmark: HALO_ASYNC_SAVES=true
+benchmark: HALO_LATENCY_QUEUE=true
+benchmark: HALO_THREAD_PRIORITY=true
+benchmark: HALO_HS_GLOBALS=rasterizer_environment_reflections=false
+display 1280x720: rendering 852x480
+data /storage/emulated/0/Android/data/com.halo.decomp/files, saves /storage/emulated/0/Android/data/com.halo.decomp/files/save
+halo-linux: config.toml line 577: unknown setting debug.warm_zero_uniforms, ignored
+halo-linux: settings: /storage/emulated/0/Android/data/com.halo.decomp/files/config.toml
+starting the game (32-bit ARM, native), stack 16 MB
+halo-linux: screen: 852x480 drawn at 852x480
+halo-linux: data root: /storage/emulated/0/Android/data/com.halo.decomp/files (the game's log: debug.txt there)
+halo-linux: no OpenGL ES 3.0 window (Couldn't find matching EGL config (call to eglChooseConfig failed, reporting an error of EGL_SUCCESS)): trying OpenGL ES 2.0
+pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+halo-linux: OpenGL ES 2.0: 2 of the renderer's OpenGL ES 3.0 functions are missing
+halo-linux: OpenGL ES 2.0: the renderer's ES 3.0 calls by extensions and emulation (0 extension functions missing)
+halo-linux: debug.gl_queue: the OpenGL calls recorded, and done in order where they must be
+halo-linux: debug.gl_async_textures: textures and buffers named from names the GL thread made ahead, texture uploads recorded with a copy of their texels
+halo-linux: OpenGL OpenGL ES 2.0 17.01214 on NVIDIA Tegra
+halo-linux: OpenGL ES 0.0: copy image 0, border clamp 0, anisotropy 1, S3TC 1, sample counting 0, base vertex 0 (none), half float targets 1
+halo-linux: anti-aliasing: off
+halo-linux: debug.deferred_draws: the game's Direct3D calls are recorded and replayed at the points that need them done
+halo-linux: gamepad: NVIDIA Controller v01.01 (standard)
+halo-linux: Internet play is off (network.online in config.toml): the invite is ignored
+halo-linux: save root: /storage/emulated/0/Android/data/com.halo.decomp/files/save
+halo-linux: debug.render_thread: the deferred draws are replayed on a thread of their own, the game's going on as it draws (debug.render_thread_async)
+halo-linux: debug.thread_priority: the render thread's nice -6 (was -4)
+halo-linux: sound: stereo
+halo-linux: Internet play: this machine's public address is addr#1f8896:42592 (from stun.l.google.com)
+halo-linux: Internet play: this machine's public address is addr#1f8896:42592 (from stun.cloudflare.com)
+halo-linux: Internet play: joining 8a5f96c13f5f's game
+halo-linux: menus: the pause menu has SETTINGS
+halo-linux: menus: 1143 widgets, 282 string lists and 100 bitmaps added to the map's 3325 tags
+halo-linux: high-res hud: 60 of 135 bitmaps in this map, 1 for some of their sprites (75 not in it)
+halo-linux: textures: converted ahead, on a thread of their own (debug.texture_preconvert)
+halo-linux: debug.thread_priority: the game thread's nice -6 (was -4)
+halo-linux: debug.hs_globals: rasterizer_environment_reflections = false
+halo-linux: model detail: stock
+halo-linux: debug.gl_thread: the queued OpenGL calls done on a thread of their own, which holds the context (its waits spun: debug.spin_waits)
+halo-linux: debug.thread_priority: the GL thread's nice -10 (was -6)
+halo-linux: anisotropic filtering: 1x (the GPU's most 15x)
+halo-linux: OpenGL ES 2.0: a render target copied into level 0 (128x128) of texture 130: done (0x0)
+halo-linux: OpenGL ES 2.0: a render target copied into level 1 (64x64) of texture 130: done (0x0)
+halo-linux: OpenGL ES 2.0: a render target copied into level 2 (32x32) of texture 130: done (0x0)
+halo-linux: OpenGL ES 2.0: a render target copied into level 3 (16x16) of texture 130: done (0x0)
+halo-linux: latency: EGL fences (EGL_KHR_fence_sync) there
+halo-linux: Internet play: UPnP: no UPnP router on this network
+halo-linux: shader warm-up: levels\b30\b30: 1661 programs, 1639 linked now, in 18562 ms
+halo-linux: texture busy tracking: 4290 textures asked about in ten seconds: 4246 not busy, 0 waited for their last draws' replay, 44 with this frame's draws handed over and replayed (2263.3 ms waited in all)
+halo-linux: shadow maps: 128x128
+halo-linux: texture: vehicles\warthog\bitmaps\headlight flares (stage 0, usage 1): not loaded yet, type 0 of 0, format 14, 64x64, 6 mipmaps
+halo-linux: frame rate: 21 frames a second over the last ten seconds; 55 of 216 frames longer than 34 ms, the longest 18628.0 ms
+halo-linux: frame times (these ten seconds, 215 frames): average 6.7 fps (149.2 ms); 1% low 0.1 fps, 0.1% low 0.1 fps; 99th percentile 5270.1 ms, 99.9th 18628.0 ms, the longest 18628.0 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: high-res text: ui\large_ui (capitals 13 units) drawn with Overpass-900.ttf, 98% wide
+halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 73.0 ms, median 54.4, 99th percentile 241.6, the longest 3289.7
+halo-linux: latency (input to the GPU's finishing it, at most, queue only, 299 frames): average 172.5 ms, median 87.7, 99th percentile 442.9, the longest 22049.1
+halo-linux: texture busy tracking: 12665 textures asked about in ten seconds: 12650 not busy, 3 waited for their last draws' replay, 12 with this frame's draws handed over and replayed (295.2 ms waited in all)
+halo-linux: frame rate: 29 frames a second over the last ten seconds; 48 of 299 frames longer than 34 ms, the longest 96.1 ms
+halo-linux: frame times (these ten seconds, 299 frames): average 29.7 fps (33.7 ms); 1% low 10.6 fps, 0.1% low 10.4 fps; 99th percentile 93.2 ms, 99.9th 96.1 ms, the longest 96.1 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 54.2 ms, median 53.9, 99th percentile 60.7, the longest 67.7
+halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 87.5 ms, median 87.2, 99th percentile 94.2, the longest 100.4
+halo-linux: frame rate: 29 frames a second over the last ten seconds; 78 of 297 frames longer than 34 ms, the longest 97.5 ms
+halo-linux: frame times (these ten seconds, 297 frames): average 29.4 fps (34.0 ms); 1% low 10.4 fps, 0.1% low 10.3 fps; 99th percentile 95.2 ms, 99.9th 97.5 ms, the longest 97.5 ms
+halo-linux: frame times (the run since 20 s, 297 frames): average 29.4 fps (34.0 ms); 1% low 10.4 fps, 0.1% low 10.3 fps; 99th percentile 95.2 ms, 99.9th 97.5 ms, the longest 97.5 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: texture busy tracking: 4094 textures asked about in ten seconds: 4074 not busy, 7 waited for their last draws' replay, 13 with this frame's draws handed over and replayed (104.2 ms waited in all)
+halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 66.5 ms, median 61.4, 99th percentile 146.7, the longest 188.1
+halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 103.2 ms, median 94.5, 99th percentile 198.3, the longest 263.4
+halo-linux: debug.async_saves: checkpoints copied aside and written by a thread of their own (20480 KB)
+halo-linux: frame rate: 23 frames a second over the last ten seconds; 208 of 234 frames longer than 34 ms, the longest 186.7 ms
+halo-linux: frame times (these ten seconds, 234 frames): average 23.0 fps (43.6 ms); 1% low 6.3 fps, 0.1% low 5.4 fps; 99th percentile 132.5 ms, 99.9th 186.7 ms, the longest 186.7 ms
+halo-linux: frame times (the run since 20 s, 531 frames): average 26.2 fps (38.2 ms); 1% low 7.7 fps, 0.1% low 5.4 fps; 99th percentile 97.5 ms, 99.9th 186.7 ms, the longest 186.7 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: texture busy tracking: 13890 textures asked about in ten seconds: 13845 not busy, 10 waited for their last draws' replay, 35 with this frame's draws handed over and replayed (945.4 ms waited in all)
+halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 91.4 ms, median 86.3, 99th percentile 168.9, the longest 247.9
+halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 138.4 ms, median 132.9, 99th percentile 242.4, the longest 313.5
+halo-linux: frame rate: 22 frames a second over the last ten seconds; 216 of 223 frames longer than 34 ms, the longest 112.4 ms
+halo-linux: frame times (these ten seconds, 223 frames): average 21.8 fps (45.9 ms); 1% low 9.3 fps, 0.1% low 8.9 fps; 99th percentile 103.5 ms, 99.9th 112.4 ms, the longest 112.4 ms
+halo-linux: frame times (the run since 20 s, 754 frames): average 24.7 fps (40.5 ms); 1% low 8.1 fps, 0.1% low 5.4 fps; 99th percentile 97.5 ms, 99.9th 186.7 ms, the longest 186.7 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic2 (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+halo-linux: texture busy tracking: 10428 textures asked about in ten seconds: 10393 not busy, 13 waited for their last draws' replay, 22 with this frame's draws handed over and replayed (609.2 ms waited in all)
+halo-linux: frame rate: 22 frames a second over the last ten seconds; 189 of 229 frames longer than 34 ms, the longest 137.5 ms
+halo-linux: frame times (these ten seconds, 229 frames): average 22.4 fps (44.7 ms); 1% low 7.3 fps, 0.1% low 7.3 fps; 99th percentile 136.9 ms, 99.9th 137.5 ms, the longest 137.5 ms
+halo-linux: frame times (the run since 20 s, 983 frames): average 24.1 fps (41.5 ms); 1% low 7.8 fps, 0.1% low 5.4 fps; 99th percentile 103.5 ms, 99.9th 186.7 ms, the longest 186.7 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 82.2 ms, median 81.2, 99th percentile 170.0, the longest 211.8
+halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 125.3 ms, median 123.7, 99th percentile 242.2, the longest 267.7
+halo-linux: texture: effects\particles\lens flare\bitmaps\flares pr overcharge (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 32x32, 5 mipmaps
+halo-linux: texture busy tracking: 951 textures asked about in ten seconds: 947 not busy, 1 waited for their last draws' replay, 3 with this frame's draws handed over and replayed (49.3 ms waited in all)
+halo-linux: Internet play: no answer from the invite's host; it may have stopped hosting or quit
+halo-linux: frame rate: 25 frames a second over the last ten seconds; 218 of 255 frames longer than 34 ms, the longest 61.6 ms
+halo-linux: frame times (these ten seconds, 255 frames): average 25.0 fps (39.9 ms); 1% low 17.4 fps, 0.1% low 16.2 fps; 99th percentile 53.2 ms, 99.9th 61.6 ms, the longest 61.6 ms
+halo-linux: frame times (the run since 20 s, 1238 frames): average 24.3 fps (41.2 ms); 1% low 8.3 fps, 0.1% low 5.4 fps; 99th percentile 95.2 ms, 99.9th 186.7 ms, the longest 186.7 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 78.7 ms, median 79.1, 99th percentile 103.7, the longest 110.1
+halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 119.4 ms, median 119.3, 99th percentile 153.1, the longest 157.9
+halo-linux: frame rate: 23 frames a second over the last ten seconds; 230 of 232 frames longer than 34 ms, the longest 69.7 ms
+halo-linux: frame times (these ten seconds, 232 frames): average 22.8 fps (43.9 ms); 1% low 14.6 fps, 0.1% low 14.3 fps; 99th percentile 67.1 ms, 99.9th 69.7 ms, the longest 69.7 ms
+halo-linux: frame times (the run since 20 s, 1470 frames): average 24.0 fps (41.6 ms); 1% low 8.6 fps, 0.1% low 5.4 fps; 99th percentile 86.9 ms, 99.9th 186.7 ms, the longest 186.7 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: texture busy tracking: 2254 textures asked about in ten seconds: 2249 not busy, 2 waited for their last draws' replay, 3 with this frame's draws handed over and replayed (57.8 ms waited in all)
+halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 81.1 ms, median 79.8, 99th percentile 119.5, the longest 134.9
+halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 123.4 ms, median 121.1, 99th percentile 181.6, the longest 190.7
+halo-linux: frame rate: 23 frames a second over the last ten seconds; 185 of 230 frames longer than 34 ms, the longest 83.5 ms
+halo-linux: frame times (these ten seconds, 230 frames): average 22.6 fps (44.3 ms); 1% low 12.5 fps, 0.1% low 12.0 fps; 99th percentile 76.6 ms, 99.9th 83.5 ms, the longest 83.5 ms
+halo-linux: frame times (the run since 20 s, 1700 frames): average 23.8 fps (42.0 ms); 1% low 9.1 fps, 0.1% low 5.4 fps; 99th percentile 82.2 ms, 99.9th 186.7 ms, the longest 186.7 ms
+halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+halo-linux: exiting after debug.exit_after
+=== debug.txt (its last 80 lines)
+
+
+10.28.26 16:27:56  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.28.26 16:27:56  reference function: _write_to_error_file
+10.28.26 16:27:56  reference address: a23a9eb1
+10.28.26 16:27:56  Couldn't read map file 'd:\cachebeta.map'
+10.28.26 16:27:56  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.28.26 16:27:56  init: map_name levels\b30\b30
+10.28.26 16:27:57  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 37 ms, 0 of 35370 triangles disagree with their vertex normals
+10.28.26 16:29:16  the saved game is taken
+
+
+10.28.26 16:44:07  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.28.26 16:44:07  reference function: _write_to_error_file
+10.28.26 16:44:07  reference address: a23ad111
+10.28.26 16:44:07  Couldn't read map file 'd:\cachebeta.map'
+10.28.26 16:44:07  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.28.26 16:44:07  init: map_name levels\b30\b30
+10.28.26 16:44:08  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 36 ms, 0 of 35370 triangles disagree with their vertex normals
+10.28.26 16:45:24  the saved game is taken
+10.28.26 16:46:07  last line repeated 2 times
+10.28.26 16:46:07  halo-linux: segmentation fault (signal 11, code 1) at 0x70, eip b6e79e5c ebp 00000200 esp 9a8fdb98
+10.28.26 16:46:07  halo-linux: stack a4fce0bc 00000060 a4fce0b8 b6e7626f a4fce0bc 9a8fdc10
+10.28.26 16:46:07  halo-linux: pc b6e79e5c libbinder.so+22e5c _ZN7android6Parcel12writeAlignedIiEEiT_+3
+10.28.26 16:46:07  halo-linux: lr b6e7626e libbinder.so+1f26e _ZN7android14IPCThreadState10freeBufferEPNS_6ParcelEPKhjPKjjPv+19
+
+
+10.28.26 16:46:18  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.28.26 16:46:18  reference function: _write_to_error_file
+10.28.26 16:46:18  reference address: a23ad111
+10.28.26 16:46:18  Couldn't read map file 'd:\cachebeta.map'
+10.28.26 16:46:18  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.28.26 16:46:18  init: map_name levels\b30\b30
+10.28.26 16:46:19  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 37 ms, 0 of 35370 triangles disagree with their vertex normals
+10.28.26 16:47:34  the saved game is taken
+10.28.26 16:48:18  last line repeated 2 times
+10.28.26 16:48:18  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b6b89330 esp 9a6fd4d0
+10.28.26 16:48:18  halo-linux: stack b6b89330 9a6fd4f0 9a6fd520 b6b6eb45 00000001 00000008
+
+
+10.28.26 16:48:29  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.28.26 16:48:29  reference function: _write_to_error_file
+10.28.26 16:48:29  reference address: a23ad111
+10.28.26 16:48:29  Couldn't read map file 'd:\cachebeta.map'
+10.28.26 16:48:29  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.28.26 16:48:29  init: map_name levels\b30\b30
+10.28.26 16:48:29  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 35 ms, 0 of 35370 triangles disagree with their vertex normals
+10.28.26 16:49:46  the saved game is taken
+
+
+10.28.26 16:50:39  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.28.26 16:50:39  reference function: _write_to_error_file
+10.28.26 16:50:39  reference address: a23ad111
+10.28.26 16:50:39  Couldn't read map file 'd:\cachebeta.map'
+10.28.26 16:50:39  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.28.26 16:50:39  init: map_name levels\b30\b30
+10.28.26 16:50:39  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 36 ms, 0 of 35370 triangles disagree with their vertex normals
+10.28.26 16:51:56  the saved game is taken
+10.28.26 16:52:39  last line repeated 2 times
+10.28.26 16:52:39  halo-linux: segmentation fault (signal 11, code 1) at 0x9c, eip b6e75f28 ebp b4878ac0 esp bebd7020
+
+
+10.28.26 16:52:49  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.28.26 16:52:49  reference function: _write_to_error_file
+10.28.26 16:52:49  reference address: a23a8111
+10.28.26 16:52:49  Couldn't read map file 'd:\cachebeta.map'
+10.28.26 16:52:49  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.28.26 16:52:49  init: map_name levels\b30\b30
+10.28.26 16:52:49  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 35 ms, 0 of 35370 triangles disagree with their vertex normals
+10.28.26 16:54:07  the saved game is taken
+
+
+10.28.26 16:54:59  halobeta xbox 01.01.14.2342(CACHE) ----------------------------------------------
+10.28.26 16:54:59  reference function: _write_to_error_file
+10.28.26 16:54:59  reference address: a23ad111
+10.28.26 16:54:59  Couldn't read map file 'd:\cachebeta.map'
+10.28.26 16:54:59  xbox ethernet link is connected at 100 Mbps in full-duplex mode
+10.28.26 16:54:59  init: map_name levels\b30\b30
+10.28.26 16:55:00  structure culling: 4416 buckets (subclusters, 3493 split) for 35105 surfaces, 625836 bytes, 39 ms, 0 of 35370 triangles disagree with their vertex normals
+10.28.26 16:56:16  the saved game is taken
+=== logcat (the app's lines, and crashes)
+10-28 16:54:58.200 21639 21639 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-28 16:54:58.202 21639 21639 D AndroidRuntime: CheckJNI is OFF
+10-28 16:54:58.254 21639 21639 E android.os.Debug: failed to load memtrack module: -2
+10-28 16:54:58.276 21639 21639 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-28 16:54:58.277 21639 21639 D AndroidRuntime: Shutting down VM
+10-28 16:54:58.278 21639 21650 I AndroidRuntime: NOTE: attach of thread 'Binder_1' failed
+10-28 16:54:58.718 21656 21656 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-28 16:54:58.721 21656 21656 D AndroidRuntime: CheckJNI is OFF
+10-28 16:54:58.774 21656 21656 E android.os.Debug: failed to load memtrack module: -2
+10-28 16:54:58.795 21656 21656 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-28 16:54:58.797   548 16362 I ActivityManager: START u0 {flg=0x10000000 cmp=com.halo.decomp/.LauncherActivity} from uid 2000 on display 0
+10-28 16:54:58.799   548 16362 V WindowManager: addAppToken: AppWindowToken{2fb72f46 token=Token{35b88f21 ActivityRecord{36846988 u0 com.halo.decomp/.LauncherActivity t940}}} to stack=1 task=940 at 0
+10-28 16:54:58.807   548   589 V WindowManager: Adding window Window{3d130159 u0 Starting com.halo.decomp} at 5 of 10 (after Window{205f063e u0 com.alphainventor.filemanager/com.alphainventor.filemanager.activity.MainActivity})
+10-28 16:54:58.827 21656 21656 D AndroidRuntime: Shutting down VM
+10-28 16:54:58.833 21656 21667 I AndroidRuntime: NOTE: attach of thread 'Binder_1' failed
+10-28 16:54:58.843   548   883 I ActivityManager: Start proc 21671:com.halo.decomp/u0a112 for activity com.halo.decomp/.LauncherActivity
+10-28 16:54:58.906   548 27914 I ActivityManager: START u0 {cmp=com.halo.decomp/.HaloActivity} from uid 10112 on display 0
+10-28 16:54:58.907   548 27914 V WindowManager: addAppToken: AppWindowToken{740ddf7 token=Token{2e4ff5f6 ActivityRecord{1b928291 u0 com.halo.decomp/.HaloActivity t941}}} to stack=1 task=941 at 0
+10-28 16:54:58.918   548   589 V WindowManager: Adding window Window{2c0bcdce u0 Starting com.halo.decomp} at 6 of 10 (after Window{3d130159 u0 Starting com.halo.decomp})
+10-28 16:54:58.949   548   563 I ActivityManager: Start proc 21703:com.halo.decomp:game/u0a112 for activity com.halo.decomp/.HaloActivity
+10-28 16:54:58.991 21703 21703 W linker  : libhalocrash.so: unused DT entry: type 0x6ffffef5 arg 0x314
+10-28 16:54:58.991 21703 21703 W linker  : libhalocrash.so: unused DT entry: type 0x6ffffffe arg 0x2d4
+10-28 16:54:58.991 21703 21703 W linker  : libhalocrash.so: unused DT entry: type 0x6fffffff arg 0x2
+10-28 16:54:58.991 21703 21703 I halo-crash: crash reporter installed
+10-28 16:54:58.991 21703 21703 I halo    : loading SDL3
+10-28 16:54:58.991 21703 21703 W linker  : libSDL3.so: unused DT entry: type 0x6ffffef5 arg 0x6fb8
+10-28 16:54:58.991 21703 21703 W linker  : libSDL3.so: unused DT entry: type 0x6ffffffe arg 0x6f58
+10-28 16:54:58.992 21703 21703 W linker  : libSDL3.so: unused DT entry: type 0x6fffffff arg 0x3
+10-28 16:54:59.002 21703 21703 I halo    : loading main
+10-28 16:54:59.003 21703 21703 W linker  : libmain.so: unused DT entry: type 0x6ffffef5 arg 0x29908
+10-28 16:54:59.003 21703 21703 W linker  : libmain.so: unused DT entry: type 0x6ffffffe arg 0x29888
+10-28 16:54:59.003 21703 21703 W linker  : libmain.so: unused DT entry: type 0x6fffffff arg 0x4
+10-28 16:54:59.012 21703 21703 I halo    : loaded the native libraries
+10-28 16:54:59.016 21703 21703 V SDL     : Manufacturer: NVIDIA
+10-28 16:54:59.016 21703 21703 V SDL     : Device: roth
+10-28 16:54:59.016 21703 21703 V SDL     : Model: SHIELD
+10-28 16:54:59.016 21703 21703 V SDL     : onCreate()
+10-28 16:54:59.018 21703 21703 V SDL     : nativeSetupJNI()
+10-28 16:54:59.018 21703 21703 V SDL     : AUDIO nativeSetupJNI()
+10-28 16:54:59.018 21703 21703 V SDL     : CONTROLLER nativeSetupJNI()
+10-28 16:54:59.046 21703 21703 V SDL     : onStart()
+10-28 16:54:59.046 21703 21703 V SDL     : onResume()
+10-28 16:54:59.060   548   701 V WindowManager: Adding window Window{1321683 u0 com.halo.decomp/com.halo.decomp.HaloActivity} at 6 of 11 (before Window{2c0bcdce u0 Starting com.halo.decomp})
+10-28 16:54:59.073 21703 21735 D libEGL  : loaded /system/lib/egl/libEGL_tegra.so
+10-28 16:54:59.074 21703 21735 I         : Attempting to load EGL implementation /system/lib/egl/libEGL_tegra_impl
+10-28 16:54:59.075 21703 21735 I         : Loaded EGL implementation /system/lib/egl/libEGL_tegra_impl
+10-28 16:54:59.077 21703 21735 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_tegra.so
+10-28 16:54:59.093 21703 21735 D libEGL  : loaded /system/lib/egl/libGLESv2_tegra.so
+10-28 16:54:59.120 21703 21735 D OpenGLRenderer: Enabling debug mode 0
+10-28 16:54:59.142   548   564 V WindowManager: Adding window Window{37d82039 u0 SurfaceView} at 6 of 12 (before Window{1321683 u0 com.halo.decomp/com.halo.decomp.HaloActivity})
+10-28 16:54:59.145 21703 21703 V SDL     : surfaceCreated()
+10-28 16:54:59.145 21703 21703 V SDL     : surfaceChanged()
+10-28 16:54:59.146 21703 21703 V SDL     : Window size: 1280x670
+10-28 16:54:59.146 21703 21703 V SDL     : Device size: 1280x720
+10-28 16:54:59.150 21703 21738 V SDL     : nativeInitSDLThread() 1 time
+10-28 16:54:59.150 21703 21738 V SDL     : Running main function SDL_main from library /data/app/com.halo.decomp-1/lib/arm/libmain.so
+10-28 16:54:59.150 21703 21738 I halo    : Halo for Android (armeabi-v7a) starting
+10-28 16:54:59.151 21703 21738 I halo    : files folder /storage/emulated/0/Android/data/com.halo.decomp/files
+10-28 16:54:59.159 21703 21738 I halo    : at the Xbox window: 80000000-88000000 ---p 00000000 00:00 0 
+10-28 16:54:59.172 21703 21738 I halo    : the GPU's report: /storage/emulated/0/Android/data/com.halo.decomp/files/gpu.txt
+10-28 16:54:59.172 21703 21738 I halo    : benchmark: HALO_EXIT_AFTER=120
+10-28 16:54:59.172 21703 21738 I halo    : benchmark: HALO_TEST_INPUT=bot:1
+10-28 16:54:59.172 21703 21738 I halo    : benchmark: HALO_FRAME_TIMING=true
+10-28 16:54:59.173 21703 21738 I halo    : benchmark: HALO_SHOW_FPS=true
+10-28 16:54:59.173 21703 21738 I halo    : benchmark: HALO_RENDER_SCALE=1.0
+10-28 16:54:59.173 21703 21738 I halo    : benchmark: HALO_GL_ASYNC_TEXTURES=true
+10-28 16:54:59.173 21703 21738 I halo    : benchmark: HALO_TEXTURE_BUSY_TRACKING=true
+10-28 16:54:59.173 21703 21738 I halo    : benchmark: HALO_FRAME_TIMING=false
+10-28 16:54:59.173 21703 21738 I halo    : benchmark: HALO_ASYNC_SAVES=true
+10-28 16:54:59.173 21703 21738 I halo    : benchmark: HALO_LATENCY_QUEUE=true
+10-28 16:54:59.174 21703 21738 I halo    : benchmark: HALO_THREAD_PRIORITY=true
+10-28 16:54:59.174 21703 21738 I halo    : benchmark: HALO_HS_GLOBALS=rasterizer_environment_reflections=false
+10-28 16:54:59.175 21703 21738 I halo    : display 1280x720: rendering 852x480
+10-28 16:54:59.178 21703 21738 I halo    : data /storage/emulated/0/Android/data/com.halo.decomp/files, saves /storage/emulated/0/Android/data/com.halo.decomp/files/save
+10-28 16:54:59.183 21703 21738 I halo-linux: config.toml line 577: unknown setting debug.warm_zero_uniforms, ignored
+10-28 16:54:59.185 21703 21738 I halo-linux: settings: /storage/emulated/0/Android/data/com.halo.decomp/files/config.toml
+10-28 16:54:59.187 21703 21740 I halo    : starting the game (32-bit ARM, native), stack 16 MB
+10-28 16:54:59.188 21703 21740 I halo-linux: screen: 852x480 drawn at 852x480
+10-28 16:54:59.196 21703 21703 V SDL     : onWindowFocusChanged(): true
+10-28 16:54:59.199   548   589 I ActivityManager: Displayed com.halo.decomp/.HaloActivity: +275ms (total +385ms)
+10-28 16:54:59.228 21703 21740 I halo-linux: data root: /storage/emulated/0/Android/data/com.halo.decomp/files (the game's log: debug.txt there)
+10-28 16:54:59.229 21703 21740 V SDL     : setOrientation() requestedOrientation=11 width=1280 height=720 resizable=false hint=LandscapeLeft LandscapeRight
+10-28 16:54:59.230 21703 21740 I halo-linux: no OpenGL ES 3.0 window (Couldn't find matching EGL config (call to eglChooseConfig failed, reporting an error of EGL_SUCCESS)): trying OpenGL ES 2.0
+10-28 16:54:59.230 21703 21740 V SDL     : setOrientation() requestedOrientation=11 width=1280 height=720 resizable=false hint=LandscapeLeft LandscapeRight
+10-28 16:54:59.239 21703 21740 I SDL/APP : pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+10-28 16:54:59.256 21703 21703 V SDL     : surfaceChanged()
+10-28 16:54:59.257 21703 21703 V SDL     : Window size: 1280x720
+10-28 16:54:59.257 21703 21703 V SDL     : Device size: 1280x720
+10-28 16:54:59.260 21703 21740 I halo-linux: OpenGL ES 2.0: 2 of the renderer's OpenGL ES 3.0 functions are missing
+10-28 16:54:59.261 21703 21740 I halo-linux: OpenGL ES 2.0: the renderer's ES 3.0 calls by extensions and emulation (0 extension functions missing)
+10-28 16:54:59.262 21703 21740 I halo-linux: debug.gl_queue: the OpenGL calls recorded, and done in order where they must be
+10-28 16:54:59.262 21703 21740 I halo-linux: debug.gl_async_textures: textures and buffers named from names the GL thread made ahead, texture uploads recorded with a copy of their texels
+10-28 16:54:59.262 21703 21740 I halo-linux: OpenGL OpenGL ES 2.0 17.01214 on NVIDIA Tegra
+10-28 16:54:59.263 21703 21740 I halo-linux: OpenGL ES 0.0: copy image 0, border clamp 0, anisotropy 1, S3TC 1, sample counting 0, base vertex 0 (none), half float targets 1
+10-28 16:54:59.273 21703 21740 I halo-linux: anti-aliasing: off
+10-28 16:54:59.274 21703 21740 I halo-linux: debug.deferred_draws: the game's Direct3D calls are recorded and replayed at the points that need them done
+10-28 16:54:59.282 21703 21740 I halo-linux: gamepad: NVIDIA Controller v01.01 (standard)
+10-28 16:54:59.290 21703 21740 I halo-linux: Internet play is off (network.online in config.toml): the invite is ignored
+10-28 16:54:59.305 21703 21740 I halo-linux: save root: /storage/emulated/0/Android/data/com.halo.decomp/files/save
+10-28 16:54:59.394 21703 21740 I halo-linux: debug.render_thread: the deferred draws are replayed on a thread of their own, the game's going on as it draws (debug.render_thread_async)
+10-28 16:54:59.395 21703 21752 I halo-linux: debug.thread_priority: the render thread's nice -6 (was -4)
+10-28 16:54:59.410 21703 21740 I halo-linux: sound: stereo
+10-28 16:54:59.597 21703 21756 I halo-linux: Internet play: this machine's public address is addr#1f8896:42592 (from stun.l.google.com)
+10-28 16:54:59.615 21703 21756 I halo-linux: Internet play: this machine's public address is addr#1f8896:42592 (from stun.cloudflare.com)
+10-28 16:54:59.616 21703 21756 I halo-linux: Internet play: joining 8a5f96c13f5f's game
+10-28 16:54:59.883 21703 21740 I halo-linux: menus: the pause menu has SETTINGS
+10-28 16:54:59.884 21703 21740 I halo-linux: menus: 1143 widgets, 282 string lists and 100 bitmaps added to the map's 3325 tags
+10-28 16:54:59.887 21703 21740 I halo-linux: high-res hud: 60 of 135 bitmaps in this map, 1 for some of their sprites (75 not in it)
+10-28 16:55:00.048 21703 21740 I halo-linux: textures: converted ahead, on a thread of their own (debug.texture_preconvert)
+10-28 16:55:01.285 21703 21740 I halo-linux: debug.thread_priority: the game thread's nice -6 (was -4)
+10-28 16:55:01.286 21703 21740 I halo-linux: debug.hs_globals: rasterizer_environment_reflections = false
+10-28 16:55:01.355 21703 21740 I halo-linux: model detail: stock
+10-28 16:55:01.361 21703 21752 I halo-linux: debug.gl_thread: the queued OpenGL calls done on a thread of their own, which holds the context (its waits spun: debug.spin_waits)
+10-28 16:55:01.369 21703 21794 I halo-linux: debug.thread_priority: the GL thread's nice -10 (was -6)
+10-28 16:55:01.400 21703 21752 I halo-linux: anisotropic filtering: 1x (the GPU's most 15x)
+10-28 16:55:03.629 21703 21794 I halo-linux: OpenGL ES 2.0: a render target copied into level 0 (128x128) of texture 130: done (0x0)
+10-28 16:55:03.632 21703 21794 I halo-linux: OpenGL ES 2.0: a render target copied into level 1 (64x64) of texture 130: done (0x0)
+10-28 16:55:03.633 21703 21794 I halo-linux: OpenGL ES 2.0: a render target copied into level 2 (32x32) of texture 130: done (0x0)
+10-28 16:55:03.633 21703 21794 I halo-linux: OpenGL ES 2.0: a render target copied into level 3 (16x16) of texture 130: done (0x0)
+10-28 16:55:04.577 21703 21794 I halo-linux: latency: EGL fences (EGL_KHR_fence_sync) there
+10-28 16:55:08.300 21703 21873 I halo-linux: Internet play: UPnP: no UPnP router on this network
+10-28 16:55:23.140 21703 21752 I halo-linux: shader warm-up: levels\b30\b30: 1661 programs, 1639 linked now, in 18562 ms
+10-28 16:55:25.087 21703 21740 I halo-linux: texture busy tracking: 4290 textures asked about in ten seconds: 4246 not busy, 0 waited for their last draws' replay, 44 with this frame's draws handed over and replayed (2263.3 ms waited in all)
+10-28 16:55:26.487 21703 21740 I halo-linux: shadow maps: 128x128
+10-28 16:55:27.555 21703 21740 I halo-linux: texture: vehicles\warthog\bitmaps\headlight flares (stage 0, usage 1): not loaded yet, type 0 of 0, format 14, 64x64, 6 mipmaps
+10-28 16:55:31.351 21703 21752 I halo-linux: frame rate: 21 frames a second over the last ten seconds; 55 of 216 frames longer than 34 ms, the longest 18628.0 ms
+10-28 16:55:31.352 21703 21752 I halo-linux: frame times (these ten seconds, 215 frames): average 6.7 fps (149.2 ms); 1% low 0.1 fps, 0.1% low 0.1 fps; 99th percentile 5270.1 ms, 99.9th 18628.0 ms, the longest 18628.0 ms
+10-28 16:55:31.354 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:55:33.998 21703 21740 I halo-linux: high-res text: ui\large_ui (capitals 13 units) drawn with Overpass-900.ttf, 98% wide
+10-28 16:55:34.301 21703 21794 I halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 73.0 ms, median 54.4, 99th percentile 241.6, the longest 3289.7
+10-28 16:55:34.302 21703 21794 I halo-linux: latency (input to the GPU's finishing it, at most, queue only, 299 frames): average 172.5 ms, median 87.7, 99th percentile 442.9, the longest 22049.1
+10-28 16:55:39.398 21703 21740 I halo-linux: texture busy tracking: 12665 textures asked about in ten seconds: 12650 not busy, 3 waited for their last draws' replay, 12 with this frame's draws handed over and replayed (295.2 ms waited in all)
+10-28 16:55:41.423 21703 21752 I halo-linux: frame rate: 29 frames a second over the last ten seconds; 48 of 299 frames longer than 34 ms, the longest 96.1 ms
+10-28 16:55:41.424 21703 21752 I halo-linux: frame times (these ten seconds, 299 frames): average 29.7 fps (33.7 ms); 1% low 10.6 fps, 0.1% low 10.4 fps; 99th percentile 93.2 ms, 99.9th 96.1 ms, the longest 96.1 ms
+10-28 16:55:41.426 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:55:44.305 21703 21794 I halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 54.2 ms, median 53.9, 99th percentile 60.7, the longest 67.7
+10-28 16:55:44.306 21703 21794 I halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 87.5 ms, median 87.2, 99th percentile 94.2, the longest 100.4
+10-28 16:55:51.533 21703 21752 I halo-linux: frame rate: 29 frames a second over the last ten seconds; 78 of 297 frames longer than 34 ms, the longest 97.5 ms
+10-28 16:55:51.534 21703 21752 I halo-linux: frame times (these ten seconds, 297 frames): average 29.4 fps (34.0 ms); 1% low 10.4 fps, 0.1% low 10.3 fps; 99th percentile 95.2 ms, 99.9th 97.5 ms, the longest 97.5 ms
+10-28 16:55:51.535 21703 21752 I halo-linux: frame times (the run since 20 s, 297 frames): average 29.4 fps (34.0 ms); 1% low 10.4 fps, 0.1% low 10.3 fps; 99th percentile 95.2 ms, 99.9th 97.5 ms, the longest 97.5 ms
+10-28 16:55:51.537 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:55:51.687 21703 21740 I halo-linux: texture busy tracking: 4094 textures asked about in ten seconds: 4074 not busy, 7 waited for their last draws' replay, 13 with this frame's draws handed over and replayed (104.2 ms waited in all)
+10-28 16:55:55.318 21703 21794 I halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 66.5 ms, median 61.4, 99th percentile 146.7, the longest 188.1
+10-28 16:55:55.318 21703 21794 I halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 103.2 ms, median 94.5, 99th percentile 198.3, the longest 263.4
+10-28 16:56:01.054 21703 21740 I halo-linux: debug.async_saves: checkpoints copied aside and written by a thread of their own (20480 KB)
+10-28 16:56:01.725 21703 21752 I halo-linux: frame rate: 23 frames a second over the last ten seconds; 208 of 234 frames longer than 34 ms, the longest 186.7 ms
+10-28 16:56:01.727 21703 21752 I halo-linux: frame times (these ten seconds, 234 frames): average 23.0 fps (43.6 ms); 1% low 6.3 fps, 0.1% low 5.4 fps; 99th percentile 132.5 ms, 99.9th 186.7 ms, the longest 186.7 ms
+10-28 16:56:01.728 21703 21752 I halo-linux: frame times (the run since 20 s, 531 frames): average 26.2 fps (38.2 ms); 1% low 7.7 fps, 0.1% low 5.4 fps; 99th percentile 97.5 ms, 99.9th 186.7 ms, the longest 186.7 ms
+10-28 16:56:01.730 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:56:03.412 21703 21740 I halo-linux: texture busy tracking: 13890 textures asked about in ten seconds: 13845 not busy, 10 waited for their last draws' replay, 35 with this frame's draws handed over and replayed (945.4 ms waited in all)
+10-28 16:56:08.235 21703 21740 I halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+10-28 16:56:09.411 21703 21794 I halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 91.4 ms, median 86.3, 99th percentile 168.9, the longest 247.9
+10-28 16:56:09.412 21703 21794 I halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 138.4 ms, median 132.9, 99th percentile 242.4, the longest 313.5
+10-28 16:56:11.955 21703 21752 I halo-linux: frame rate: 22 frames a second over the last ten seconds; 216 of 223 frames longer than 34 ms, the longest 112.4 ms
+10-28 16:56:11.957 21703 21752 I halo-linux: frame times (these ten seconds, 223 frames): average 21.8 fps (45.9 ms); 1% low 9.3 fps, 0.1% low 8.9 fps; 99th percentile 103.5 ms, 99.9th 112.4 ms, the longest 112.4 ms
+10-28 16:56:11.958 21703 21752 I halo-linux: frame times (the run since 20 s, 754 frames): average 24.7 fps (40.5 ms); 1% low 8.1 fps, 0.1% low 5.4 fps; 99th percentile 97.5 ms, 99.9th 186.7 ms, the longest 186.7 ms
+10-28 16:56:11.959 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:56:12.082 21703 21740 I halo-linux: texture: effects\particles\lens flare\bitmaps\flares_generic2 (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 64x64, 6 mipmaps
+10-28 16:56:13.790 21703 21740 I halo-linux: texture busy tracking: 10428 textures asked about in ten seconds: 10393 not busy, 13 waited for their last draws' replay, 22 with this frame's draws handed over and replayed (609.2 ms waited in all)
+10-28 16:56:22.185 21703 21752 I halo-linux: frame rate: 22 frames a second over the last ten seconds; 189 of 229 frames longer than 34 ms, the longest 137.5 ms
+10-28 16:56:22.186 21703 21752 I halo-linux: frame times (these ten seconds, 229 frames): average 22.4 fps (44.7 ms); 1% low 7.3 fps, 0.1% low 7.3 fps; 99th percentile 136.9 ms, 99.9th 137.5 ms, the longest 137.5 ms
+10-28 16:56:22.186 21703 21752 I halo-linux: frame times (the run since 20 s, 983 frames): average 24.1 fps (41.5 ms); 1% low 7.8 fps, 0.1% low 5.4 fps; 99th percentile 103.5 ms, 99.9th 186.7 ms, the longest 186.7 ms
+10-28 16:56:22.188 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:56:22.352 21703 21794 I halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 82.2 ms, median 81.2, 99th percentile 170.0, the longest 211.8
+10-28 16:56:22.354 21703 21794 I halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 125.3 ms, median 123.7, 99th percentile 242.2, the longest 267.7
+10-28 16:56:26.861 21703 21740 I halo-linux: texture: effects\particles\lens flare\bitmaps\flares pr overcharge (stage 0, usage 1): not loaded yet, type 0 of 0, format 10, 32x32, 5 mipmaps
+10-28 16:56:26.886 21703 21740 I halo-linux: texture busy tracking: 951 textures asked about in ten seconds: 947 not busy, 1 waited for their last draws' replay, 3 with this frame's draws handed over and replayed (49.3 ms waited in all)
+10-28 16:56:29.654 21703 21756 I halo-linux: Internet play: no answer from the invite's host; it may have stopped hosting or quit
+10-28 16:56:32.372 21703 21752 I halo-linux: frame rate: 25 frames a second over the last ten seconds; 218 of 255 frames longer than 34 ms, the longest 61.6 ms
+10-28 16:56:32.372 21703 21752 I halo-linux: frame times (these ten seconds, 255 frames): average 25.0 fps (39.9 ms); 1% low 17.4 fps, 0.1% low 16.2 fps; 99th percentile 53.2 ms, 99.9th 61.6 ms, the longest 61.6 ms
+10-28 16:56:32.373 21703 21752 I halo-linux: frame times (the run since 20 s, 1238 frames): average 24.3 fps (41.2 ms); 1% low 8.3 fps, 0.1% low 5.4 fps; 99th percentile 95.2 ms, 99.9th 186.7 ms, the longest 186.7 ms
+10-28 16:56:32.374 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:56:34.595 21703 21794 I halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 78.7 ms, median 79.1, 99th percentile 103.7, the longest 110.1
+10-28 16:56:34.596 21703 21794 I halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 119.4 ms, median 119.3, 99th percentile 153.1, the longest 157.9
+10-28 16:56:42.560 21703 21752 I halo-linux: frame rate: 23 frames a second over the last ten seconds; 230 of 232 frames longer than 34 ms, the longest 69.7 ms
+10-28 16:56:42.562 21703 21752 I halo-linux: frame times (these ten seconds, 232 frames): average 22.8 fps (43.9 ms); 1% low 14.6 fps, 0.1% low 14.3 fps; 99th percentile 67.1 ms, 99.9th 69.7 ms, the longest 69.7 ms
+10-28 16:56:42.563 21703 21752 I halo-linux: frame times (the run since 20 s, 1470 frames): average 24.0 fps (41.6 ms); 1% low 8.6 fps, 0.1% low 5.4 fps; 99th percentile 86.9 ms, 99.9th 186.7 ms, the longest 186.7 ms
+10-28 16:56:42.565 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:56:43.135 21703 21740 I halo-linux: texture busy tracking: 2254 textures asked about in ten seconds: 2249 not busy, 2 waited for their last draws' replay, 3 with this frame's draws handed over and replayed (57.8 ms waited in all)
+10-28 16:56:47.290 21703 21794 I halo-linux: latency (input to the frame's swap, queue only, 300 frames): average 81.1 ms, median 79.8, 99th percentile 119.5, the longest 134.9
+10-28 16:56:47.291 21703 21794 I halo-linux: latency (input to the GPU's finishing it, at most, queue only, 300 frames): average 123.4 ms, median 121.1, 99th percentile 181.6, the longest 190.7
+10-28 16:56:52.745 21703 21752 I halo-linux: frame rate: 23 frames a second over the last ten seconds; 185 of 230 frames longer than 34 ms, the longest 83.5 ms
+10-28 16:56:52.745 21703 21752 I halo-linux: frame times (these ten seconds, 230 frames): average 22.6 fps (44.3 ms); 1% low 12.5 fps, 0.1% low 12.0 fps; 99th percentile 76.6 ms, 99.9th 83.5 ms, the longest 83.5 ms
+10-28 16:56:52.746 21703 21752 I halo-linux: frame times (the run since 20 s, 1700 frames): average 23.8 fps (42.0 ms); 1% low 9.1 fps, 0.1% low 5.4 fps; 99th percentile 82.2 ms, 99.9th 186.7 ms, the longest 186.7 ms
+10-28 16:56:52.748 21703 21752 I halo-linux: thermal: cpu0 1810/0 MHz, cpu1 1810/1912 MHz, cpu2 1810/1912 MHz, cpu3 1810/1912 MHz
+10-28 16:56:59.294 21703 21740 I halo-linux: exiting after debug.exit_after
+10-28 16:56:59.380   548  1832 I WindowState: WIN DEATH: Window{1321683 u0 com.halo.decomp/com.halo.decomp.HaloActivity}
+10-28 16:56:59.380   548  1832 W WindowManager: Force-removing child win Window{37d82039 u0 SurfaceView} from container Window{1321683 u0 com.halo.decomp/com.halo.decomp.HaloActivity}
+10-28 16:56:59.590   548  1290 I ActivityManager: Process com.halo.decomp:game (pid 21703) has died
+10-28 16:56:59.591   548  1290 W ActivityManager: Force removing ActivityRecord{1b928291 u0 com.halo.decomp/.HaloActivity t941}: app died, no saved state
+10-28 16:57:05.571 25329 25329 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-28 16:57:05.573 25329 25329 D AndroidRuntime: CheckJNI is OFF
+10-28 16:57:05.627 25329 25329 E android.os.Debug: failed to load memtrack module: -2
+10-28 16:57:05.649 25329 25329 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-28 16:57:05.650   548   564 I ActivityManager: Force stopping com.halo.decomp appid=10112 user=0: from pid 25329
+10-28 16:57:05.651   548   564 I ActivityManager: Killing 21671:com.halo.decomp/u0a112 (adj 9): stop com.halo.decomp
+10-28 16:57:05.660   548   883 W ActivityManager: Spurious death for ProcessRecord{ead41a2 21671:com.halo.decomp/u0a112}, curProc for 21671: null
+10-28 16:57:05.660 25329 25329 D AndroidRuntime: Shutting down VM
